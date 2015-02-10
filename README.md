@@ -8,20 +8,20 @@ The code, however, is an abomination: the main controller for the app is over 8,
 
 That said, the app still works great and I run it all the time. And despite its usefulness, iPulse is not a source of revenue anymore, so I've decided to make it available free of charge. Open source with warts and all.
 
-Build and run and **try not to** look at the source code. There is [extensive user help](English.lproj/Help.html) that explains the information being presented by iPulse.
+Build and run and **try not to** look at the source code. There is [extensive user help](English.lproj/Help.html) that explains the information being presented by iPulse. Localized help is available from the app's Help menu.
 
 I'll do my best to keep the iPulse running on the latest version of OS X since it's an important tool for the work I do. If you find bugs, come up with new features or are **brave enough** to refactor the code, I'll be happy to take pull requests.
 
 ## Code Structure
 
-You're kidding, right? It's all in MainController.m!
+You're kidding, right? It's all in `MainController.m`!
 
 If you do dare to look at the source, there are some common places to look in the app:
 
 
 ### Info classes
 
-These classes are used to maintain circular buffers of sampled data. MemoryInfo.m has memory usage, AirportInfo.m has Wi-Fi data, etc.
+These classes are used to maintain circular buffers of sampled data. `MemoryInfo.m` has memory usage, `AirportInfo.m` has Wi-Fi data, etc.
 
 Other types of data that aren't tracked historically are queried directly by the gauge on an as-needed basis.
 
