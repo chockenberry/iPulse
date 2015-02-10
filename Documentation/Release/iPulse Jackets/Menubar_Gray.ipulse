@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IFGlobalStatusLowerBarColorAlert</key>
+	<string>1.000000 0.024058 0.012269 0.750000</string>
+	<key>IFGlobalStatusLowerBarColorLeft</key>
+	<string>0.000000 0.000000 0.000000 1.000000</string>
+	<key>IFGlobalStatusLowerBarColorRight</key>
+	<string>0.000000 0.000000 0.000000 1.000000</string>
+	<key>IFGlobalStatusLowerDotColorAlert</key>
+	<string>1.000000 0.532178 0.000000 0.750000</string>
+	<key>IFGlobalStatusLowerDotColorLeft</key>
+	<string>1.000000 1.000000 1.000000 1.000000</string>
+	<key>IFGlobalStatusLowerDotColorRight</key>
+	<string>1.000000 1.000000 1.000000 1.000000</string>
+	<key>IFGlobalStatusUpperBarColorAlert</key>
+	<string>1.000000 0.024058 0.012269 0.750000</string>
+	<key>IFGlobalStatusUpperBarColorLeft</key>
+	<string>0.000000 0.000000 0.000000 1.000000</string>
+	<key>IFGlobalStatusUpperBarColorRight</key>
+	<string>0.000000 0.000000 0.000000 1.000000</string>
+	<key>IFGlobalStatusUpperDotColorAlert</key>
+	<string>1.000000 0.532178 0.000000 0.750000</string>
+	<key>IFGlobalStatusUpperDotColorLeft</key>
+	<string>1.000000 1.000000 1.000000 1.000000</string>
+	<key>IFGlobalStatusUpperDotColorRight</key>
+	<string>1.000000 1.000000 1.000000 1.000000</string>
+</dict>
+</plist>

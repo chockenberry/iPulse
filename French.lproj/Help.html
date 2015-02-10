@@ -1,0 +1,557 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<title>iPulse - Aide</title>
+		<style>
+			BODY {
+				color: black;
+				background-color: white;
+				font-family: "Lucida Grande", Arial, sans-serif;
+				font-size: 12px;
+			}
+			TABLE, TD, TH {
+				color: black;
+				font-family: "Lucida Grande", Arial, sans-serif;
+				font-size: 12px;
+			}
+			TD, TH {
+				text-align: left;
+				vertical-align: top;
+			}
+			UL {
+				list-style: square;
+			}
+			OL {
+				list-style-type: lower-alpha;
+			}
+			A {
+				/* color: #0066cc; */
+				color: #33337F;
+			}
+			A:hover {
+				color: #666666;
+			}
+			EM {
+				color: #cc3333;
+				font-style: normal;
+			}
+			PRE {
+				padding-left: 24px;
+				font-family: "Andale Mono", Courier, monospace;
+				font-size: 12px;
+				color: #33337F;
+			}
+			.section {
+				width: 130px;
+				color: #cc0000;
+				font-weight: bold;
+				text-align: right;
+				vertical-align: top;
+				/* border: black solid 1px; */
+				padding-right: 10px;
+			}
+			.sectionbody {
+				width: 520px;
+				vertical-align: top;
+				padding-bottom: 24px;
+				/* border: black solid 1px; */
+			}
+			.topic {
+				color: #cc0000;
+				text-decoration: none;
+				padding-right: 4px;
+			}
+			.figure {
+				text-align: center;
+			}
+			.gauge {
+				color: #0066cc;
+				font-weight: bold;
+			}
+			.subtle {
+				color: #ccccff;
+			}
+			.command {
+				font-size: 12px;
+				font-family: "Andale Mono", Courier, monospace;
+				color: #33337F;
+				/* font-weight: bold; */
+			}
+			.group {
+				/* background-color: #aaddff; */
+				background-color: #dedeff;
+				padding: 10px;
+				border: #ccccff solid 1px;
+				margin-bottom: 5px;
+			}
+			.key {
+				width: 65px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<table>
+			<tr>
+				<td>&nbsp;</td>
+				<td class="sectionbody">
+					<a href="http://iconfactory.com/software/ipulse">Page d'accueil iPulse</a>  | <a href="http://iconfactory.com/freeware/ipulse">Galerie de jaquettes iPulse</a>  |  <a href="http://iconfactory.com/software/ipulse_support">iPulse FAQ</a>  | <a href="http://iconfactory.com/home">Page d'accueil Iconfactory</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					Au sujet d'iPulse				</td>
+				<td class="sectionbody">
+iPulse est une application qui affiche graphiquement le fonctionnement interne de Mac&nbsp;OS&nbsp;X.
+<p>
+Après avoir démarré l'application iPulse, plusieurs jauges sont affichées la fenêtre et l'icône du dock d'iPulse. Ces jauges affichent les éléments suivants :
+<ul>
+	<li><a href="#cpu_usage">Usage de l'unité centrale</a></li>
+	<li><a href="#system_load">Charge du système</a></li>
+	<li><a href="#memory_usage">Usage</a> et <a href="#memory_swapping">permutation</a> de la mémoire</li>
+	<li><a href="#disk_usage">Usage</a> et <a href="#disk_activity">activité</a> du disque</li>
+	<li><a href="#network_activity">Activité du réseau</a></li>
+	<li><a href="#mobility">État de la mobilité (Batterie et Sans fil)</a></li>
+	<li><a href="#clock">Horloge (Date et heure actuelle)</a></li>
+	<li><a href="#general_information">Information générale</a></li>
+</ul>
+Vous pouvez en apprendre plus au sujet de chaque jauge, et de la fenêtre d'information qui apparaît quand vous placez le curseur au-dessus d'iPulse, en cliquant sur le nom ci-dessus. Nous vous proposons également de commencer par <a href="#introduction">l'introduction</a> puisqu'elle fournit de l'information de fond utile.
+</p>
+<p>
+iPulse peut être configuré en utilisant les <a href="#preferences">préférences</a> de l'application&mdash;il y a plusieurs façons différentes d'afficher l'information de votre système. Vous pouvez également charger une jaquette iPulse pour modifier rapidement les préférences (une section ci-dessous explique comment <a href="#creating_jackets">créer vos propres jaquettes</a>.)</p>
+<p>
+Lorsque vous serez plus familier avec iPulse, jetez un coup d'oeil aux sections <a href="#tips_and_tricks">Trucs et Astuces</a> et aux <a href="#power_users">Utilisateurs avancés</a> pour de l'aide supplémentaire sur la configuration d'iPulse.</p>
+<p>
+<em>Nota : </em> Cette page est affichée la première fois que vous lancez iPulse. Si vous devez vous référer y encore, choisissez <strong>Aide</strong> de la barre de menu d'iPulse.</p>				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					Comment fonctionne-t-il?				</td>
+				<td class="sectionbody">
+Comme vous le savez peut-être, Mac OS X est basé sur le système d'exploitation Unix. Ce système d'exploitation a évolué durant plusieurs d'années pour devenir une plate-forme de calcul robuste et efficace. Les développeurs de Mac&nbsp;OS&nbsp;X et leurs prédécesseurs ont inclus plusieurs mécanismes pour examiner l'état interne du système d'exploitation. Cette instrumentation permet à un administrateur d'ajuster le système pour une exécution optimum et de déterminer la cause de plusieurs problèmes du système.
+<p>
+Avec iPulse, notre but était de représenter graphiquement cette information interne d'une façon qui utilise peu d'espace et est facile à lire.</p>
+<p>
+Où iPulse obtient-il donc cette information interne ? Et comment est-elle affichée graphiquement ? La section qui suit répond à ces questions.</p>
+<p>
+<a name="introduction"></a><span class="topic">Introduction</span> Afin de rendre ce fichier d'aide utile au plus grand nombre de personnes possibles, nous commencerons chaque sujet à un niveau de base. Pendant que nous progressons dans le sujet, le nombre de détails techniques augmente&mdash;les lecteurs peuvent sauter au prochain sujet s'ils trouvent le sujet actuel devient trop difficile.</p>
+<p>
+Une des nouvelles fonctionnalités principales dans cette version d'iPulse est qu'une fenêtre d'information apparaît lorsque la souris est au-dessus d'une jauge. Le contenu de cette fenêtre sera discuté après une brève introduction de la jauge. Dans plusieurs cas, la fenêtre d'information vous aide à apprendre ce que fait la jauge.</p>
+<p>
+Après avoir expliqué la fenêtre d'information, nous présenterons l'information de bas niveau qui sera utile aux lecteurs qui sont techniquement enclin et qui veulent comprendre complètement les données. Nous nous référerons aux commandes du shell Unix qui peuvent être exécutées à partir d'une fenêtre du Terminal. Si vous êtes curieux, allez-y et utilisez les commandes : aucune des informations présentées ici ne peut endommager votre Mac (assurez-vous simplement de ne faire aucune erreur typographique !) Vous pouvez également utiliser <span class="command">man [command]</span> pour en apprendre plus au sujet de n'importe laquelle de ces commandes mentionnées ci-dessous.</p>
+<div class="group">
+<strong>Gauges iPulse</strong>
+<a name="diagram"></a>
+<p>
+<div class="figure">
+<img src="../iPulse_help.gif" width="343" height="300" border="0"></div>
+Le diagramme ci-dessus montre l'emplacement des diverses jauges dans l'interface d'iPulse. Chacune des jauges sera décrite ci-dessous.
+</p>
+<p>
+Si vous cherchez de l'information sur une jauge particulière vous pouvez la localiser rapidement cherchant un repère comme celui-ci : <a href="#diagram">[#]</a> (où le # est remplacé par un nombre sur la jauge.) Cliquer sur le marqueur pour revenir au diagramme. Utiliser le bouton Revenir du navigateur pour revenir au sujet.</p>
+</div>
+
+
+<p>
+<a name="cpu_usage"></a><span class="topic">Unité centrale</span> La première jauge que nous expliquerons est celle du l'unité centrale (UC) : le coeur de votre Mac et de l'affichage d'iPulse !</p>
+<p>
+Mac&nbsp;OS&nbsp;X suit la convention d'Unix qui sépare l'utilisation de l'unité centrale en trois catégories : le temps du système, le temps d'utilisateur et le temps 'nice'. Le temps de système est la quantité de temps utilisé à faire les tâches du système d'exploitation. Le temps d'utilisateur est la quantité de temps utilisée pour exécuter les applications et les services en dehors du noyau. Le temps 'nice' est le temps utilisé pour exécuter des opérations de faibles priorités parce que leur priorité réduite permet au noyau d'abaisser leur utilisation de l'UC lorsque le système devient plus occupé.</p>
+<p>
+Le graphe de l'unité centrale (UC) est tracé avec le pourcentage du temps passé sur des tâches de système dans le cercle intérieur <a href="#diagram">[1]</a> et le pourcentage du temps d'utilisateur dans le cercle extérieur <a href="#diagram">[2]</a> . Toute opération ayant une priorité plus basse (nice) est affichée en dehors du cercle utilisateur <a href="#diagram">[3]</a>. Le nombre affiché sur la jauge est la somme du temps système, utilisateur et nice. La valeur est ramenée à une moyenne utilisant les 10 dernières mises à jour.</p>
+<p>
+Une autre fonctionnalité de la jauge de l'UC est qu'elle devient plus foncée selon la charge du système. Nous expliquerons la charge du système dans le prochain sujet, pensez à cette fonctionnalité comme celle d'un élément chauffant : plus l'UC "chauffe", plus la jauge est foncée.</p>
+<p>
+iPulse examine la quantité de travail que votre Mac a fait au cours des dernières 15 minutes et emploie la valeur résultante pour ajuster la couleur de la teinte de la jauge. Le résultat est que vous pouvez voir des tendances à long terme de l'utilisation de l'unité centrale. Par exemple, si vous accomplissez une certaine tâche intensive pour l'unité centrale comme faire une tâche de floue gaussienne sur une image de deux gigaoctets, vous verrez la jauge de l'unité centrale devenir plus rouge (c'est chaud !) Quand la jauge de l'unité centrale revient à sa couleur normale, vous saurez que votre tâche de traitement est terminée.</p>
+<p>
+Chaque jauge d'iPulse affiche une fenêtre d'information lorsque vous placez votre souris au-dessus de la jauge. Ceci vous aide à apprendre où chacune des jauges se trouve. Après avoir utilisé iPulse pendant un certain temps, vous n'aurez aucun problème à vous rappeler, mais au début, cela peut être un peu difficile d'associer la jauge à l'élément qu'elle représente.</p>
+La fenêtre d'information de l'unité centrale (UC) affiche les éléments suivants :
+<ul>
+	<li>Charge - la charge actuelle du système (ramenée à une moyenne pour la minute passée) avec les charges de minimum, maximum et moyennes de l'heure passée.</li>
+	<li>Opérations - le nombre d'opérations qui sont actuellement en activité, décomposé en celles qui fonctionnent, qui sont dormantes, ou dans un autre état. Les opérations étiquetées "root" sont des opérations qu'iPulse ne peut pas examiner parce qu'il n'a pas les permissions appropriées &mdash; vous pouvez changer manuellement les permissions d'iPulse de sorte qu'il puisse enregistrer l'information des opérations plus précisément. Voir la section <a href="#power_users">Utilisateurs avancés</a> ci-dessous pour plus d'information. </li>
+	<li> Température - la température actuelle telle qu'enregistrée par un capteur sur la puce du processeur. Quelques Macs n'enregistrent pas cette information (notamment, les derniers PowerMac G4 de bureau.) Même lorsque la température de l'unité centrale est enregistrée, elle n'est pas extrêmement précise : les valeurs tendent à être inférieures à la vraie température. Il est préférable de penser à cette valeur comme une valeur relative. La température de fonctionnement maximum pour la puce G4 est 101 &deg;C&mdash;si vous voyez que cette valeur affichée, sauvez-vous ! : -)</li>
+	<li>Usage - l'utilisation de l'unité centrale est décomposée en valeurs de pourcentage pour chacune des catégories mentionnées ci-dessus. Par défaut, la valeur totale n'inclura pas les opérations de faible priorité (il y a une préférence pour modifier ceci.)</li>
+	<li>Liste des opérations - la dernière information est la liste des opérations triées par l'utilisation moyenne de l'unité centrale de traitement. L'application la plus occupée est au-dessus de la liste. Le nombre d'opérations (également appelé une identification d'opérations ou un opid) est également affiché pour nous les « geeks » d'Unix.</li>
+</ul>
+</p>
+<p>
+Vous pouvez obtenir la même information en utilisant <span class="command">top</span> dans une fenêtre du Terminal. En fait, si vous trouvez qu'iPulse enregistre quelque chose d'inattendu, par exemple, une opération utilisant plus de puissance de traitement que la normale, vous pouvez employer <span class="command">top</span> pour identifier les opérations qui consomment le plus de cycles de l'unité centrale. Le nombre d'opérations rapporté dans la fenêtre d'information peut aussi être utilisé avec <span class="command">ps -p #</span> (où # est le numéro de l'opération.)</p>
+<p>
+Les statistiques d'utilisation de l'unité centrale sont obtenues en utilisant l'appel de système de host_statistics() avec le sélecteur HOST_CPU_LOAD_INFO.</p>
+
+
+<p>
+<a name="system_load"></a><span class="topic">Charge du système</span> Une autre mesure de l'utilisation de l'unité centrale dans le monde Unix est la "charge moyenne". La charge moyenne est une métrique qui représente le nombre moyen d'opérations attendant l'unité centrale sur une certaine période de temps. À mesure que la charge de l'unité centrale augmente, la charge moyenne augmente aussi.</p>
+<p>
+Vous pouvez penser à la charge moyenne comme une file d'attente à la banque. Il y a des clients (opérations) qui doivent interagir avec un caissier (le processeur.) Il peut y avoir plus d'un guichet (processeurs multiples). Pendant que la ligne (file d'attente des opérations) devient plus longue, les guichets ont plus de travail à faire. À l'heure du déjeuner, lorsqu'il y a plus de clients qui attendent d'être servis, la charge moyenne du guichet sera plus élevée qu'à d'autres moments de la journée.</p>
+<p>
+La jauge d'historique affiche la charge moyenne sous forme d'un cercle de points à la circonférence de la fenêtre iPulse [19]. Ceci donne une vue globale de la charge durant la dernière heure. La minute actuelle est représentée par un point non rempli ; les autres points montrent la charge moyenne relativement à la minute actuelle. Par exemple, les cinq points qui sont dans le sens contraire des aiguilles d'une montre à partir du point non rempli affichent les dernières cinq minutes.</p>
+<p>
+Un point opaque indique une minute d'activité élevée (le chargement de votre courriel, l'exécution d'un travail complexe dans Photoshop, ou autre chose qui demande beaucoup de l'unité centrale). Alternativement, un point transparent indique une période de charge basse pour l'unité centrale. Votre pause-café, par exemple.</p>
+<p>
+L'affichage de la charge moyenne peut être ajusté dans le panneau Historique de la fenêtre de préférence. Le curseur pour la moyenne de la charge minimum définit la plus basse charge moyenne qui sera affichée (n'importe quelle charge moyenne au-dessous de cette valeur sera transparente). La moyenne de la charge maximum est le niveau auquel les points deviennent opaques. Ces préférences sont également utilisées pour la fonctionnalité de la teinte de l'unité centrale mentionnée ci-dessus.</p>
+<p>
+Il n'y a aucune fenêtre d'information pour la jauge de l'Historique. Vous pouvez voir les statistiques de la charge moyenne en plaçant votre curseur au-dessus de la jauge de l'unité centrale.</p>
+<p>
+Tant <span class="command">uptime</span> et <span class="command">top</span> affiche les moyennes de la charge courante dans une fenêtre du Terminal. Ils enregistrent les charges moyennes sur une période de 1, 5 et 15 minutes.</p>
+<p>
+iPulse récupère la charge de l'unité centrale en utilisant l'appel de système host_statistics() avec le sélecteur de HOST_LOAD_INFO.</p>
+
+<p>
+<a name="memory_usage"></a><span class="topic">L'utilisation de la mémoire</span> Mac&nbsp;OS&nbsp;X a un mécanisme très sophistiqué pour gèrer la mémoire virtuelle. Si vous avez eu la malencontreuse expérience d'avoir eu à utiliser la mémoire virtuelle dans OS 9, vous apprécierez ce perfectionnement !</p>
+<p>
+La mémoire virtuelle de Mac&nbsp;OS&nbsp;X est gèrée en divisant l'utilisation de la mémoire physique en quatre catégories : résidente, active, inactive et libre. Chacune de ces catégories occupe des blocs de 4 Ko de mémoire appelés pages. Les catégories sont décrites ci-dessous :
+<ul>
+	<li> Résidente <a href="#diagram">[4]</a> - Ces pages représentent la mémoire employée par le noyau Unix. Ces pages sont verrouillées en place et ne seront jamais libérées de la mémoire physique. Les applications ont un effet indirect sur l'utilisation de la mémoire &quot;résidente&quot; puisque c'est ici que le noyau conserve et gère les données sur les opérations, les fils, et les bibliothèques.</li>
+	<li> Active <a href="#diagram">[5]</a> - Les pages actives indiquent la mémoire physique qui a été consultée récemment. Ces pages actives sont également liées (accessible) é une application.</li>
+	<li> Inactive <a href="#diagram">[6]</a> - Les pages inactives sont celles qui n'ont pas été consultées récemment. Les données dans les pages inactives sont valides, mais ne peuvent être liées à une application. Les pages inactives seront soit rendues actives (liées à une application) ou seront déplacées de la mémoire physique au disque (pour faire de la place à de nouvelles pages.</li>
+	<li> Libre <a href="#diagram">[7]</a> - Ces pages ne sont pas en service par aucune partie du système et peuvent être utilisées par une application immédiatement.</li>
+</ul>
+Il y a plusieurs "pagineurs" dans Mac&nbsp;OS&nbsp;X qui contrôlent périodiquement l'état de chaque catégorie et déplace des pages mémoire d'un groupe à l'autre. Les algorithmes derrière ce mécanisme sont au-delà de la portée de ce document; cherchez le site des développeurs Apple sur "<a href="http://developer.apple.com/cgi-bin/search.pl?&q=VM+pager">VM pager</a>" et vous verrez tous les détails pertinents. Ce site Web a également d'autres informations générales sur le sous-ensemble de la <a href="http://developer.apple.com/cgi-bin/search.pl?&q=OS+X+virtual+memory">mémoire virtuelle</a>.
+</p>
+<p>
+Quand l'iPulse représente graphiquement l'utilisation de la mémoire, il divise les quatre groupes ci-dessus en deux bandes colorées représentant la mémoire "utilisée" et "disponible". La bande de couleur "utilisée" montre la quantité résidente (extrême gauche) et la mémoire active. La mémoire qui est "disponible", représentée par la mémoire inactive et libre (extrême droite), est montrée dans l'autre bande de couleur.</p>
+<p>
+Quand vous placez votre curseur au-dessus de la jauge avec votre souris, un indicateur mettra en valeur la catégorie de la mémoire que vous regardez et combien d'espace est assigné. Après le sommaire, vous verrez une liste des opérations (applications) qui utilisent le plus de mémoire. La liste montre la quantité de mémoire physique en service (utilisation résidente) comme quantité et pourcentage de la mémoire totale. La quantité totale de la mémoire employée par l'application (mémoire virtuelle) est également affichée.</p>
+
+<p>
+De plus, la commande <span class="command">top</span> dans une fenêtre du Terminal montre également cette information et fournit plus de détail sur la distribution de la mémoire par l'opération. La commande <span class="command">vm_stat</span> fournit également des informations plus détaillées sur la façon dont la mémoire virtuelle est utilisée.</p>
+<p>
+iPulse appelle host_statistics() avec le sélecteur HOST_VM_INFO pour recueillir l'information sur la mémoire utilisée par le noyau Unix.</p>
+
+
+<p>
+<a name="memory_swapping"></a><span class="topic">Permutation de la mémoire</span> La mémoire permutée (ou "paginée") est l'acte de déplacer des pages de mémoire de la mémoire physique au disque dur. C'est une opération qui utilise beaucoup de ressources du système : la mémoire doit être lue et copiée au disque. Si votre Mac permute, il n'a pas beaucoup de temps pour d'autres tâches importantes (comme une partie d'Unreal Tournament.)</p>
+<p>
+La permutation vers l'intérieur (également appelé pagein) se produit quand une application doit accéder à une page de mémoire, et que la page n'est pas en activité ou est inactive. La page doit être lue à partir du disque. De même, des pages inactives seront permutées vers l'extérieur (pageout) et écrites au disque afin de faire de la place pour de nouvelles demandes de mémoire.</p>
+<p>
+Vous noterez ce comportement en utilisant  Mac&nbsp;OS&nbsp;X : lorsque vous avez beaucoup d'applications qui fonctionnent, et que la mémoire devient pleine, vous noterez un délai et une activité du disque quand vous passerez d'une application à l'autre. Ceci est provoqué par des pages de mémoire étant permutées vers et hors du disque.</p>
+<p>
+Si vous éprouvez beaucoup d'activité de permutation, c'est un bon signe que vous devez acheter plus de mémoire pour votre Mac !</p>
+<p>
+Les jauges pour des pages étant permutées dedans et dehors affichent l'activité en incrément d'une page jusqu'à un maximum de 90 (une page par degré d'arc sur la jauge.) Les pages qui sont permutées dedans sont affichées du côté gauche <a href="#diagram">[16]</a> et des pages permutées dehors sont affichées du côté droit <a href="#diagram">[17]</a>. Le texte sur le graphe montre le nombre de pages permutées.</p>
+<p>
+Quand vous placez votre curseur au-dessus des jauges de permutation, vous verrez une fenêtre d'information avec le sommaire de l'activité de pagination. Il y a également un état du nombre de fichiers qui sont utilisés pour enregistrer la mémoire sur le disque; avoir beaucoup d'utilisation du fichier de permutation "swap file" indique que la mémoire virtuelle devient fragmentée et qu'un redémarrage peut être nécessaire.</p>
+<p>
+La liste des opérations est triée par deux critères importants : 
+<ul>
+	<li>Pageins - le nombre de pages lu par chaque opération à partir du disque vers la mémoire.</li>
+	<li>Fautes - le nombre de pages qui ont dû être consultées, mais n'étaient pas en activité. C'est un indicateur des applications qui utilisent activement la mémoire. Avoir un compte élevé de fautes n'est pas nécessairement une mauvaise chose.</li>
+</ul>
+</p>
+<p>
+iPulse appelle le host_statistics() avec le sélecteur HOST_VM_INFO pour recueillir l'information sur la mémoire du noyau Unix.</p>
+
+<p>
+<a name="disk_usage"></a><span class="topic">Utilisation de disque</span> iPulse affiche une jauge de l'utilisation du disque vous donnant un aperçu rapide de la quantité d'espace utilisée. Lorsque vous utilisez des applications comme iMovie, iPhoto et iTunes, l'espace libre devient rare souvent!</p>
+<p>
+Pour réduire l'encombrement dans la jauge, seulement les disques (filesystems) qui sont en lecture/écriture sont affichés (CDs et les autres médias en lecture seul ne sont pas affichés.) Les disques de réseau sont affichés dans l'indicateur après vous y êtes branché.</p>
+<p>
+La quantité d'espace disque utilisée <a href="#diagram">[10]</a> et la quantité d'espace libre <a href="#diagram">[9]</a> sont affichées de façon horaire. Lorsque la quantité d'espace disque excède 90 %, la jauge est affichée avec une couleur d'avertissement. iPulse limite l'utilisation de l'affichage aux six premiers disques qui sont connectés. Le premier disque dans la liste est celui utilisé pour charger Mac&nbsp;OS&nbsp;X et est intitulé &quot;(Root)&quot; suivant les conventions standards Unix.</p>
+<p>
+Dans la version 2.0, une nouvelle fonctionnalité a été ajoutée pour montrer la somme de tous les disques&mdash;iPulse calcule l'espace employé par tous les disques et affiche le résultat. Si vous avez plusieurs disques, c'est souvent une meilleure option que de les afficher individuellement.</p>
+<p>
+Quand vous placez le curseur au-dessus de la jauge d'utilisation du disque, vous verrez un sommaire qui montre chaque disque et combien d'espace est en service. La liste montre également le type de système de fichiers utilisé sur le disque. Le système de fichiers peut être l'un de ceux-ci :
+<ul>
+	<li>hfs - système de fichiers hiérarchique. Le système de fichiers traditionnel Mac.</li>
+	<li>webdav - Web-based Distributed Authoring and Versioning file system. Nous sommes heureux Apple ait plutôt choisi de l'appeler iDisk !</li>
+	<li>smbfs - système de fichiers de bloc de message de serveur. Utilisé par Windows pour partager des fichiers sur un réseau.</li>
+	<li>ufs - système de fichiers d'Unix. Utilisé depuis l'aube du temps, quand un disque de Mo était suffisant.</li>
+	<li>msdos - système de fichiers MS-DOS. Pour tous vos besoins en disque souple !</li>
+	<li>nfs - Network File System. Un mécanisme de partage de fichiers généralement utilisé sur Unix et Linux.</li>
+	<li>udf - système de fichiers de format de disque universel. Utilisé pour des enregistrements CD et de DVD.</li>
+</ul>
+</p>
+<p>
+La commande <span class="command">df -k</span> dans une fenêtre du Terminal montre l'utilisation des disques pour tous les systèmes de fichiers (filesystems) montés (y compris ceux en lecture seule et de dispositif.)</p>
+<p>
+Les statistiques de disque sont recueillies en appelant getmntinfo().</p>
+
+<p>
+<a name="disk_activity"></a><span class="topic">L'activité de disque</span> La jauge d'utilisation du disque décrite ci-dessus affiche des informations assez statiques sur la façon dont le disque est utilisé. La jauge d'activité du disque montre comment le disque est employé par le système. La jauge affiche un indicateur pour chaque opération de lecture ou d'écriture exécutée par le noyau Unix. Elle affiche également la quantité de données transférées.</p>
+<p>
+L'activité de lecture est affichée sous forme d'un point du côté gauche de la jauge <a href="#diagram">[8]</a> tandis que l'activité d'écriture est affichée sous forme d'un point du côté droit <a href="#diagram">[11]</a>. Quand le point est affiché, il indique qu'il y avait une opération de lecture ou d'écriture pendant la dernière période de mise à jour. S'il y a plus de 100 opérations exécutées, le point est affiché dans la couleur de mise en évidence pour indiquer qu'il y a un niveau plus élevé d'activité.</p>
+<p>
+Le nombre d'octets transférés au ou vers le disque est montré sous forme d'un diagramme à barres sous l'indicateur d'activité. L'échelle pour le graphique peut être définie à fixe, logarithmique ou automatique&mdash;ces options sont décrites dans la section <a href="#preferences">préférences</a>. Vous pouvez configurer le diagramme des barres pour qu'il affiche une ligne à la valeur crête pour les lectures/écritures.</p>
+<p>
+Le diagramme à barres inclut également un indicateur de crêtes. iPulse retient un nombre maximum d'octets sur une certaine période de temps et affichera une petite ligne à cette valeur maximale. Au début, la crête sera maintenue durant une minute; vous pouvez ajuster le temps de prise dans les préférences globales.</p>
+<p>
+Quand vous placez votre curseur au-dessus de la jauge, on vous affichera un sommaire de la lecture et de l'écriture des opérations. Le sommaire inclut le nombre d'opérations et d'octets par seconde transférée pendant la dernière période de mise à jour. La crête actuelle et les valeurs moyennes sont également affichées.</p>
+<p>
+L'information d'activité du disque est obtenue à partir de l'IOKit à l'aide du sélecteur "IOBlockStorageDriver".</p>
+
+
+<p>
+<a name="network_activity"></a><span class="topic">L'activité de réseau</span> En concevant iPulse, un des problèmes que nous avons eu à résoudre était de décider du type d'information de réseau à afficher. Il y a beaucoup d'information de réseau fourni par le noyau. En fin de compte, nous avons décidé que deux types d'information étaient les plus utiles :
+<ul>
+	<li> Activité IP - le nombre de paquets envoyés et reçus par IP (Internet Protocol). Ceci vous laisse voir l'activité provoquée par n'importe quel paquet IP (même si ce n'est pas un paquet TCP.) </li>
+	<li> Largeur de bande TCP - le nombre d'octets envoyé et reçu par TCP (Transmission Control Protocol.) Ceci vous permet de voir la quantité de données que vous transférez en faisant des tâches communes telles que déplacer des fichiers entre les serveurs, surfer le Web et lire le courriel.</li>
+</ul>
+</p>
+<p>
+iPulse représente graphiquement le trafic entrant du réseau du côté gauche <a href="#diagram">[12,13]</a> et le trafic sortant du côté droit <a href="#diagram">[14,15]</a>. Le diagramme à barres affiche le nombre de kilo-octets de données par seconde <a href="#diagram">[13,14]</a>. L'échelle pour le graphique peut être placée à fixe, logarithmique ou automatique&mdash;selon les réglages des <a href="#preferences"> préférences. Le diagramme à barres peut aussi être configuré pour afficher une crête pour le trafic réseau. </a>.</p>
+<p>
+Le point au début du graphe est affiché s'il y a des paquets IP reçus <a href="#diagram">[12,15]</a>; le point est mis en relief s'il y a plus de 25 paquets par seconde.</p>
+<p>
+Quand vous placez votre curseur au-dessus de la jauge, on vous affichera un sommaire du trafic sur le réseau. Le résumé inclut le nombre de paquets transféré avec les octets par seconde durant la période de mise à jour. La pointe courante et les valeurs moyennes sont aussi affichées.</p>
+<p>
+La fenêtre d'information affiche aussi le nom de l'hôte avec des informations de configuration réseau de base (nom de l'interface et les adresses IP associées).</p>
+<p>
+Vous pouvez voir l'activité du réseau en utilisant la ligne de commande du Terminal en tapant la commande <span class="command">netstat -I [interface]</span> avec l'interface nommée (tel que en0 pour Ethernet et en1 pour Airport). D'autres informations de configuration de réseau peuvent être recueillies à l'aide d'<span class="command">ifconfig -a -u</span>.</p>
+<p>
+L'information de réseau est recueillie en utilisant l'appel de système sysctlbyname(). Les statistiques TCP sont recueillies à l'aide du sélecteur "net.inet.tcp.stats", les statistiques IP avec le sélecteur "net.inet.ip.stats". Si vous ne croyiez pas qu'il y avait beaucoup d'information, vous pouvez recueillir cette information à l'aide de <span class="command">sysctl -A net</a>.</p>
+
+<p>
+<a name="mobility"></a><span class="topic"> Mobilité </span> Si vous avez un Mac avec une batterie ou Ethernet sans fil (AirPort), vous verrez quelques jauges supplémentaires. Une affiche le niveau actuel de charge de la batterie <a href="#diagram">[18]</a>, l'autre affiche la force du signal sans fil <a href="#diagram">[20]</a>.</p>
+<p>
+La jauge de la batterie affiche six points quand la batterie est pleine et aucun point quand la batterie est vide. Quand le niveau de batterie tombe sous les 10 %, l'arrière-plan est mis en évidence (la couleur par défaut est rouge, vous donnant un indice visuel pour sauvegarder votre travail!)</p>
+<p>
+Pendant que la batterie se charge, les points sont affichés en orange. Quand la batterie est pleine et les points deviennent verts. Cette coloration est la même que celle de l'adaptateur secteur standard, mais si vous désirez quelque chose de différent, vous pouvez changer les couleurs avec le panneau de préférence Mobilité.</p>
+<p>
+La force du signal sans fil est affichée de façon semblable. La force maximum du signal est affichée avec six points, alors qu'aucun signal n'affiche aucun point. Si la force de signal plonge en dessous des 10 %, l'arrière-plan est mis en évidence&mdash;vous alertant qu'il est temps de trouver un siège dans le coffee shop !</p>
+<p>
+La fenêtre d'information pour les deux jauges affiche des informations supplémentaires sur la batterie et la connexion sans fil. Le voltage de la batterie et la quantité de courant qui est tirée sont montrés avec une estimation du temps restant. L'information sans fil inclus du nom du point d'accès et l'identifiant avec le taux signal/bruit.</p>
+<p>
+L'information sur la batterie est obtenue à partir d'IOPMCopyBatteryInfo. L'information sans fil vient de la structure non documentée Apple80211.</p>
+
+<p>
+<a name="clock"></a><span class="topic"> Horloge </span> L'horloge affiche l'heure actuelle.</p>
+<p>
+En utilisant les réglages des préférences par défaut, l'affichage des données devrait être assez évident. Les réglages sur 24 heures changent le visage de l'horloge de sorte qu'elle montre une seule position pour chaque heure du jour. <a href="http://www.cam.net.uk/home/pb/">L'horloge de 24 heures</a> précède les mécanismes d'horlogerie mécaniques&mdash;elle était initialement utilisée sur le 'visage' d'une horloge solaire.</p>
+<p>
+L'horloge peut également inclure un indicateur de date. Les préférences vous permettent de définir le mois, le jour, la date ou la phase de la lune comme indicateur. La phase de la lune divise l'année en 12 périodes (approximativement). Si vous vous êtes déjà demandé pourquoi le numéro 12 apparaît fréquemment dans le chronométrage, vous pouvez blâmer la lune!</p>
+<p>
+Un dispositif pour sonner sur l'heure peut également être configuré. Les instructions pour ajouter vos propres sons se trouvent dans la section <a href="#tips_and_tricks">Trucs et Astuces</a>.</p>
+<p>
+Quand vous placez votre curseur au-dessus de la date (à la position de 12 heures) la fenêtre d'information de l'horloge est montrée. Cette fenêtre affiche l'heure numérique et la date (avec le fuseau horaire et le décalage par rapport à GMT/UTC). Un calendrier avec la semaine courante et la date mise en évidence est également affiché.</p>
+<p>
+La fenêtre d'information affiche également la quantité de temps depuis que vous avez relancé Mac&nbsp;OS&nbsp;X la dernière fois (généralement désigné sous le nom de temps de bon fonctionnement.) Ceux de vous qui ont plaisir à regarder les étoiles apprécieront également la date julienne et les détails au sujet de la phase de lune.</p>
+<p>
+Le temps est acquis par un appel système à time(). Le temps est converti en temps local avec localtime(). Les calculs sur les phases de la lune sont dérivés du travail effectué initialement par John Walker&mdash;une visite sur son site est <a href="http://www.fourmilab.ch/earthview/">Earth and Moon Viewer</a> fortement recommandé.</p>
+
+<p>
+<a name="general_information"></a><span class="topic">Information générale</span> Et le dernier, mais non le moindre, iPulse affichera quelques informations générales quand vous placez le curseur au-dessus d'une partie de la fenêtre sans jauges.</p>
+<p>
+L'information inclut le nom de l'ordinateur et de vos noms de connexion (versions longues et courtes). Les versions de Mac&nbsp;OS&nbsp;X et d'iPulse sont également affichées avec le temps passé à l'exécution d'iPulse.</p>
+<p>
+En terminant, les informations générales montrent si les clics de souris sont ignorés. Ceci vous permet de voir si en cliquant sur la fenêtre, iPulse fera réellement n'importe quoi :-)</p>				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					Préférences				</td>
+				<td class="sectionbody">
+<a name="preferences"></a>Il y a beaucoup de préférences pour iPulse. Au lieu d'expliquer chacune d'elles en de minutieux détails, nous mettrons en évidence seulement certaines des fonctionnalités principales. Nous nous concentrerons également sur les préférences qui sont moins évidentes.
+<p>
+<span class="topic">Utilisation de jaquettes</span> Une façon rapide pour modifier vos configurations de préférence est de charger une jaquette iPulse. Après avoir démarré iPulse, tout ce que vous devez faire est de double-cliquer sur la jaquette (avec l'extension de fichier .ipulse) et les réglages contenus dans le fichier seront appliqués.</p>
+<p>
+Le dossier iPulse que vous avez téléchargé contient plusieurs jaquettes échantillons. Nous avons également créé une galerie en ligne avec des jaquettes supplémentaires. Cette galerie sera mise à jour périodiquement&msdash;il y a un lien pratique dans le menu Aide pour consulter la page Web.</p>
+<p>
+Si vous faites une modification à une jaquette, vous devriez en sauvegarder une copie. Aller simplement au panneau de préférence Général et cliquer sur le bouton Enregistrer les réglages. Choisissez alors un nom de fichier, cliquez sur OK, et vous aurez une nouvelle jaquette avec vos configurations mises à jour.</p>
+<p>
+<span class="topic">Activer et désactiver les jauges</span> Toutes les jauges peuvent être désactivées en cliquant sur une case. Ceci vous permet d'ajuster iPulse rapidement selon vos besoins.</p>
+<p>
+<span class="topic"> Opacité </span> Tous les puits de couleur d'iPulse supportent l'opacité. Ceci vous permet d'ajuster non seulement la couleur que vous voyez dans la jauge, mais aussi la quantité de couleur que vous voyez.</p>
+<p>
+Pour ajuster l'opacité de la jauge, cliquez simplement sur le contrôle du puits de couleur. Dans la fenêtre de réglage de la couleur, glissez le curseur d'opacité de 0 % (complètement transparent) à 100 % (entièrement opaque). Vous verrez le changement sur la jauge immédiatement.</p>
+<p>
+L'ajustement de l'opacité d'une jauge à 0 % est une façon simple de masquer des parties des jauges d'iPulse. Par exemple, vous pouvez placer l'arrière-plan de la fenêtre à 0 % et avoir les jauges flottées au-dessus de votre bureau. Ceci fonctionne également pour les fonds pour le disque et de mobilité. De même, si vous voulez voir la quantité de mémoire utilisée, mais pas la quantité disponible, vous pouvez régler l'opacité pour la mémoire disponible à 0 %.</p>
+<p>
+<span class="topic">Textes des jauges</span> La plupart des jauges ont une option pour afficher le texte sur la jauge. Par défaut, le texte est seulement affiché sur la fenêtre flottante &mdash; une préférence dans le panneau Global vous laisse mettre du texte sur l'icône du Dock aussi.</p>
+<p>
+<span class="topic">Échelle d'activité</span>L'activité de disque et de réseau ont une préférence pour mesurer la jauge. Les types de graduation sont :
+<ul>
+	<li> Fixe - l'échelle est déterminée par la valeur que vous choisissez dans le menu local. Par exemple, si vous choisissez "100K octets par seconde", la jauge pleine indique qu'il y a eu 100Ko d'activité dans la seconde qui vient de passer. Si la mesure est à moitié pleine (45° de l'arc 90°) alors ceci indique qu'il y a eu 50Ko d'activité. </li>
+	<li> Automatique - cette échelle est tout comme l'échelle fixe décrite ci-dessus, sauf que la valeur maximum de l'échelle s'ajuste automatiquement. Le réglage est fait en utilisant la valeur maximale actuelle. Par exemple, si l'activité maximale est actuel 75Ko par seconde, alors l'échelle de mesure est placée à la prochaine puissance plus élevée de 100Ko par seconde. </li>
+	<li>Logarithmique - cette échelle divise la jauge en trois sections, dont chacune affiche un intervalle des données pour une puissance de dix. Par exemple, si vous choisissez une échelle logarithmique de 10K à 1M par seconde, des valeurs entre le 1K et le 10K sont affichées dans les premiers 30°, les valeurs entre 10K et 100K dans le deuxième 30° arc, et les valeurs entre 100K et 1M par seconde dans les 30° restants. Si l'activité va au-dessous des 1K octets par seconde, aucune activité n'est affichée &mdash; avec un activité au-dessus de 1M octets/seconde la jauge entière est remplie.</li>
+</ul>
+De plus, l'échelle automatique affiche une série de points sur la jauge pour vous donner une indication de l'échelle actuelle. Il n'y a aucun point à 1K, un point à 10K, deux points à 100K, et ainsi de suite. De même, l'échelle logarithmique affiche une mince division entre chacun des trois intervalles, vous donnant une idée de la quantité de données étant mesurée.
+</p>
+<p>
+<span class="topic">Indicateurs des pointes</span> Les indicateurs de pointes peuvent être configurés pour les jauges d'activité de disque et de réseau. Ces indicateurs se comportent comme les mètres de niveau sur certains appareils d'enregistrement sonores.</p>
+<p>
+Les indicateurs fonctionnent en suivant un niveau d'activité maximum sur une période donnée. Cette valeur maximum est affiché sous forme une mince ligne sur la jauge.</p>
+<p>
+Vous pouvez contrôler pendant combien de temps le niveau d'activité maximum est affiché (maintenu) dans le panneau Global des préférences. Si vous utilisez une échelle automatique pour l'activité, l'ajustement de prise maximale du temps affectera également combien de fois l'échelle est ajustée.</p>
+<p>
+<span class="topic">échelle de la charge</span> Si vous choisissez d'afficher la jauge d'historique, il est probable que vous devrez ajuster les charges moyennes de minimum et de maximum. Les valeurs par défaut seront bonnes pour un éventail de machines, mais l'ajustement précis des configurations permettra un affichage plus précis sur votre propre machine &mdash; que ce soit un iBook ou un G5 à biprocesseur.</p>
+<p>
+La première chose que vous voudrez faire est de placer votre curseur au-dessus de la mesure de l'unité centrale pour que la fenêtre d'information apparaisse. Au dessus de la fenêtre d'information, vous verrez une ligne d'information intitulée "Charge" avec des valeurs minimums et maximums. Ces valeurs devraient être utilisées comme point de départ quand vous définissez les valeurs dans le panneau de préférence Historique.</p>
+<p>
+Vous noterez que l'opacité des points d'historique change pendant que vous ajustez les curseurs minimums et maximums. La moyenne de la charge minimum place la plus basse charge moyenne qui sera affichée (n'importe quelle charge moyenne au-dessous de cette valeur sera transparente). La charge moyenne maximum est le niveau auquel les points deviennent opaques.</p>
+<p>
+Ces préférences sont également employées pour ajuster la teinte sur la jauge de l'unité centrale. La teinte est transparente (non montré) à la valeur de charge minimum. Quand la charge est au maximum, l'opacité de la teinte est affichée entièrement.</p>
+<p>
+<span class="topic"> Décoration </span> Un des dispositifs les plus populaires de cette version d'iPulse est la possibilité d'ajouter une image en arrière-plan. Vous pouvez ajouter à peu près tout ce que vous aimez derrière les jauges d'iPulse. Ceci combiné avec la possibilité d'ajuster l'opacité de la jauge, vous donnant beaucoup de liberté pour modifier l'apparence d'iPulse.</p>
+<p>
+Voyez la section suivante sur la création de jaquettes et l'information sur le format et la taille de l'image d'arrière-plan.</p>
+<p>
+<span class="topic">Unités</span> The display units used by iPulse can be set in the Global preferences. The formats are:
+Les unités de visualisation employées par iPulse peuvent être défini dans les préférences globales. Les formats sont :
+<ul>
+	<li>Apple - Le Finder affiche des valeurs binaires avec deux caractères majuscules. Par exemple, 2^10 = 1024 = 1 Ko.</li>
+	<li>IEEE - Le standard IEEE utilise une unité majuscule suivie d'un "o" (pour indiquer octet). Donc 2^10 = 1024 = 1 Ko.</li>
+	<li>SI binaire - unité SI (également connu comme système des unités internationales) définit un ensemble standard de préfixes pour la mesure. Même si vous vivez dans un pays qui refuse obstinément d'utiliser le système métrique, vous êtes au courant des kilogrammes, des mégahertz et des gigawatts pour mesurer des unités dans les puissances de 10. Ces préfixes ont été modifiés pour mesurer en puissance de 2, tel que 2^10 = 1024 = 1 KiO. Ce format est expliqué en détail  <a href="http://physics.nist.gov/cuu/Units/binary.html">ici</a>.</li>
+</ul>
+</p>
+
+<p>
+<span class="topic">Ignorer la souris</span> Dans le panneau de préférence Fenêtre, il y a plusieurs réglages qui devraient être assez évidents. Celui qui ne l'est pas est "Ignorer les clics de souris."</p>
+<p>
+C'est une nouvelle fonctionnalité dans cette version d'iPulse. Après avoir activé la fonction, les clics de souris dans la fenêtre flottante d'iPulse seront ignorés et passés à l'application en dessous. Ceci vous permet de cliquer sur les barres de défilement, le bureau ou n'importe quoi derrière iPulse.</p>
+<p>
+Le seul inconvénient de cette fonctionnalité est qu'il est difficile de déplacer la fenêtre d'iPulse puisqu'elle ignore vos clics. Ce nous amène à notre prochain sujet...</p>
+<p>
+<span class="topic"> Réglage des raccourcis </span> iPulse vous permet de définir deux raccourcis. Un de ces raccourcis affiche ou ou masque la fenêtre flottante d'iPulse. L'autre raccourci bascule la fonctionnalité "Ignorer les clics de souris" discutée ci-dessus.</p>
+<p>
+Par défaut, les raccourcis ne sont pas activés. Vous devrez aller aux préférences Globales et appuyer sur le bouton "Définir...". Dans la fenêtre qui apparaît, appuyez la combinaison de touches ou la touche de fonction que vous voulez assigner et appuyer OK. Assurez-vous de ne pas assigner une combinaison de touches qui est utilisée dans une autre application. Si vous assignez Commande-C au raccourci, vous obtiendrez iPulse au lieu d'une copie provenant du presse-papiers!</p>
+<p>
+Après avoir défini le raccourci, vous pouvez utiliser les raccourcis dans n'importe quelle application. Le raccourci Afficher/masquer est utile si vous voulez vous débarrasser d'iPulse pour une présentation, un jeu ou n'importe quelle autre activité plein écran où il serait visible. Si vous utilisez la fonctionnalité "Ignorer les clics de souris", vous pouvez employer un raccourci pour activer rapidement la souris, déplacez la fenêtre flottante d'iPulse, et puis désactivez la souris une autre fois.</p>
+<p>
+<span class="topic">Masquer iPulse dans les listes</span> Pour terminer, dans les préférences globales, il y a une préférence pour inclure iPulse dans les listes des opérations. Nous recommandons de <strong>ne pas utiliser</strong> ce dispositif.</p>
+<p>
+La raison n'est pas parce que nous ne voulons pas que vous sachiez combien iPulse utilise de puissance de l'unité centrale; c'est parce qu'un processus qui se surveille est notoirement imprécis. Si vous voulez une évaluation précise de combien de temps iPulse utilise, s'il vous plaît utilisez <span class="command">top</span> à partir d'une fenêtre du Terminal.</p>
+<p>
+Si vous croyez qu'iPulse utilise trop de temps du processeur, examinez s'il vous plaît la section <a href="#tips_and_tricks"> Trucs et Astuces</a> pour connaître les façons d'en réduire l'utilisation.</p>				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					Création de jaquettes				</td>
+				<td class="sectionbody">
+<a name="creating_jackets"></a> Si vous voulez créer vos propres jaquettes iPulse et les distribuer à vos amis ou les faire télécharger sur votre site Web, voici quelques instructions simples qui vous aideront :
+<p>
+<span class="topic"> Image d'arrière-plan </span> La partie la plus visuellement saisissante d'une jaquette iPulse est l'image utilisée derrière les jauges. Vous pouvez placer n'importe quel fichier de type TIFF, JPG, PNG, GIF, PDF ou ICNS comme arrière-plan en utilisant les commandes sur le panneau de préférence Autre. Si vous utilisez le format TIFF, assurez-vous qu'il n'y a pas aucun canal ou couche alpha dans le fichier.</p>
+<p>
+Les dimensions du fichier d'image devraient être de 128 x 128 pixels (il sera mesuré automatiquement quand l'utilisateur changera la taille de la fenêtre iPulse.) Les jauges sont placées dans des divisions égales de 128 pixels - 8, 16, et 32 pixels. Le cercle est divisé comme une horloge - 12 sections de 30° chacune.</p>
+<p>
+<span class="topic"> Sauvegarde des réglages </span> Après avoir configuré iPulse de la façon qui vous plaît, créez la jaquette en allant au panneau de préférence principal et en cliquant sur Enregistrer les réglages. Ceci créera un fichier .ipulse (jaquette) contenant les réglages.</p>
+<p>
+Rappelez-vous que la jaquette ne contient pas des panneaux de préférences Fenêtre ou Global. Ces préférences, qui contiennent les raccourcis, les tailles des fenêtres, et d'autres éléments de configuration, sont considérées les configurations personnelles et ne sont pas mises à jour quand un autre utilisateur d'iPulse charge votre jaquette.</p>				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					Trucs et Astuces				</td>
+				<td class="sectionbody">
+<a name="tips_and_tricks"></a> Cette section vous donne quelques idées pour configurer iPulse sur votre propre système.
+<p>
+<span class="topic"> Démarrer iPulse à la connexion </span> Vous pouvez configurer iPulse pour qu'il démarre automatiquement en utilisant éléments d'ouverture des Préférences Système.</p>
+<p>
+<span class="topic"> Réduire l'utilisation de l'unité centrale par iPulse </span> Sur un Mac plus ancien, vous pouvez être préoccupé par l'utilisation de l'unité centrale par iPulse. Voici quelques astuces pour qu'iPulse fonctionne aussi efficacement que possible : 
+<ul>
+	<li> Un temps plus long entre les mises à jour - Dans le panneau de préférence Global, il y a une configuration pour le temps entre les mises à jour. Puisque la majorité de l'utilisation de l'unité centrale par iPulse est passée à rassembler de l'information nécessaire par la mise à jour, vous pouvez réduire le temps de manière significative en modifiant la vitesse par défaut d'une seconde à deux secondes (ou même à trois secondes.)</li>
+	<li> Réduire la priorité d'iPulse à un autre réglage - Vérifier dans le panneau de préférence Global est la priorité des opérations pour iPulse. Assurez-vous que la priorité est réduite (le défaut est +5 nice). Quand la priorité d'iPulse est réduite, les autres applications auront plus de temps du processeur quand les choses deviennent occupées. Un autre avantage, en période d'activité élevée, est qu'iPulse se mettra à jour automatiquement moins fréquemment donnant plus de temps à l'unité centrale pour exécuter d'autres tâches.</li>
+	<li> Désactiver l'ombre de la fenêtre flottante - Si vous avez une ombre sur votre fenêtre d'iPulse, désactivez-la. La fenêtre ne paraîtra pas aussi bien, mais elle exigera moins de temps du processeur puisque l'ombre n'a pas besoin d'être recalculée à chaque mise à jour.</li>
+	<li> Arrêter le fondu de la fenêtre de l'information - Définir le fondu de la fenêtre d'information à "Aucun". La fenêtre semblera plus rapide et elle emploiera moins de temps du processeur pour s'afficher.</li>
+</ul>
+</p>
+<p>
+<span class="topic"> Ajouter vos propres sons </span> Pour utiliser vos propres sons pour la fonctionnalité "Sonner sur l'heure", ajoutez des fichiers de son AIFF à votre dossier ~/Bibliothèque/Sounds. Les fichiers avec l'extension ".aiff" apparaîtront dans la liste de fichiers de sons après que vous relanciez iPulse.</p>
+<p>
+Pour créer un fichier de son AIFF, vous pouvez utiliser QuickTime Player pour ouvrir un MP3, film ou autre fichier média. Choisissez la partie que vous voulez en utilisant les curseurs au bas de la fenêtre de temps. Utilisez alors <strong>Édition > Supprimer</strong> suivit de <strong>Fichier > Exporter</strong> pour sauvegarder la partie choisie dans le fichier sonore. Assurez-vous que "Son vers AIFF" est choisi dans le menu local quand vous exportez.</p>
+<p>
+<span class="topic"> Exécuter iPulse sans une icône de Dock </span> Normalement, iPulse affiche une icône dans le Dock.  Vous pouvez configurer iPulse pour qu'il s'exécuter comme application d'"arrière-plan", ce qui empêchera l'apparition de l'icône de l'application dans le dock.</p>
+<p>
+Lorsque vous exécutez une application en arrière-plan, vous devez connaître plusieurs limitations :
+<ul>
+	<li> Il n'y a aucune barre de menu pour l'application. Les touches de commande fonctionneront, donc vous pouvez quitter l'application (Commande-Q) ou afficher des préférences (Commande-, (virgule)). Vous pouvez également utiliser le menu contextuel qui apparaît lorsque vous faites contrôle-clic sur la fenêtre d'iPulse accéder à ces fonctions.</li>
+	<li> iPulse n'apparaîtra pas dans le menu Forcer à quitter lorsque vous utilisez Option-Commande-Échap. Vous devrez employer une fenêtre du Terminal pour "tuer" manuellement l'opération iPulse.</li>
+	<li> Puisque les changements requis sont dans la configuration de l'application, tous les utilisateurs sur la machine doivent utiliser iPulse en arrière-plan.</li>
+</ul>
+Avant de faire le changement au mode d'exécution, assurez-vous que la fenêtre d'iPulse est affichée sur le bureau.
+</p>
+<p>
+Pour configurer iPulse pour qu'il s'exécute en mode arrière-plan, ouvrez le paquet de l'application en utilisant un commande-clic sur l'icône de l'application et en choisissant "Afficher le contenu du progiciel". Trouvez le fichier Info.plist dans le dossier Contents et ouvrez-le avec TextEdit. Trouvez la chaîne de texte LSUIElement et modifiez le  "&lt;string&gt;0&lt;/string&gt;" à "&lt;string&gt;1&lt;/string&gt;". Sauvegarder le fichier et revenez au dossier Contents.</p>
+<p>
+Si vous exécutez Mac&nbsp;OS&nbsp;X 10.2, vous pouvez simplement redémarrer iPulse à ce moment. Si vous exécutez Mac&nbsp;OS&nbsp;X 10.3 (Panther), l'information Launch Services contenue dans le fichier Info.plist est dans un cache, donc vous devrez créer une nouvelle application et mettre à jour le cache. La façon la plus simple de faire ceci est de choisir iPulse dans le Finder et dupliquer le fichier (en utilisant Command-D). Ensuite lancer le nouveau fichier (iPulse copie) et vérifier qu'il n'est pas affiché dans le Dock. À ce moment, le cache a été mis à jour,  vous pouvez donc quitter iPulse et revenir au Finder. Supprimer le fichier iPulse original et renommer " iPulse copie" à "iPulse".</p>
+<p>
+Si vous décidez de ne pas exécuter iPulse en mode arrière-plan, changez  LSUIElement de nouveau à sa valeur initiale de "0".</p>				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					Utilisateurs avancés				</td>
+				<td class="sectionbody">
+<a name="power_users"></a> Cette section est consacrée à ceux qui ne craignent pas la ligne de commande. Les instructions dans cette section supposent que vous êtes confortable avec une fenêtre du Terminal. Si vous ne l'êtes pas, nous recommandons que vous passiez cette section.
+<p>
+<span class="topic"> Préférences </span> La plupart des préférences dans iPulse sont exposées avec les panneaux de la fenêtre des préférences. Il y a, cependant, d'autres préférences qui peuvent être utiles, mais qui encombreraient l'interface utilisateur ou serait difficile pour un utilisateur de débutant.</p>
+<p>
+Pour définir une de ces préférences d'"utilisateur avancé", quittez iPulse et tapez ce qui suit à partir d'une ligne de commande :
+<pre>
+% defaults write com.iconfactory.iPulse [preference] [value]
+</pre>
+où [ preference ] est le nom de la préférence et [ value ] est la valeur à utiliser (montré dans le tableau ci-dessous). Après avoir relancé l'iPulse, vous devriez voir la nouvelle configuration de préférence.
+</p>
+<p>
+Pour effacer la préférence et retourner à la configuration par défaut, utilisez : 
+<pre>
+% defaults delete com.iconfactory.iPulse [preference]
+</pre>
+Assurez-vous d'écrire en respectant la casse! La clé [preference] ifapplicationneverhide n'est pas la même chose que IFApplicationNeverHide. Utilisez <span class="command">man defaults</span> pour plus d'information pour savoir comment définir les réglages par défaut en utilisant la ligne de commande.
+</p>
+<p>
+Ainsi, sans autre retard, voici les préférences d'utilisateur avancé :</p>
+<table>
+	<tr>
+		<th>Préférence</th>
+		<th>Valeur</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td> IFApplicationNeverHide </td>
+		<td> 1 </td>
+		<td> When this preference is set to 1, iPulse will never hide. This prevents the dock icon from dimming. </td>
+	</tr>
+	<tr>
+		<td> IFApplicationPlotProcessorArea </td>
+		<td> 0 </td>
+		<td> Normally, iPulse plots the CPU gauge with the percentage represented as an area within the circle. For example, a 50% usage will fill 50% of the circle's area. This is more visually accurate, but tends to make smaller CPU usage values look bigger. To plot the CPU as a function of the radius, change the value to 0. This will cause 50% usage to use half of the circle's radius.</td>
+	</tr>
+	<tr>
+		<td> IFApplicationAlwaysHoverTime </td>
+		<td> 0 </td>
+		<td> By default, iPulse shows the clock information even if there is no date indicator and the clock is turned off. When this preference is set to 0, the information window will only be displayed when the date indicator is displayed. </td>
+	</tr>
+	<tr>
+		<td> IFApplicationHideInfoOnDrag </td>
+		<td> 1 </td>
+		<td> Setting this preference to 1 will cause iPulse to hide the information window while you drag the floating window. This is less work for older graphics cards and can provide better response. </td>
+	</tr>
+	<tr>
+		<td> IFApplicationAlternativeActivity </td>
+		<td> 1 </td>
+		<td> Set this preference to 1 and you'll see an activity indicator that doesn't overlap the gauge to the top. </td>
+	</tr>
+	<tr>
+		<td> IFApplicationSwapfilesPath </td>
+		<td> /path/to/dir </td>
+		<td> Cette préférence indique le chemin d'accès où vos swapfiles sont localisés. Si vous avez personnalisé votre configuration swapfile, vous devrez changer ceci du défaut de /var/vm. </td>
+	</tr>
+	<tr>
+		<td> IFApplicationCHUDWorkaround </td>
+		<td> 1 </td>
+		<td> Si vous avez installer les outils CHUD, vous devrez régler cet indicateur, sinon iPulse le noyau utilisera une quantité excessive de temps-CPU. Quand l'indicateur est 1, iPulse évite un appel à host_processor_info avec le paramêtre de température PROCESSOR_TEMPERATURE. </td>
+	</tr>
+	<tr>
+		<td> IFApplicationInfoDelay </td>
+		<td> 0.75 </td>
+		<td> Par défaut, iPulse utilisera un délai de 0.75 seconde avant d'ouvrir la fenêtre d'information (en prenant pour acquis que la préférence est activée dans le panneau Fenêtre). Si vous désirez que le délai soit plus court ou plus long, vous pouvez modifier la valeur à tout nombre plus grand que 0. </td>
+	</tr>
+	<tr>
+		<td> IFApplicationTrackMouse </td>
+		<td> 0 </td>
+		<td> iPulse only checks the mouse position for displaying the information window at each update period (as defined in the Global timing preferences.) If you have a long update period, you may want to have iPulse track the mouse so that you can get faster feedback. This feature is not enabled by default since it uses more processor resources&mdash;each time the mouse moves, system information must be collected.</td>
+	</tr>
+	<tr>
+		<td> IFApplicationStatusAlertThreshold </td>
+		<td> 0.9 </td>
+		<td> Status values show in the menu bar are displayed in the range of 0.0 to 1.0. When the threshold defined by this parameter is exceeded, the alert color is applied. The default is to show the alert color when the display is at 90% of the maximum value.</td>
+	</tr>
+	<tr>
+		<td> IFApplicationIgnoreExpose </td>
+		<td> 0 </td>
+		<td> If you'd like iPulse to remain on the desktop when you use the Show Desktop feature in Exposé, set this preference to 1. This will make iPulse's transparent windows "sticky" like the Dock and menu bar. This feature uses undocumented calls in the Core Graphics framework, so it may not work in any release other than Panther. But it's pretty cool anyway :-)</td>
+	</tr>
+</table>
+
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

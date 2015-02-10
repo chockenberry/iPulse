@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IFGlobalStatusImage</key>
+	<data>
+	BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0ltYWdlLoSECE5TT2JqZWN0AIWShISECE5T
+	U3RyaW5nAZSEASsLQmFja2dyb3VuZDKGhAFjAJcAlwCXAJcAlwCXAJcAlwGXAZcAlwCX
+	AJcAhAFzAZcAkoSEhBBOU0JpdG1hcEltYWdlUmVwEYSECk5TSW1hZ2VSZXARlIQBaYEC
+	PoQGWzU3NGNdTU0AKgAAAXiAACBQOCQWDQeEQmFQuGQ2HQ+IRGJROKRWLReMRmNRuOR2
+	PR+QSGRSOJKyTP+TKyUSeUyuVS2YSyZS+Zy6bTGaTmbzWcTudT2gTyhT+hz6jUGiUmj0
+	WkUulU2oTWOS2SVWrR2qVetVuJ1mSyeEVGn0yyWOzU60WK02W12e1W+2XC3XGpQevQ27
+	3K23u9X26XPAXy/4LA37C4OewS7wy84jHYfIYTJYbJ4/K5HKZTFWCH43MZbM6DRZ/SZf
+	TaHS03NyqIZ7T6PX6nYajY7Xabe6wLFwvd7rZ7/ZcHbcDh8LcUqw5yHb2uc3ncnWc/pd
+	OC8zoP/r8fi9vtd3id7jWzr63lADwdzv+nw+v0ey1avsZ3y+f6er2/f6+7ifDydHfP1A
+	D8Ps/MBQCvT+Pk/zzQHBkDQbAsIQI1SBusuzyvhCUHwzB0OQi2Dxq7C7qRGq0KxJE6sR
+	Ei0Nw9DsWRfDUPxRGcaRrG0bxxHMdR3HiKICAAAOAQAAAwAAAAEATwAAAQEAAwAAAAEA
+	FQAAAQIAAwAAAAQAAAImAQMAAwAAAAEABQAAAQYAAwAAAAEAAgAAAREABAAAAAEAAAAI
+	ARUAAwAAAAEABAAAARYABAAAAAEAAABnARcABAAAAAEAAAFvARoABQAAAAEAAAIuARsA
+	BQAAAAEAAAI2ARwAAwAAAAEAAQAAASgAAwAAAAEAAgAAAVIAAwAAAAEAAQAAAAAAAAAI
+	AAgACAAIAAr8gAAAJxAACvyAAAAnEIaShISEB05TQ29sb3IAlJcDhAJmZgAAhpKFhg==
+	</data>
+	<key>IFGlobalStatusLowerBarColorAlert</key>
+	<string>1.000000 0.024058 0.012269 0.750000</string>
+	<key>IFGlobalStatusLowerBarColorLeft</key>
+	<string>0.000000 0.352643 0.776042 1.000000</string>
+	<key>IFGlobalStatusLowerBarColorRight</key>
+	<string>0.000000 0.352643 0.776042 1.000000</string>
+	<key>IFGlobalStatusLowerDotColorAlert</key>
+	<string>1.000000 0.024058 0.012269 0.750000</string>
+	<key>IFGlobalStatusLowerDotColorLeft</key>
+	<string>0.417680 1.000000 0.000000 1.000000</string>
+	<key>IFGlobalStatusLowerDotColorRight</key>
+	<string>0.417680 1.000000 0.000000 1.000000</string>
+	<key>IFGlobalStatusUpperBarColorAlert</key>
+	<string>1.000000 0.024058 0.012269 0.750000</string>
+	<key>IFGlobalStatusUpperBarColorLeft</key>
+	<string>0.500000 0.005894 0.000000 1.000000</string>
+	<key>IFGlobalStatusUpperBarColorRight</key>
+	<string>0.000000 0.500000 0.029127 1.000000</string>
+	<key>IFGlobalStatusUpperDotColorAlert</key>
+	<string>1.000000 0.024058 0.012269 0.750000</string>
+	<key>IFGlobalStatusUpperDotColorLeft</key>
+	<string>1.000000 0.463735 0.000000 1.000000</string>
+	<key>IFGlobalStatusUpperDotColorRight</key>
+	<string>1.000000 0.463735 0.000000 1.000000</string>
+</dict>
+</plist>

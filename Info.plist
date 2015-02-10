@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>ipulse</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>Preferences</string>
+			<key>CFBundleTypeName</key>
+			<string>iPulse Jacket</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>iPulse</string>
+	<key>CFBundleGetInfoString</key>
+	<string>iPulse 2.5.3 - Copyright © 2002-2015, The Iconfactory</string>
+	<key>CFBundleIconFile</key>
+	<string>iPulse.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.iconfactory.iPulse</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>iPulse</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2.5.3</string>
+	<key>CFBundleSignature</key>
+	<string>ifIP</string>
+	<key>CFBundleVersion</key>
+	<string>2.5.3</string>
+	<key>LSUIElement</key>
+	<string>0</string>
+	<key>NSHelpFile</key>
+	<string>Help.html</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>SecTaskAccess</key>
+    <array>
+		<string>allowed</string>
+    </array>
+	<key>LSUIElement</key>
+	<string>1</string>
+	<key>SUFeedURL</key>
+	<string>http://iconfactory.com/appcasts/iPulse/appcast.xml</string>
+	<key>SUExpectsDSASignature</key>
+	<true/>
+	<key>SUPublicDSAKeyFile</key>
+	<string>dsa_pub.pem</string>
+</dict>
+</plist>

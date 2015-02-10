@@ -1,0 +1,677 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<title>iPulse - Hjälp</title>
+		<style>
+			BODY {
+				color: black;
+				background-color: white;
+				font-family: "Lucida Grande", Arial, sans-serif;
+				font-size: 12px;
+			}
+			TABLE, TD, TH {
+				color: black;
+				font-family: "Lucida Grande", Arial, sans-serif;
+				font-size: 12px;
+			}
+			TD, TH {
+				text-align: left;
+				vertical-align: top;
+			}
+			UL {
+				list-style: square;
+			}
+			OL {
+				list-style-type: lower-alpha;
+			}
+			A {
+				/* color: #0066cc; */
+				color: #33337F;
+			}
+			A:hover {
+				color: #666666;
+			}
+			EM {
+				color: #cc3333;
+				font-style: normal;
+			}
+			PRE {
+				padding-left: 24px;
+				font-family: "Andale Mono", Courier, monospace;
+				font-size: 12px;
+				color: #33337F;
+			}
+			.section {
+				width: 130px;
+				color: #cc0000;
+				font-weight: bold;
+				text-align: right;
+				vertical-align: top;
+				/* border: black solid 1px; */
+				padding-right: 10px;
+			}
+			.sectionbody {
+				width: 520px;
+				vertical-align: top;
+				padding-bottom: 24px;
+				/* border: black solid 1px; */
+			}
+			.topic {
+				color: #cc0000;
+				text-decoration: none;
+				padding-right: 4px;
+			}
+			.figure {
+				text-align: center;
+			}
+			.gauge {
+				color: #0066cc;
+				font-weight: bold;
+			}
+			.subtle {
+				color: #ccccff;
+			}
+			.command {
+				font-size: 12px;
+				font-family: "Andale Mono", Courier, monospace;
+				color: #33337F;
+				/* font-weight: bold; */
+			}
+			.group {
+				/* background-color: #aaddff; */
+				background-color: #dedeff;
+				padding: 10px;
+				border: #ccccff solid 1px;
+				margin-bottom: 5px;
+			}
+			.key {
+				width: 65px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<table>
+			<tr>
+				<td>&nbsp;</td>
+				<td class="sectionbody">
+					<a href="http://iconfactory.com/software/ipulse">iPulse webbsida</a>  | <a href="http://iconfactory.com/freeware/ipulse">iPulse Jacket-galleri</a>  |  <a href="http://iconfactory.com/software/ipulse_support">iPulse FAQ</a>  | <a href="http://iconfactory.com/home">Iconfactorys webbsida</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					Om iPulse
+				</td>
+				<td class="sectionbody">
+iPulse är ett program som grafiskt visar insidan av Mac&nbsp;OS&nbsp;X.
+<p>
+Efter det att du har startat iPulse, visas diverse mätare i iPulse-fönstret och i Dock-ikonen. Dessa mätare visar följande information:
+<ul>
+	<li><a href="#cpu_usage">CPU-användning</a></li>
+	<li><a href="#system_load">Systembelastning</a></li>
+	<li><a href="#memory_usage">Minnesanvändning</a> och <a href="#memory_swapping">växling</a></li>
+	<li><a href="#disk_usage">Hårddiskanvändning</a> och <a href="#disk_activity">aktivitet</a></li>
+	<li><a href="#network_activity">Nätverksaktivitet</a></li>
+	<li><a href="#mobility">Mobilitetsstatus (batteri och trådlöst)</a></li>
+	<li><a href="#clock">Klocka (aktuell tid och datum)</a></li>
+	<li><a href="#general_information">Allmän information</a></li>
+</ul>
+Du kan få mer information om varje mätare, och informationsfönstret som visas då du pekar på varje mätare, genom att klicka på länkarna här ovan. Vi rekommenderar också att du läser <a href="#introduction">Introduktionen</a> då den innehåller en del viktig bakgrundsinformation.
+</p>
+<p>
+iPulse kan konfigureras genom <a href="#preferences">programinställningarna</a>&mdash;det finns många olika sätt att visa din systeminformation på. Du kan också ladda en iPulse-jacket för att snabbt göra inställningarna (en avdelning längre ner förklarar hur du <a href="#creating_jackets">skapar dina egna jackets</a>.)
+</p>
+<p>
+Efter det att du har lärt dig grunderna i iPulse, titta gärna på avdelningarna <a href="#tips_and_tricks">Tips och Trick</a> och <a href="#power_users">Power Users</a> för ytterligare information om konfigurering av iPulse.
+</p>
+<p>
+<em>OBS:</em> Den här sidan visas första gången du startar iPulse. Om du behöver läsa den igen, välj <strong>Hjälp</strong> från menyraden i iPulse.
+</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					Hur det fungerar
+				</td>
+				<td class="sectionbody">
+Som du vet så är Mac&nbsp;OS&nbsp;X baserat på operativsystemet Unix. Unix har utvecklats under många år, och blivit en robust och effektiv datorplattform. Utvecklarna av Mac&nbsp;OS&nbsp;X och dess föregångare, har inkluderat en mängd mekanismer för att undersöka operativsystemets interna tillstånd. Detta gör att en administratör kan justera systemet för bästa möjliga prestanda, och hitta orsaken till alla sorters systemfel.
+<p>
+Vårt mål med iPulse var att på grafisk väg visa denna interna information på ett sätt som både spar utrymme på skärmen, och är lätt att läsa.
+</p>
+<p>
+Så varifrån får iPulse all information? Och hur visas den grafiskt? Resten av den här avdelningen svarar på just dessa frågor.
+</p>
+<p>
+<a name="introduction"></a><span class="topic">Introduktion</span> För att den här hjälpfilen ska vara till nytta för en så bred grupp människor som möjligt så kommer vi att börja varje ämne på en grundläggande nivå. Ju längre vi kommer i ämnet, desto fler tekniska detaljer kommer vi att ta upp&mdash;läsare kan hoppa till nästa ämne om de tycker det aktuella ämnet är för svårt.
+</p>
+<p>
+En av de största nya funktionerna i den är versionen av iPulse, är informationen som visas när du rör muspekaren över en mätare. Innehållet i detta fönster kommer att diskuteras efter en kort introduktion till mätaren. I många fall kan informationsfönstret hjälpa dig att förstå vad mätaren gör.
+</p>
+<p>
+Efter vi har pratat om informationsfönstret kommer vi att presentera lågnivåinformation som är värdefull för de läsare som är tekniskt inriktade, och vill ha ingående förklaringar till informationen. Vi kommer att referera till shell-kommandon som kan köras från ett Terminal-fönster. Om du är nyfiken, använd gärna dessa kommandon: inga av exemplen här kan skada din dator (se bara till att inte stava något fel!) Du kan också använda <span class="command">man [kommando]</span> för att lära dig mer om ett särkilt kommando.
+</p>
+<div class="group">
+<strong>Mätare i iPulse</strong>
+<a name="diagram"></a>
+<p>
+<div class="figure">
+<img src="../iPulse_help.gif" width="343" height="300" border="0">
+</div>
+Diagrammet ovan visar var de olika mätarna i iPulse är placerade i gränssnittet. Varje mätare beskrivs nedan.
+</p>
+<p>
+Om du letar efter information om en särskild mätare kan du hitta den snabbt genom att leta efter en markering som ser ut så här: <a href="#diagram">[#]</a> (där # är numret på mätaren.) Om du klickar på en markering så skickas du tillbaka till det här diagrammet. Använd din webbläsares bakåt-knapp för att återvända till ämnet.
+</p>
+</div>
+
+
+<p>
+<a name="cpu_usage"></a><span class="topic">CPU-användning</span> Den första mätaren vi ska ta upp är CPUn: hjärtat i din Mac och iPulses display!
+</p>
+<p>
+Mac&nbsp;OS&nbsp;X följer Unix-konventionen att dela upp CPU-användningen i tre kategorier: systemtid, användartid och nice-tid. Systemtiden är mängden tid som används för operativsystemets uppgifter. Användartid däremot, är den tid som används för program och andra tjänster utanför systemets kärna. Nice-tid är mängden tid som används för lågprioriterade processer&mdash;dessa processer är "trevliga" för att deras reducerade prioritet tillåter kärnan att automatiskt sänka deras CPU-användning när systemet är belastat.
+</p>
+<p>
+CPU-mätaren ritas upp med andelen systemtid i den innersta cirkeln <a href="#diagram">[1]</a> och andelen användartid i den yttre cirkeln <a href="#diagram">[2]</a>. Alla lågprioriterade (nice) processer visas utanför användarcirkeln <a href="#diagram">[3]</a>. Siffran som visas på mätaren är summan av systemtiden, användartiden och nice-tiden. Värdet är ett genomsnitt av de tio senaste uppdateringarna.
+</p>
+<p>
+En annan funktion i CPU-mätaren är att den tonar displayen efter systemets belastning. Vi ska förklara systembelastning i nästa ämne, men du kan se på den här funktionen som ett elektriskt element: då din processor "blir varmare", får mätaren mer färg.
+</p>
+<p>iPulse undersöker hur mycket arbete din Mac har utfört den senaste kvarten och använder resultatet för att justera färgtonen på mätaren. Resultatet blir att du kan se "trender" i CPU-användningen. Till exempel, om du utför någon processorintensiv uppgift såsom att applicera Gaussisk oskärpa på en mycket stor bildfil, kommer du att märka att CPU-mätaren blir rödare (den är varm!) När CPU-mätaren återgår till sin normala färg, vet du att din process är färdig.
+</p>
+<p>
+Varje mätare i iPulse visar ett informationsfönster när du rör muspekaren över mätaren. Detta hjälper dig att hålla reda på var varje mätare är placerad. När du har använt iPulse ett tag kommer du inte ha några problem med att komma ihåg detta, men i början kan det vara en aning knepigt att alltid koppla varje mätare till rätt information.
+</p>
+Informationsfönstret för CPU visar följande:
+<ul>
+	<li>Belastning - den aktuella systembelastningen (ett snitt över den senaste minuten) tillsammans med den minimala, maximala och genomsnittliga belastningen över den senaste timmen.</li>
+	<li>Processer - antalet processer som är aktiva för tillfället, uppdelat i de processer som körs, sover, eller befinner sig i något annat tillstånd. Processerna markerade med "root" kan inte iPulse undersöka då det inte finns tillräcklig behörighet; du kan på manuell väg ändra behörigheterna för iPulse så att mer korrekt processinformation visas. Se avdelningen <a href="#power_users">Power Users</a> nedan för mer information.</li>
+	<li>Temperatur - den aktuella temperaturen, baserat på en sensor på CPU-chippet. En del Macar rapporterar inte denna information (till exempel de senaste stationära G4:orna.) Även då temperaturen rapporteras är denna information inte fullt korrekt: värdena brukar vara lägre än den faktiska temperaturen. Det är vettigast att se det här värdet relativt. Den maximala temperaturen för G4-chippet är 101&deg;&mdash;om du ser detta värde, spring för livet! :-)</li>
+	<li>Användning - CPU-användningen är uppdelad i de tre kategorier som beskrivs längre upp. Enligt grundinställningarna räknas inte lågprioriterade processer till den totala mängden (detta går dock att ändra i inställningarna.)</li>
+	<li>Processlistning - Den sista informationen är listan över processer, sorterade efter genomsnittlig CPU-användning. Den mest krävande processen står längst upp i listan. Processnumret (som också kallas process-id eller procid) visas också, för oss Unix-nördar.</li>
+</ul>
+</p>
+<p>
+Du kan få liknande information genom kommandot <span class="command">top</span> i ett Terminal-fönster. Eller ännu bättre, om du märker att iPulse rapporterar något konstigt, till exempel en process som använder mer CPU-tid än vanligt, kan du använda kommandot <span class="command">top</span> för att undersöka problemet. Processnumret som visas i informationsfönstret kan även användas med <span class="command">ps -p #</span> (där # är processnumret.)
+</p>
+<p>
+Statistiken för CPU-användning hämtas genom systemanropet host_statistics() med väljaren HOST_CPU_LOAD_INFO. 
+</p>
+
+
+<p>
+<a name="system_load"></a><span class="topic">Systembelastning</span> Ett annat mått på CPU-användning i Unix-världen, är den "genomsnittliga belastningen". Den genomsnittliga belastningen är en siffra som beskriver det genomsnittliga antalet processer som väntat på CPU-tid över en tidsperiod. Då CPU-belastningen ökar så gör även den genomsnittliga belastningen det.
+</p>
+<p>
+Man kan jämföra den genomsnittliga belastningen med en bankomatkö. Det finns ett antal kunder (processer) som vill komma fram till bankomaten (processorn.) Det kan finnas mer än en bankomat (flera processorer.) Då kön (processkön) blir längre, har bankomaterna mer att göra. Vid lunchtid, då fler människor besöker bankomaten, kommer den genomsnittliga belastningen att vara högre än vid andra tidpunkter på dagen.
+</p>
+<p>
+Historikmätaren visar den genomsnittliga belastningen som en ring med prickar runt iPulse-fönstret <a href="#diagram">[19]</a>. Detta ger en överblick över belastningen den senaste timmen. De aktuella minuten markeras med en fylld prick; de andra prickarna visar den genomsnittliga belastningen jämfört med den aktuella minuten. Till exempel, de fem prickar som ligger motsols från den fyllda pricken visar de senaste fem minuterna.
+</p>
+<p>
+En fylld prick indikerar en minut av hög aktivitet (att kolla din mail, köra ett tungt filter i Photoshop, eller något annat som drar mycket datorkraft.) På samma sätt betecknar en ofylld prick en period av låg belastning; din kafferast till exempel.
+</p>
+<p>
+Hur den genomsnittliga belastningen ska visas kan du ändra i Historik-panelen i inställningsfönstret. Reglaget för minimal genomsnittlig belastning ställer in den minsta belastningen som ska visas (all belastning under detta kommer att visas som en ofylld prick.) Den maximala genomsnittliga belastningen betecknar på vilken nivå prickarna blir fyllda. Dessa inställningar påverkar även färgtoningen för CPU-användningen som nämndes tidigare.
+</p>
+<p>
+Det finns inget informationsfönster för Historikmätaren. Du kan se statistik för den genomsnittliga belastningen genom att röra musen över CPU-mätaren.
+</p>
+<p>
+Både <span class="command">uptime</span> och <span class="command">top</span> visar de aktuella genomsnittliga belastningarna i ett Terminal-fönster. De visar belastningen över tidsperioder på 1, 5 och 15 minuter.
+</p>
+<p>
+Statistiken för CPU-användning hämtas genom systemanropet host_statistics() med väljaren HOST_LOAD_INFO. 
+</p>
+
+<p>
+<a name="memory_usage"></a><span class="topic">Minnesanvändning</span> Mac&nbsp;OS&nbsp;X har väldigt avancerade system för virtuellt minne. Om du någonsin hade oturen att uppleva virtuellt minne i Mac OS 9, kommer du att uppskatta detta väldigt mycket!
+</p>
+<p>
+Det virtuella minnet i Mac&nbsp;OS&nbsp;X hanteras genom att dela in det fysiska minnet i fyra kategorier: trådat, aktivt, inaktivt och ledigt. Dessa kategorier är i sin del uppdelade i 4 kilobyte stora minnesblock som kallas sidor. Kategorierna beskrivs nedan:
+<ul>
+	<li>Trådat <a href="#diagram">[4]</a> - dessa sidor representerar minnet som används av kärnan i Unix. Sidorna är "låsta" och kommer aldrig att lämna det fysiska minnet. Program har en indirekt effekt på det trådade minnet eftersom att det är här kärnan lagrar och hanterar information om processer, trådar och bibliotek.</li>
+	<li>Aktivt <a href="#diagram">[5]</a> - aktiva sidor indikerar fysiskt minne som nyligen använts. Sidorna är tillgängliga för program.</li>
+	<li>Inaktivt <a href="#diagram">[6]</a> - inaktiva sidor är de som inte använts nyligen. Informationen på de aktiva sidorna är fullständig, men är inte tillgänglig för program. Inaktiva sidor kommer antingen bli aktiva (tillgängliga för program), eller flyttas från det fysiska minnet till systemskivan (för att ge plats år nya sidor.)</li>
+	<li>Ledigt <a href="#diagram">[7]</a> - lediga sidor används inte någonstans i systemet, och kan tilldelas program direkt.</li>
+</ul>
+Det finns flera "sidfördelare" i Mac&nbsp;OS&nbsp;X som kontinuerligt kontrollerar tillståndet hos de olika kategorierna och flyttar sidor mellan dem. Algoritmerna bakom detta är alldeles för komplexa för att beskrivas här; sök på Apples sida för utvecklare efter "<a href="http://developer.apple.com/cgi-bin/search.pl?&q=VM+pager">VM pager</a>" för alla detaljer. Webbsidan har också mer information om delsystemet för <a href="http://developer.apple.com/cgi-bin/search.pl?&q=OS+X+virtual+memory">virtuellt minne</a>.
+</p>
+<p>
+När iPulse ritar upp minnesanvändningen, delas de fyra olika minneskategorierna in i två färgade fält som representerar a) minne som används, och b) minne som är tillgängligt. Fältet för minne som används visar det trådade minnet (längst till vänster) och det aktiva minnet. Minne som är tillgängligt, representerat av inaktivt och ledigt minne (längst till höger), visas i det andra färgfältet.
+</p>
+<p>
+När du rör musen över mätaren, kommer en indikator visa vilken minneskategori du tittar på och hur mycket utrymme som är tilldelat. Efter sammanfattningen kommer du att se en lista över de processer (program) som använder mest minne. Listan visar mängden fysiskt minne som används (inbyggt minne) uttryckt i både storlek och i procent av den totala mängden minne. Den totala mängden minne som används av programmet (virtuellt minne) visas också.
+</p>
+
+<p>
+Återigen, kommandot <span class="command">top</span> i ett Terminal-fönster visar den här informationen och ger fler detaljer om hur minnet är fördelat inom processen. Kommandot <span class="command">vm_stat</span> visar detaljerad information om hur det virtuella minnet används.
+</p>
+<p>
+Statistiken för minnesanvändning hämtas genom systemanropet host_statistics() med väljaren HOST_VM_INFO. 
+</p>
+
+
+<p>
+<a name="memory_swapping"></a><span class="topic">Minnesväxling</span> Minnesväxling (eller "sidfördelning") är då sidor från det fysiska minnet till hårddisken. Detta kräver en hel del systemresurser: minne måste läsas och kopieras till skivan. Om du växlar minne har inte din Mac mycket tid över till andra viktiga uppgifter (såsom en omgång Unreal Tournament.)
+</p>
+<p>
+Inväxling sker när ett program behöver tillgång till en minnessida, och sidan inte är aktiv eller inaktiv. Sidan måste läsas från skivan. På samma sätt kommer inaktiva sidor att växlas ut och skrivas till skivan för att ge plats för nya minnesförfrågningar.
+</p>
+<p>
+Du kommer att lägga märke vid detta när du använder Mac&nbsp;OS&nbsp;X: när du har många program igång, och minnet blir fullt, kommer du att märka fördröjningar och hårddiskaktivitet när du växlar mellan olika program. Detta orsakas av att minnessidor växlas in till det nya programmet, medan sidor från ett annat program växlas ut till skivan.
+</p>
+<p>
+Om du upplever mycket växlingsaktivitet så är det ett gott tecken på att du behöver köpa mer minne till din Mac!
+</p>
+<p>
+Mätarna för sidväxling visar aktivitet för en sida åt gången, upp till maximalt 90 sidor (en sida per grad på mätaren.) Sidor som växlas in visas till vänster <a href="#diagram">[16]</a> och sidor som växlas ut visas till höger <a href="#diagram">[17]</a>. Texten på mätaren visar antalet sidor som växlas.
+</p>
+<p>
+När du rör musen över växlingsmätarna, visas informationsfönstret med en sammanfattning av växlingsaktiviteten. Du får också en rapport om hur många filer som används för att lagra minne på hårddisken; att ha mycket "swapfile"-användning betyder att det virtuella minnet är fragmenterat, och att det kan vara vettigt att starta om datorn.
+</p>
+<p>
+Listan över processer är indelad i två typer av viktig information:
+<ul>
+	<li>Sidor in - antalet sidor varje program läste in från skivan till minnet.</li>
+	<li>Fel - antalet sidor som behövdes men inte var aktiva. Det här är en fingervisning till vilka program som använder minne aktivt. Att ha ett stort antal fel behöver inte vara något dåligt.</li>
+</ul>
+</p>
+<p>
+Statistiken för minnesanvändning hämtas genom systemanropet host_statistics() med väljaren HOST_VM_INFO. 
+</p>
+
+<p>
+<a name="disk_usage"></a><span class="topic">Hårddiskanvändning</span> iPulse visar en mätare för hårddiskanvändning, som ger dig en snabb överblick över hur mycket hårddiskutrymme som används. När du använder program som iMovie, iPhoto och iTunes kan det ledigt utrymme lätt bli en bristvara!
+</p>
+<p>
+För att det inte ska bli rörigt i mätaren visas endast skivor (filsystem) som är både läs- och skrivbara. CD-ROM-skivor och andra typer av skivor som endast är läsbara visas inte. Nätverksvolymer visas i mätaren efter att du anslutit till dem.
+</p>
+<p>
+Mängden hårddiskutrymme som används <a href="#diagram">[10]</a> och mängden ledigt utrymme <a href="#diagram">[9]</a> visas båda på ett klockliknande sätt. När mängden använt utrymme överstiger 90%, tonas mätaren i en varningsfärg. iPulse begränsar mätningen av hårddiskanvändning till de första sex skivorna som är anslutna. Den första skivan i listan är den aktuell startskivan och är märkt med "(Root)" enligt Unix-konventionerna.
+</p>
+<p>
+I version 2.0 av iPulse kan du även se summan av alla skivor&mdash;iPulse räknar ut mängden utrymme hos alla skivor tillsammans, och visar resultatet. Om du har många skivor är detta oftast ett bättre alternativ än att visa dem enskilt.
+</p>
+<p>
+När du rör musen över mätaren för hårddiskanvändning kommer du att se en sammanfattning som visar varje skiva, och hur mycket utrymme på dessa som används. Listan visar också vilket filsystem som används på respektive skiva. Filsystemet kan vara ett av följande:
+<ul>
+	<li>hfs - Hierarchical file system. Det vanliga filsystemet för Mac.</li>
+	<li>webdav - Web-based Distributed Authoring and Versioning file system. Vi är tacksamma för att Apple valde att kalla det iDisk istället!</li>
+	<li>smbfs - Server Message Block file system. Används av Windows för att dela filer på ett nätverk.</li>
+	<li>ufs - Unix file system. Har använts sedan tidernas begynnelse, då en hårddisk på 1 MB var enorm.</li>
+	<li>msdos - MS-DOS file system. För alla dina diskettbehov!</li>
+	<li>nfs - Network file system. En fildelningsmekanism som ofta används av Unix och Linux.</li>
+	<li>udf - Universal Disk Format file system. Används för CD- och DVD-inspelningar.</li>
+</ul>
+</p>
+<p>
+Kommandot <span class="command">df -k</span> i ett Terminal-fönster visar hårddiskanvändningen för alla filsystem som lagts på skrivbordet (inklusive endast läsbara filsystem och diverse apparater såsom digitalkameror.)
+</p>
+<p>
+Statistiken för hårddiskanvändning hämtas genom systemanropet getmntinfo().
+</p>
+
+<p>
+<a name="disk_activity"></a><span class="topic">Hårddiskaktivitet</span> Mätaren för hårddiskanvändning ovan visar rätt så statisk information om hur hårddisken används. Mätaren för hårddiskaktivitet, å andra sidan, visar hur hårddisken används av systemet. Mätaren visar en indikator för varje läs- eller skrivoperation som utförs av Unix-kärnan. Den visar också mängden data som överförs.
+</p>
+<p>
+Läsaktiviteten visas som en prick till vänster på mätaren <a href="#diagram">[8]</a> medan skrivaktiviteten visas till höger <a href="#diagram">[11]</a>. När pricken syns betyder det att en läs- eller skrivoperation utfördes under den senaste uppdateringen. Om mer än 100 operationer utfördes visas pricken i en markeringsfärg för att indikera att det är hög aktivitet för tillfället.
+</p>
+<p>
+Antalet överförda bytes till eller från hårddisken visas med en mätare under aktivitetsindikatorn. Skalan på denna mätare kan visas som fast, logaritmisk eller automatisk&mdash;dessa olika alternativ beskrivs i avdelningen <a href="#preferences">inställningar</a>.  Du kan ställa in mätaren så att ett streck visas vid en topp i antalet läsningar/skrivningar.
+</p>
+<p>
+Mätaren innehåller en toppindikator. iPulse håller reda på det maximala antalet bytes över en tidsperiod, och visar ett litet streck vid detta toppvärde. Från början kommer denna topp att hållas kvar i en minut; du kan ändra detta värde i de globala inställningarna.
+</p>
+<p>
+När du rör musen över mätaren kommer en sammanfattning över läs- och skrivoperationerna att visas. Denna sammanfattning innehåller antalet operationer och antalet överförda bytes per sekund under den senaste uppdateringen. De aktuella topp- och snittvärdena visas också.
+</p>
+<p>
+Statistiken för hårddiskaktivitet hämtas från IOKit med väljaren "IOBlockStorageDriver".
+</p>
+
+
+<p>
+<a name="network_activity"></a><span class="topic">Nätverksaktivitet</span> När vi skapade iPulse hade vi svårt att bestämma oss för vilken nätverksinformation som ska visas. Det finns en mängd nätverksinformation att hämta från kärnan. I slutändan bestämde vi oss för att två typer av information var viktigast:
+<ul>
+	<li>IP-aktivitet - antalet skickade och mottagna paket av IP (Internet Protocol.) Detta gör att du kan se aktivitet hos vilket IP-paket som helst, oavsett om det är ett TCP-paket eller inte.</li>
+	<li>TCP-bandbredd - antalet bytes som skickats och mottagits av TCP (Transmission Control Protocol.) Detta gör att du kan se mängden data som skickas då du utför vanliga saker som att flytta filer mellan servrar, surfa på nätet och kolla din e-post.</li>
+</ul>
+</p>
+<p>
+iPulse ritar upp inkommande nätverkstrafik till vänster <a href="#diagram">[12,13]</a> och utgående trafik till höger <a href="#diagram">[14,15]</a>. Stapelmätaren visar antalet bytes per sekund <a href="#diagram">[13,14]</a>. Skalan på denna mätare kan visas som fast, logaritmisk eller automatisk, beroende på <a href="#preferences">inställningarna</a>. Stapelmätaren kan också konfigureras så att den visar toppvärden i nätverkstrafiken.
+</p>
+<p>
+Pricken i början på stapelmätaren visas om några IP-paket mottagits <a href="#diagram">[12,15]</a>. Pricken markeras om fler än 25 paket per sekund har överförts.
+</p>
+<p>
+När du rör muspekaren över mätaren visas en sammanfattning av nätverkstrafiken. Denna sammanfattning innehåller antalet överförda paket samt antalet bytes per sekund under den senaste uppdateringen. De aktuella topp- och snittvärdena visas också.
+</p>
+<p>
+Informationsfönstret visar också det aktuella värdnamnet samt en del grundläggande information om nätverkskonfigurationen (namnet på gränssnittet och dess IP-adress.)
+</p>
+<p>
+Du kan se nätverksaktiviteten genom att i ett Terminal-fönster använda kommandot <span class="command">netstat -I [gränssnitt]</span>, där [gränssnitt] är det namngivna gränssnittet (som en0 för Ethernet och en1 för Airport.) Ytterligare information om nätverkskonfigurationen kan fås med kommandot <span class="command">ifconfig -a -u</span>.
+</p>
+<p>
+Nätverksinformationen hämtas genom systemanropet sysctlbyname(). TCP-statistiken hämtas genom väljaren "net.inet.tcp.stats", och IP-statistiken genom väljaren "net.inet.ip.stats". Om du inte tror på vårt påstående om att det finns mycket nätverksinformation, pröva kommandot <span class="command">sysctl -A net</a>.
+</p>
+
+<p>
+<a name="mobility"></a><span class="topic">Mobilitet</span> Om du har en Mac med antingen batteri eller trådlöst Ethernet (AirPort), kommer du att se ett par extra mätare. Den ena visar den aktuella batterinivån <a href="#diagram">[18]</a>, och den andra visar den trådlösa signalstyrkan <a href="#diagram">[20]</a>.
+</p>
+<p>
+Batterimätaren visar sex prickar när batteriet är fullt, och inga prickar när batteriet är slut. När batterinivån understiger 10%, blir bakgrunden tonad i en varningsfärg (grundinställningen är röd) för att visuellt markera att du bör spara dina öppna dokument.
+</p>
+<p>
+När batteriet laddas blir prickarna orange. När batteriet laddats färdigt blir prickarna gröna. Dessa färger matchar din den medföljande strömadaptern, men du kan ändra färgerna i mobilitetsinställningarna i inställningsfönstret.
+</p>
+<p>
+Den trådlösa signalstyrkan visas på ett liknande sätt. Maximal signalstyrka visas med sex prickar, medan inga prickar alls betyder obefintlig signal. Om signalstyrkan understiger 10% tonas bakgrundsfärgen för att signalera att det kan vara vettigt att byta bord på fiket.
+</p>
+<p>
+Informationsfönstret för båda dessa mätare visar ytterligare information om batteriet och den trådlösa anslutningen. Batteriets spänning och ström visas, samt en uppskattning av hur mycket batteritid som återstår. Den trådlösa informationen visar anslutningsnamnet, ID-numret samt signal-to-noise-förhållandet.
+</p>
+<p>
+Batteriinformationen hämtas genom IOPMCopyBatteryInfo. Den trådlösa informationen kommer från den den odokumenterade frameworken Apple80211.
+</p>
+
+<p>
+<a name="clock"></a><span class="topic">Klocka</span> Klockan visar den aktuella tiden.
+</p>
+<p>
+Med grundinställningarna är det rätt uppenbart hur informationen visas. 24-timmars-inställningen ändrar utseendet på klockan så att varje timme på dygnet visas separat. <a href="http://www.cam.net.uk/home/pb/">24-timmars-klockan</a> kom före de mekaniska klockorna&mdash; den användes ursprungligen på urtavlan hos soluren.
+</p>
+<p>
+Klockan kan också visa datum. Genom inställningarna kan du välja månad, dag, datum eller månfas som indikator. Månfasen delar in året i (ungefär) tolv perioder. Om du någonsin undrat varför siffran 12 återkommer inom tideräkning, kan du skylla på månen!
+</p>
+<p>
+Du kan också ställa in klockan så att den ringer varje heltimme. Instruktioner för hur du väljer ett eget ljud som ringsignal kan du hitta i avdelningen <a href="#tips_and_tricks">Tips och Trick</a>.
+</p>
+<p>
+När du rör musen över datumet (på tolvans plats), visas informationsfönstret för klockan. Fönstret visar den numeriska tiden och datumet (tillsammans med tidszonen och GMT/UTC-förskjutningen.) En almanacka med den aktuell vecka och datum visas också.
+</p>
+<p>
+Informationsfönstret visar dessutom hur länge sedan det var du startade om Mac&nbsp;OS&nbsp;X (vilket vanligtvis kallas för "uptime".) För dig som tycker om att beskåda stjärnhimlen finns även Juliansk datum och detaljerad information om månfasen.
+</p>
+<p>
+Tidsinformationen hämtas genom systemanropet time(). Tiden konverteras till lokal tid genom localtime(). Uträkningen av månfaserna bygger på arbete av John Walker&mdash; ett besök på hans <a href="http://www.fourmilab.ch/earthview/">Earth and Moon Viewer</a> rekommenderas varmt.
+</p>
+
+<p>
+<a name="general_information"></a><span class="topic">Allmän information</span> Och sist men inte minst så visar iPulse en del allmän information när du rör musen över någon del av fönstret som inte innehåller någon mätare.
+</p>
+<p>
+I denna information ingår datorns namn och ditt inloggningsnamn (både de korta och långa versionerna.) Versionsnumret av iPulse och Mac OS X visas också, samt hur lång tid du har kört iPulse.
+</p>
+<p>
+Till sist visar det allmänna informationsfönstret om musklick ignoreras. Detta gör att du kan se huruvida ett musklick i iPulse-fönstret faktiskt gör något överhuvudtaget :-)
+</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					Inställningar
+				</td>
+				<td class="sectionbody">
+<a name="preferences"></a>Det finns en mängd inställningar i iPulse. Istället för att beskriva alla dess ingående, kommer vi att gå igenom några av de viktigaste. Vi kommer också att fokusera på de inställningar som inte är helt självklara.
+<p>
+<span class="topic">Att använda Jackets</span> Ett snabbt sätt att ändra dina inställningar är att ladda en så kallad Jacket. Efter det att du har startat iPulse, behöver du bara dubbelklicka på en Jacket (med filändelsen .ipulse) så laddas alla inställningar från filen.
+</p>
+<p>
+iPulse-mappen du laddade ner innehåller ett flertal Jackets att börja med. Vi har också skapat ett <a href="http://www.iconfactory.com/ip_gallery.asp">online-galleri</a> med ytterligare Jackets. Detta galleri uppdateras då och då&mdash;det finns en färdig länk i Hjälp-menyn för att besöka galleriet.
+</p>
+<p>
+Om du gör några ändringar i en Jacket, bör du spara en kopia. Gå bara till startsidan i inställningarna och klicka på knappen Spara Inställningar. Döp sedan filen och tryck OK, så sparas en ny Jacket med de gjorda ändringarna.
+</p>
+<p>
+<span class="topic">Att aktivera och avaktivera mätare</span> Alla mätare kan avaktiveras och aktiveras med ett enda musklick. Detta gör att du snabbt kan justera iPulse så att det passar dig.
+</p>
+<p>
+<span class="topic">Opacitet</span> Alla färgfält i iPulse stöder opacitet. Detta gör att du inte bara kan välja färg på de olika mätarna, utan även hur mycket färg som visas.
+</p>
+<p>
+För att ändra mätarens opacitet, klicka bara på färgrutan. I färgjusteringsfönstret kan du dra opacitetsreglaget från 0% (helt genomskinlig) till 100% (helt ogenomskinlig.) Ändringarna syns direkt.
+</p>
+<p>
+Att ändra en mätares opacitet till 0% är ett enkelt sätt att gömma delar av iPulse-mätarna. Till exempel kan du sätta fönstrets bakgrund till 0% och låta mätarna "flyta" på ditt skrivbord. Detta fungerar även för mobilitets- och hårddiskanvändningens fönster. På samma sätt kan du till exempel sätta opaciteten för ledigt minne till 0%, om du endast vill se mängden minne som används.
+</p>
+<p>
+<span class="topic">Text på mätare</span> De flesta mätare kan visa en text. Som grundinställning visas endast text på det flytande fönstret&mdash;en inställning i den allmänna inställningarna låter dig ha text på Dock-ikonen också.
+</p>
+<p>
+<span class="topic">Aktivitetsskala</span>Både hårddisk- och nätverksaktivitet har en inställning för hur mätaren ska skalas. De olika typerna av skala är:
+<ul>
+	<li>Fast - Skalan baseras på det värde du väljer i popup-menyn. Om du till exempel väljer "100K bytes per sekund", betyder en full mätare att det har varit 100KB av aktivitet den senaste sekunden. Om mätaren är halvfull (45&deg; av 90&deg;-mätaren) betyder detta att det har varit 50KB av aktivitet.</li>
+	<li>Automatisk - Den här skalan liknar den fasta skalan som beskrivs ovan, förutom att det maximala värdet justeras automatiskt. Justeringen baseras på det senaste toppvärdet. Om toppvärdet till exempel är 75KB per sekund för tillfället, justeras mätarens skala till nästa tiopotens&mdash;100KB per sekund.</li>
+	<li>Logaritmisk - Den här skalan delar in mätaren i tre delar, där varje del visar en serie data för en tiopotens. Om du till exempel väljer en logaritmisk skala på 10K till 1M per sekund, visas värden mellan 1K och 10K i de första 30&deg;, värden mellan 10K och 100K i nästa 30&deg;, och värden mellan 100K och 1MB i de sista 30&deg;. Om aktiviteten understiger 1K bytes per sekund visas inget&mdash;vid aktivitet över 1M bytes per sekund är hela mätaren fylld.</li>
+</ul>
+Dessutom visar den automatiska skala en serie prickar på mätaren för att indikera vilken skala som används för tillfället. Inga prickar visas vid 1K, en prick vid 10K, två prickar vid 100K, och så vidare. På samma sätt visar den logaritmiska skalan smala streck mellan vart och ett av de tre områdena för att indikera skalan.
+</p>
+<p>
+<span class="topic">Toppindikatorer</span> Toppindikatorerna kan ställas in för mätarna för hårddisk- och nätverksaktivitet. Dessa indikatorer uppför sig som nivåmätarna på en del utrustning för ljudinspelning.
+</p>
+<p>
+Indikatorerna håller reda på den maximala aktivitetsnivån över en tidsperiod. Det maximala värdet visas som ett smalt streck på mätaren.
+</p>
+<p>
+Du kan ställa in hur länge en topp ska visas (hållas kvar) i de allmänna inställningarna. Om du använder en automatisk skala för aktivitet, kommer dessa inställningar också påverka hur ofta skalan justeras om.
+</p>
+<p>
+<span class="topic">Belastningsskala</span> Om du väljer att visa historikmätaren, är det troligt att du behöver jsutera värdena för minimal och maximal genomsnittlig belastning. Grundinställningarna fungerar fint för de flesta datorer, men en finjustering kommer att ge noggrannare information för just din dator&mdash;iBook som G5:a.
+</p>
+<p>
+Det första du bör göra är att röra musen över CPU-mätaren så att informationsfönstret visas. Längst upp i informationsfönstret visas en rad information som kallas "Belastning" med min- och maxvärden. Dessa värden kan du utgå från när du ställer in dina egna värden i historikinställningarna.
+</p>
+<p>
+Du kommer att märka att opaciteten hos historikprickarna ändras när du justerar min- och maxvärdena. Den minimala genomsnittliga belastningen ställer in den minsta belastningen som ska visas (värden under detta värde kommer inte att synas.) Den maximala genomsnittliga belastningen är vid vilket värde prickarna blir helt ogenomskinliga.
+</p>
+<p>
+Dessa inställningar används också för att justera färgtoningen på CPU-mätaren. Färgtoningen är genomskinlig (visas inte) vid den minimala belastningen. När belastningen är vid maximum har färgtoningen full opacitet.
+</p>
+<p>
+<span class="topic">Dekorationer</span> En av de mer populära funktionerna i den här versionen av iPulse, är möjligheten att välja en bakgrundsbild. Du kan använda i princip vilken bild som helst, att visa bakom iPulse-mätarna. Det, kombinerat med möjligheten att ställa in opacitet, ger dig rätt mycket frihet att ändra utseendet på iPulse.
+</p>
+<p>
+Se avdelningen om att skapa egna Jackets för information om formatet och storleken på bakgrundsbilden.
+</p>
+<p>
+<span class="topic">Enheter</span> Vilken enhet iPulse ska uttrycka information i, kan anges i de allmänna inställningarna.
+<ul>
+	<li>Apple-format - Finder visar binära värden med två bokstäver i versaler. Till exempel, 2^10 = 1024 = 1 KB.</li>
+	<li>IEEE-format - IEEE-standarden använder en bokstav i versal följt av ett "b" (för att indikera byte.) Så 2^10 = 1024 = 1 Kb.</li>
+	<li>SI-systemets format - SI-systemet definierar en uppsättning prefix för mätningar. Oavsett om du bor i ett land som envist vägrar använda metersystemet, känner du säkert till kilogram, megahertz och gigawatt som mätenheter i tiopotenser. Dessa prefix har modifierats så att de motsvarar tvåpotenser så att 2^10 = 1024 = 1 KiB. Detta format förklaras mer ingående <a href="http://physics.nist.gov/cuu/Units/binary.html">här</a>.</li>
+</ul>
+</p>
+<p>
+<span class="topic">Ignorera musen</span> I fönsterinställningarna finns en del inställningar som är rätt uppenbara. Det är däremot inte "Ignorera musklick".
+</p>
+<p>
+Det här är en ny funktion i den här versionen av iPulse. Om du kryssar i den här rutan ignoreras musklick i iPulse-fönstret, och skickas istället till det underliggande programmet. Detta gör att du kan klicka på det som ligger under fönstret, utan att behöva flytta på det.
+</p>
+<p>
+Den enda nackdelen med detta är att det är svårt att flytta iPulse-fönstret eftersom att det ignorerar dina musklick. Detta leder till nästa ämne...
+</p>
+<p>
+<span class="topic">Att ställa in kortkommandon</span> iPulse låter dig ställa in två kortkommandon. Ett av dessa kortkommandon gömmer eller visar iPulse-fönstret, det andra växlar "ignorera musklick"-funktionen som nämns ovan.
+</p>
+<p>
+I grundinställningen är kortkommandona inte aktiverade. Du måste gå till de allmänna inställningarna och klicka på knappen "Välj...". I fönstret som öppnas trycker du den tangentbordskombination eller funktionsknapp du vill använda, och klickar på OK. Se till att inte välja en kombination som redan används i ett annat program. Om du väljer kommando-C som som kortkommando kommer du att se iPulse istället för att kopiera till urklipp!
+</p>
+<p>
+När du har ställt in kortkommandot kan du använda det i vilket program som helst. Kortkommandot för att visa/gömma är praktiskt vid en presentation, ett spel, eller någon annan aktivitet som använder hela skärmen. Om du använder "ignorera musklick"-funktionen kan du använda kortkommandot för att snabbt aktivera musklick, flytta iPulse-fönstret, och sedan avaktivera musklick igen.
+</p>
+<p>
+<span class="topic">Göm iPulse i listor</span> Slutligen, i de allmänna inställningarna finns en inställning för att inkludera iPulse i listor över processer. Vi rekommenderar att du <strong>inte</strong> aktiverar denna funktion.
+</p>
+<p>
+Anledningen till detta är inte att vi inte vill att du ska veta hur mycket processorkraft iPulse använder; det är för att ett program som kollar sig självt ofta resulterar i helt felaktig information. Om du vill ha ett troligt mått på hur mycket processortid iPulse använder, använd istället kommandot <span class="command">top</span> från ett Terminal-fönster.
+</p>
+<p>
+om du tycker att iPulse använder för mycket processorkraft, kolla avdelningen <a href="#tips_and_tricks">Tips och Trick</a> för några metoder åtgärda detta.
+</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					Att skapa Jackets
+				</td>
+				<td class="sectionbody">
+<a name="creating_jackets"></a>Om du vill skapa egna Jackets och distribuera dessa till dina kompisar eller lägga upp dem på din hemsida, så får du här några enkla instruktioner som hjälp på traven:
+<p>
+<span class="topic">Bakgrundsbild</span> 
+Det tydligaste visuella elementet i en Jacket är bakgrundsbilden. Du kan använda vilken bild som helst i formaten TIFF, JPG, PNG, GIF, PDF eller ICNS, genom inställningarna i Övriga inställningar. Om du använder TIFF-formatet, se då till att bilden inte innehåller några alfakanaler eller lager.
+</p>
+<p>
+Bildfilens mått ska vara 128 x 128 pixlar (den kommer att skalas automatiskt när användaren ändrar storleken på iPulse-fönstret.) Mätarna placeras ut i steg som delar 128 jämnt&mdash;8, 16 och 32 pixlar. Cirkeln delas upp som en klocka&mdash;12 delar på 30&deg; var.
+</p>
+<p>
+<span class="topic">Spara inställningar</span> Efter det att du har gjort dina inställningar, skapar du din Jacket genom att gå till de allmänna inställningarna och där klicka på knappen "Spara inställningar". Då skapas en .ipulse-fil (en Jacket) som innehåller alla inställningar.
+</p>
+<p>
+Tänk på att en Jacket inte innehåller fönsterinställningar eller globala inställningar. Dessa inställningar, som innehåller kortkommandon, fönsterstorlek och annat, räknas som personliga inställningar och ändras inte när en annan användare laddar din Jacket.
+</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					Tips och Trick
+				</td>
+				<td class="sectionbody">
+<a name="tips_and_tricks"></a>Den här avdelningen visar hur du kan ställa in iPulse för just ditt system.
+<p>
+<span class="topic">Starta iPulse vid inloggning</span> Du kan ställa in iPulse så att det startas automatiskt, genom att använda Startobjekt i Systeminställningar.
+</p>
+<p>
+<span class="topic">Minska processorkraften iPulse använder</span> På äldre Macar kan processorkraften gå åt. Här är några sätt att minska processorkraften iPulse använder:
+<ul>
+	<li>Längre uppdateringstid - I de globala inställningarna finns en inställning för hur lång tid det ska gå mellan uppdateringarna. Eftersom att merparten av processorkraften iPulse använder går åt till att samla information vid varje uppdatering, kan du lätta processorn avsevärt genom att höja uppdateringstiden till två sekunder istället för en (kanske till tre sekunder till och med.)</li>
+	<li>Minska iPulse prioritet - En annan inställning i de globala inställningarna är processprioriteten för iPulse. Se till att sänka prioriteten (grundinställningen är +5 nice.) När du sänker iPulse prioritet kommer andra program att få mer processortid när systemet börjar bli upptaget. En annan fördel är att iPulse automatisk sänker sin uppdateringstid då aktiviteten är hög, vilket ger processorn mer tid åt andra uppgifter.</li>
+	<li>Stäng av skuggningen av fönstret - Om du har en skugga på iPulse-fönstret, pröva att stänga av den. Det kommer inte att se lika snyggt ut, men det kräver mindre processorkraft då skuggan måste räknas ut vid varje uppdatering.</li>
+	<li>Stäng av toningen av informationsfönstret - Ställ in informationsfönstrets toning på "Ingen". Fönstret kommer att visas snabbare, och kräver mindre processorkraft.</li>
+</ul>
+</p>
+<p>
+<span class="topic">Lägg till dina egna ljud</span> För att använda dina egna ljud till funktionen "Ring vid hel timme" kan du lägga till AIFF-filer i mappen ~/Bibliotek/Sounds. Filer med filändelsen ".aiff" kommer att synas i listan över ljud efter att du har startat om iPulse.
+</p>
+<p>
+För att skapa en AIFF-fil kan du öppna en MP3-fil, en film eller någon annan fil som innehåller ljud, i QuickTime Player. Markera den bit av ljudet du vill använda genom att flytta markörerna nedanför tidslinjen. Välj sedan Redigera > Radera omarkerat, och sedan Arkiv > Exportera, för att spara den markerade biten av ljudfilen. Se till att du har valt "Ljud till AIFF" i popup-menyn när du exporterar.
+</p>
+<p>
+<span class="topic">Att köra iPulse utan Dock-ikon</span> Vanligtvis visas iPulse med en ikon i Dock. Du kan ställa in iPulse att köra i "bakgrundsläge" vilket gör att Dock-ikonen inte visas.
+</p>
+<p>
+När du kör ett program i bakgrundsläge bör du tänka på några saker:
+<ul>
+	<li>Det finns ingen menyrad för programmet. Alla kortkommandon kommer fortfarande att fungera, så du kan avsluta programmet (kommando-Q) eller visa inställningarna (kommando-komma). Du kan också använda kontextmenyn som visas när du kontroll-klickar på iPulse-fönstret.</li>
+	<li>iPulse kommer inte att visas i fönstret för tvångsavslutning av program som visas då du trycker kommando-alt-escape. Du blir tvungen att använda ett Terminal-fönster för att tvångsavsluta iPulse.</li>
+	<li>Eftersom att ändringarna so krävs görs på själva programmet, kommer det att köras i bakgrundsläge för alla användare i systemet.</li>
+</ul>
+Innan du ändrar till bakgrundsläge, se till att iPulse-fönstret visas på skrivbordet.
+</p>
+<p>
+För att ställa in iPulse att köra i bakgrundsläge, öppna programpaketet genom att kontroll-klicka på programmet och välja "Visa paketets innehåll". Leta upp filen Info.plist i mappen Contents, och öppna den i Textredigeraren. Leta upp LSUIElement och ändra "&lt;string&gt;0&lt;/string&gt;" till "&lt;string&gt;1&lt;/string&gt;". Spara filen och gå tillbaka till mappen Contents.
+</p>
+<p>
+Om du kör Mac&nbsp;OS&nbsp;X 10.2 kan du helt enkelt starta om iPulse. Om du kör 10.3 (Panther) så sparas informationen du just ändrade i en cache, vilket gör att du måste skapa ett nytt program och uppdatera cachen. Detta gör du enklast genom att markera iPulse i Finder, och duplicera filen (genom att trycka kommando-D.) Sedan startar du den nya filen - "iPulse (kopia)" -  och kontrollerar så att iPulse inte syns i Dock. Vid det här laget har cachen uppdaterats, så du kan avsluta iPulse och återgå till Finder. Ta bort den ursprungliga iPulse-filen, och döp om den nya till "iPulse".
+</p>
+<p>
+Om du bestämmer dig för att du inte vill köra i bakgrundsläge, ändra då LSUIElement till det ursprungliga värdet "0".
+</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					Power Users
+				</td>
+				<td class="sectionbody">
+<a name="power_users"></a>Den här avdelningen är till för de som inte är rädda för kommandorader. Instruktionerna i den här avdelningen förutsätter att du har full koll på Terminalen. Om du inte har det, föreslår vi att du hoppar över den här avdelningen.
+<p>
+<span class="topic">Inställningar</span> De flesta inställningarna i iPulse syns i de olika panelerna i inställningsfönstret. Det finns dock ytterligare inställningar som kan vara användbara, men som skulle röra till gränssnittet eller vara svåra för nybörjare att förstå.
+</p>
+<p>
+För att ändra någon av dessa "power user"-inställningar, avsluta iPulse och köra följande kommando i ett Terminal-fönster:
+<pre>
+% defaults write com.iconfactory.iPulse [inställning] [värde]
+</pre>
+där [inställning] är namnet på inställningen och [värde] är värdet du vill använda (dessa visas i tabellen nedan.) Efter det att du har startat om iPulse ska du kunna se de nya inställningarna.
+</p>
+<p>
+För att ta bort inställningen och gå tillbaka till grundinställningen, använd:
+<pre>
+% defaults delete com.iconfactory.iPulse [inställning]
+</pre>
+Se till att du matchar stora och små bokstäver när du skriver in [inställning]&mdash;ifapplicationneverhide är inte samma sak som IFApplicationNeverHide. Använd <span class="command">man defaults</span> för ytterligare information om att göra grundinställningar från kommandoraden.
+</p>
+<p>
+Så utan några krusiduller, här är de olika "power user"-inställningarna:
+</p>
+<table>
+	<tr>
+		<th>Inställning</th>
+		<th>Grundinställning</th>
+		<th>Beskrivning</th>
+	</tr>
+	<tr>
+		<td> IFApplicationNeverHide </td>
+		<td> 1 </td>
+		<td> När den här inställningen står på 1, går iPulse inte att gömma. Detta hindrar även Dock-ikonen från att bli halvgenomskinlig.</td>
+	</tr>
+	<tr>
+		<td> IFApplicationPlotProcessorArea </td>
+		<td> 0 </td>
+		<td> Vanligtvis ritar iPulse CPU-mätaren som en andel av arean en cirkel. Till exempel fylls 50% av cirkelns area då CPU-belastningen är 50%. Detta är visuellt sett mer korrekt, men gör att låga CPU-belastningar ser större ut. För att rita ut CPU-användningen som en funktion av radien, ändra värdet till 0. Detta gör att 50% belastning använder 50% av cirkelns radie.</td>
+	</tr>
+	<tr>
+		<td> IFApplicationAlwaysHoverTime </td>
+		<td> 0 </td>
+		<td> Enligt grundinställningen visar iPulse information om klockan även när det inte finns någon datumindikator och klockan är avstängd. Med värdet 0 på den här inställningen visas endast informationsfönstret om datumindikatorn visas.</td>
+	</tr>
+	<tr>
+		<td> IFApplicationHideInfoOnDrag </td>
+		<td> 1 </td>
+		<td> Med värdet 1 på den här inställningen kommer informationsfönstret att gömmas då du flyttar iPulse-fönstret. Detta innebär mindre arbete för gamla grafikkort, och kan erbjuda snabbare respons.</td>
+	</tr>
+	<tr>
+		<td> IFApplicationAlternativeActivity </td>
+		<td> 1 </td>
+		<td> Med värdet 1 på den här inställningen visas en aktivitetsindikator som inte överlappar mätaren till toppen.</td>
+	</tr>
+	<tr>
+		<td> IFApplicationSwapfilesPath </td>
+		<td> /sökväg/till/mapp </td>
+		<td> Den här inställningen anger sökvägen till dina växelfiler. Om du har ändrat din konfiguration för växelfiler, måste du även ändra den här inställningen från grundinställningen /var/vm.</td>
+	</tr>
+	<tr>
+		<td> IFApplicationCHUDWorkaround </td>
+		<td> 1 </td>
+		<td> Om du har CHUD-verktygen installerade måste du göra den här inställningen, annars kommer iPulse att göra så att kärnan använder alldeles för stora mängder processortid. Med värdet 1 undviker iPulse att anropa host_processor_info med parametern PROCESSOR_TEMPERATURE. Nyare processorer, som G5 och G4, kommer att ignorera den här inställningen eftersom att temperaturen läses genom IOKit istället för Mach-systemanropet.</td>
+	</tr>
+	<tr>
+		<td> IFApplicationInfoDelay </td>
+		<td> 0.75 </td>
+		<td> Enligt grundinställningen väntar iPulse i 0,75 sekunder innan informationsfönstret öppnas. Om du vill ha en längre eller kortare fördröjning kan du ändra det här värdet till vad som helt över 0.</td>
+	</tr>
+	<tr>
+		<td> IFApplicationTrackMouse </td>
+		<td> 0 </td>
+		<td> iPulse kollar bara musens position (för att visa informationsfönstret) vid varje uppdatering. Om du har en lång uppdateringstid vill du kanske att iPulse ska hålla reda på musens position mycket snabbare än så. Den här inställningen är inte aktiverad från början eftersom att den använder mer processorkraft&mdash;varje gång du rör musen måste systeminformation hämtas.</td>
+	</tr>
+	<tr>
+		<td> IFApplicationStatusAlertThreshold </td>
+		<td> 0.9 </td>
+		<td> Statusvärden i menyraden visas i intervallet 0,0 till 1,0. När gränsvärdet som definieras av den här inställning överskrids, visas varningsfärgen. Grundinställningen är att visa varningsfärgen då värdet överstiger 90% av det maximala värdet.</td>
+	</tr>
+	<tr>
+		<td> IFApplicationIgnoreExpose </td>
+		<td> 0 </td>
+		<td> If you'd like iPulse to remain on the desktop when you use the Show Desktop feature in Exposé, set this preference to 1. This will make iPulse's transparent windows "sticky" like the Dock and menu bar. This feature uses undocumented calls in the Core Graphics framework, so it may not work in any release other than Panther. But it's pretty cool anyway :-)</td>
+	</tr>
+
+</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>com.iconfactory.iPulse.BatteryChargeColor</key>
+	<string>0.201464 0.510753 0.099292 1.000000</string>
+	<key>com.iconfactory.iPulse.BatteryLowColor</key>
+	<string>1.000000 0.000000 0.000000 1.000000</string>
+	<key>com.iconfactory.iPulse.BatteryNormalColor</key>
+	<string>0.000000 0.000000 0.000000 1.000000</string>
+	<key>com.iconfactory.iPulse.DiskBackground</key>
+	<string>0.992475 0.960960 1.000000 0.130000</string>
+	<key>com.iconfactory.iPulse.DiskHigh</key>
+	<string>0.898039 0.050980 0.050980 1.000000</string>
+	<key>com.iconfactory.iPulse.DiskIOShowGauge</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.DiskRead</key>
+	<string>0.500000 0.070963 0.035558 0.760000</string>
+	<key>com.iconfactory.iPulse.DiskScale</key>
+	<integer>-4</integer>
+	<key>com.iconfactory.iPulse.DiskShowActivity</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.DiskShowGauge</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.DiskShowPeak</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.DiskShowText</key>
+	<integer>0</integer>
+	<key>com.iconfactory.iPulse.DiskSumAll</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.DiskUsed</key>
+	<string>0.000000 0.000000 0.000000 0.470000</string>
+	<key>com.iconfactory.iPulse.DiskWarning</key>
+	<string>0.898039 0.050980 0.050980 1.000000</string>
+	<key>com.iconfactory.iPulse.DiskWrite</key>
+	<string>0.201464 0.510753 0.099292 0.750000</string>
+	<key>com.iconfactory.iPulse.GlobalHoldTime</key>
+	<real>1</real>
+	<key>com.iconfactory.iPulse.GlobalSchedulingPriority</key>
+	<integer>5</integer>
+	<key>com.iconfactory.iPulse.GlobalUpdateFrequency</key>
+	<integer>10</integer>
+	<key>com.iconfactory.iPulse.HistoryLoadColor</key>
+	<string>1.000000 1.000000 1.000000 0.600000</string>
+	<key>com.iconfactory.iPulse.HistoryLoadMaximum</key>
+	<real>2.5</real>
+	<key>com.iconfactory.iPulse.HistoryLoadMinimum</key>
+	<real>1</real>
+	<key>com.iconfactory.iPulse.HistoryShow</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.MemoryInactiveFree</key>
+	<string>1.000000 1.000000 0.600000 0.000000</string>
+	<key>com.iconfactory.iPulse.MemoryShowGauge</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.MemoryShowText</key>
+	<integer>0</integer>
+	<key>com.iconfactory.iPulse.MemorySwappingIn</key>
+	<string>0.022381 0.270284 0.521569 1.000000</string>
+	<key>com.iconfactory.iPulse.MemorySwappingOut</key>
+	<string>0.521569 0.000000 0.421456 1.000000</string>
+	<key>com.iconfactory.iPulse.MemorySwappingShowGauge</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.MemorySwappingShowText</key>
+	<integer>0</integer>
+	<key>com.iconfactory.iPulse.MemorySystemActive</key>
+	<string>1.000000 1.000000 1.000000 0.350000</string>
+	<key>com.iconfactory.iPulse.MobilityBackgroundColor</key>
+	<string>0.000000 0.000000 0.000000 0.750000</string>
+	<key>com.iconfactory.iPulse.MobilityBatteryChargeColor</key>
+	<string>1.000000 0.439216 0.000000 1.000000</string>
+	<key>com.iconfactory.iPulse.MobilityBatteryColor</key>
+	<string>1.000000 0.200000 0.000000 1.000000</string>
+	<key>com.iconfactory.iPulse.MobilityBatteryFullColor</key>
+	<string>0.000000 0.682353 0.000000 1.000000</string>
+	<key>com.iconfactory.iPulse.MobilityBatteryShowGauge</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.MobilityWarningColor</key>
+	<string>1.000000 0.000000 0.000000 1.000000</string>
+	<key>com.iconfactory.iPulse.MobilityWirelessColor</key>
+	<string>0.000000 0.682353 0.000000 1.000000</string>
+	<key>com.iconfactory.iPulse.MobilityWirelessShowGauge</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.NetworkHigh</key>
+	<string>1.000000 0.437644 0.000000 1.000000</string>
+	<key>com.iconfactory.iPulse.NetworkIn</key>
+	<string>1.000000 0.152941 0.078431 0.760000</string>
+	<key>com.iconfactory.iPulse.NetworkOut</key>
+	<string>0.400000 1.000000 0.200000 0.750000</string>
+	<key>com.iconfactory.iPulse.NetworkScale</key>
+	<integer>-3</integer>
+	<key>com.iconfactory.iPulse.NetworkShowActivity</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.NetworkShowGauge</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.NetworkShowPeak</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.NetworkShowText</key>
+	<integer>0</integer>
+	<key>com.iconfactory.iPulse.OtherBackgroundColor</key>
+	<string>0.048913 0.048913 0.048913 0.520000</string>
+	<key>com.iconfactory.iPulse.OtherImageTransparency</key>
+	<real>0.0</real>
+	<key>com.iconfactory.iPulse.OtherMarkerColor</key>
+	<string>1.000000 1.000000 1.000000 0.160000</string>
+	<key>com.iconfactory.iPulse.OtherTextColor</key>
+	<string>1.000000 1.000000 1.000000 1.000000</string>
+	<key>com.iconfactory.iPulse.OtherTextShadowDark</key>
+	<integer>0</integer>
+	<key>com.iconfactory.iPulse.ProcessorIncludeNice</key>
+	<integer>0</integer>
+	<key>com.iconfactory.iPulse.ProcessorLoadColor</key>
+	<string>1.000000 0.000000 0.000000 0.000000</string>
+	<key>com.iconfactory.iPulse.ProcessorNice</key>
+	<string>1.000000 1.000000 1.000000 0.100000</string>
+	<key>com.iconfactory.iPulse.ProcessorShowGauge</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.ProcessorShowText</key>
+	<integer>0</integer>
+	<key>com.iconfactory.iPulse.ProcessorSystem</key>
+	<string>1.000000 1.000000 1.000000 0.500000</string>
+	<key>com.iconfactory.iPulse.ProcessorUser</key>
+	<string>1.000000 0.984429 0.534124 0.800000</string>
+	<key>com.iconfactory.iPulse.TimeDateBackgroundColor</key>
+	<string>0.000000 0.000000 0.000000 0.770000</string>
+	<key>com.iconfactory.iPulse.TimeDateForegroundColor</key>
+	<string>1.000000 1.000000 1.000000 1.000000</string>
+	<key>com.iconfactory.iPulse.TimeDateStyle</key>
+	<integer>4</integer>
+	<key>com.iconfactory.iPulse.TimeHandsColor</key>
+	<string>1.000000 1.000000 1.000000 0.190000</string>
+	<key>com.iconfactory.iPulse.TimeNoonAtTop</key>
+	<integer>0</integer>
+	<key>com.iconfactory.iPulse.TimeRing</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.TimeRingSound</key>
+	<string>Tink</string>
+	<key>com.iconfactory.iPulse.TimeSecondsColor</key>
+	<string>0.000000 0.000000 0.000000 0.500000</string>
+	<key>com.iconfactory.iPulse.TimeShowGauge</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.TimeTraditional</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.TimeUse24Hour</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.WinodwShowImage</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.WirelessLowColor</key>
+	<string>1.000000 0.000000 0.000000 1.000000</string>
+	<key>com.iconfactory.iPulse.WirelessNormalColor</key>
+	<string>0.000000 0.000000 0.000000 1.000000</string>
+</dict>
+</plist>

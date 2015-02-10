@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>com.iconfactory.iPulse.ProcessorShowGauge</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.ProcessorShowText</key>
+	<integer>0</integer>
+	<key>com.iconfactory.iPulse.ProcessorSystem</key>
+	<string>0.878431 0.878431 1.000000 1.000000</string>
+	<key>com.iconfactory.iPulse.ProcessorUser</key>
+	<string>0.400000 0.400000 0.800000 1.000000</string>
+	<key>com.iconfactory.iPulse.ProcessorNice</key>
+	<string>0.000000 0.000000 0.521569 1.000000</string>
+	<key>com.iconfactory.iPulse.ProcessorLoadColor</key>
+	<string>1.000000 0.000000 0.000000 0.000000</string>
+	<key>com.iconfactory.iPulse.ProcessorIncludeNice</key>
+	<integer>0</integer>
+
+	<key>com.iconfactory.iPulse.MemoryShowGauge</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.MemoryShowText</key>
+	<integer>0</integer>
+	<key>com.iconfactory.iPulse.MemorySystemActive</key>
+	<string>1.000000 0.152941 0.078431 0.700000</string>
+	<key>com.iconfactory.iPulse.MemoryInactiveFree</key>
+	<string>1.000000 0.800000 0.000000 0.700000</string>
+	<key>com.iconfactory.iPulse.MemorySwappingShowGauge</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.MemorySwappingShowText</key>
+	<integer>0</integer>
+	<key>com.iconfactory.iPulse.MemorySwappingIn</key>
+	<string>0.235294 0.788235 1.000000 0.750000</string>
+	<key>com.iconfactory.iPulse.MemorySwappingOut</key>
+	<string>0.000000 0.000000 0.521569 0.750000</string>
+
+	<key>com.iconfactory.iPulse.DiskShowGauge</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.DiskShowText</key>
+	<integer>0</integer>
+	<key>com.iconfactory.iPulse.DiskSumAll</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.DiskUsed</key>
+	<string>0.627451 0.219608 0.850980 1.000000</string>
+	<key>com.iconfactory.iPulse.DiskWarning</key>
+	<string>0.898039 0.050980 0.050980 1.000000</string>
+	<key>com.iconfactory.iPulse.DiskBackground</key>
+	<string>0.956863 0.427451 0.721569 1.000000</string>
+	<key>com.iconfactory.iPulse.DiskIOShowGauge</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.DiskRead</key>
+	<string>0.980392 0.768627 0.890196 1.000000</string>
+	<key>com.iconfactory.iPulse.DiskWrite</key>
+	<string>0.400000 0.000000 0.600000 1.000000</string>
+	<key>com.iconfactory.iPulse.DiskHigh</key>
+	<string>0.898039 0.050980 0.050980 1.000000</string>
+	<key>com.iconfactory.iPulse.DiskShowActivity</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.DiskShowPeak</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.DiskScale</key>
+	<integer>-4</integer>
+
+	<key>com.iconfactory.iPulse.NetworkShowGauge</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.NetworkShowText</key>
+	<integer>0</integer>
+	<key>com.iconfactory.iPulse.NetworkIn</key>
+	<string>1.000000 0.035352 0.000000 0.750000</string>
+	<key>com.iconfactory.iPulse.NetworkOut</key>
+	<string>0.371107 1.000000 0.000000 0.750000</string>
+	<key>com.iconfactory.iPulse.NetworkHigh</key>
+	<string>1.000000 0.437644 0.000000 1.000000</string>
+	<key>com.iconfactory.iPulse.NetworkShowActivity</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.NetworkShowPeak</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.NetworkScale</key>
+	<integer>-3</integer>
+
+	<key>com.iconfactory.iPulse.MobilityBatteryShowGauge</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.MobilityBatteryColor</key>
+	<string>1.000000 0.200000 0.000000 1.000000</string>
+	<key>com.iconfactory.iPulse.MobilityBatteryChargeColor</key>
+	<string>1.000000 0.439216 0.000000 1.000000</string>
+	<key>com.iconfactory.iPulse.MobilityBatteryFullColor</key>
+	<string>0.000000 0.682353 0.000000 1.000000</string>
+	<key>com.iconfactory.iPulse.MobilityWirelessShowGauge</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.MobilityWirelessColor</key>
+	<string>0.000000 0.682353 0.000000 1.000000</string>
+	<key>com.iconfactory.iPulse.MobilityBackgroundColor</key>
+	<string>1.000000 1.000000 1.000000 0.750000</string>
+	<key>com.iconfactory.iPulse.MobilityWarningColor</key>
+	<string>1.000000 0.000000 0.000000 1.000000</string>
+
+	<key>com.iconfactory.iPulse.HistoryShow</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.HistoryLoadColor</key>
+	<string>0.707965 0.058811 0.091406 1.000000</string>
+	<key>com.iconfactory.iPulse.HistoryLoadMinimum</key>
+	<real>0.5</real>
+	<key>com.iconfactory.iPulse.HistoryLoadMaximum</key>
+	<real>2.0</real>
+
+	<key>com.iconfactory.iPulse.HistoryShow</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.HistoryLoadColor</key>
+	<string>0.000000 0.000000 0.000000 1.000000</string>
+	<key>com.iconfactory.iPulse.HistoryLoadMinimum</key>
+	<real>0.5</real>
+	<key>com.iconfactory.iPulse.HistoryLoadMaximum</key>
+	<real>2</real>
+
+	<key>com.iconfactory.iPulse.TimeShowGauge</key>
+	<integer>0</integer>
+	<key>com.iconfactory.iPulse.TimeTraditional</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.TimeUse24Hour</key>
+	<integer>0</integer>
+	<key>com.iconfactory.iPulse.TimeNoonAtTop</key>
+	<integer>0</integer>
+	<key>com.iconfactory.iPulse.TimeHandsColor</key>
+	<string>0.000000 0.000000 0.000000 1.000000</string>
+	<key>com.iconfactory.iPulse.TimeSecondsColor</key>
+	<string>0.000000 0.000000 0.000000 1.000000</string>
+	<key>com.iconfactory.iPulse.TimeDateForegroundColor</key>
+	<string>1.000000 1.000000 1.000000 1.000000</string>
+	<key>com.iconfactory.iPulse.TimeDateBackgroundColor</key>
+	<string>0.000000 0.000000 0.000000 0.750000</string>
+	<key>com.iconfactory.iPulse.TimeDateStyle</key>
+	<integer>0</integer>
+	<key>com.iconfactory.iPulse.TimeRing</key>
+	<integer>1</integer>
+	<key>com.iconfactory.iPulse.TimeRingSound</key>
+	<string>Tink</string>
+	<key>com.iconfactory.iPulse.TimeShowWeek</key>
+	<integer>0</integer>
+
+	<key>com.iconfactory.iPulse.OtherMarkerColor</key>
+	<string>1.000000 1.000000 1.000000 0.000000</string>
+	<key>com.iconfactory.iPulse.OtherTextColor</key>
+	<string>1.000000 1.000000 1.000000 1.000000</string>
+	<key>com.iconfactory.iPulse.OtherTextShadowDark</key>
+	<integer>0</integer>
+	<key>com.iconfactory.iPulse.OtherBackgroundColor</key>
+	<string>0.942440 0.966850 1.000000 0.750000</string>
+	<key>com.iconfactory.iPulse.OtherImageTransparency</key>
+	<real>1</real>
+
+	<key>IFWindowShowFloating</key>
+	<integer>1</integer>
+	<key>IFWindowFloatingShadow</key>
+	<integer>1</integer>
+	<key>IFWindowFloatingNoHide</key>
+	<integer>1</integer>
+	<key>IFWindowFloatingIgnoreClick</key>
+	<integer>0</integer>
+	<key>IFWindowFloatingLevel</key>
+	<integer>3</integer>
+	<key>IFWindowFloatingSize</key>
+	<integer>128</integer>
+	<key>IFWindowShowInfo</key>
+	<integer>1</integer>
+	<key>IFWindowInfoDelay</key>
+	<integer>0</integer>
+	<key>IFWindowInfoFadeIn</key>
+	<integer>12</integer>
+	<key>IFWindowInfoFadeOut</key>
+	<integer>8</integer>
+	<key>IFWindowInfoForegroundColor</key>
+	<string>1.000000 1.000000 1.000000 1.000000</string>
+	<key>IFWindowInfoBackgroundColor</key>
+	<string>0.000000 0.000000 0.000000 0.750000</string>
+	<key>IFWindowInfoHighlightColor</key>
+	<string>1.000000 0.708507 0.000000 1.000000</string>
+	
+	<key>IFWindowFloatingRelativePosition</key>
+	<integer>0</integer>
+	<key>IFWindowFloatingCenterX</key>
+	<integer>74</integer>
+	<key>IFWindowFloatingCenterY</key>
+	<integer>74</integer>
+	<key>IFWindowFloatingRelativeX</key>
+	<integer>74</integer>
+	<key>IFWindowFloatingRelativeY</key>
+	<integer>74</integer>
+
+	<key>IFGlobalShowDockIcon</key>
+	<integer>1</integer>
+	<key>IFGlobalShowDock</key>
+	<integer>0</integer>
+	<key>IFGlobalDockIncludeText</key>
+	<integer>0</integer>
+	<key>IFGlobalUpdateFrequency</key>
+	<integer>10</integer>
+	<key>IFGlobalSchedulingPriority</key>
+	<integer>5</integer>
+	<key>IFGlobalHoldTime</key>
+	<real>1</real>
+	<key>IFGlobalUnitsType</key>
+	<integer>0</integer>
+	<key>IFGlobalShowSelf</key>
+	<integer>0</integer>
+	<key>IFGlobalShowStatus</key>
+	<integer>1</integer>
+	<key>IFGlobalUsePowerMate</key>
+	<integer>1</integer>
+	<key>IFGlobalPowerMateOutputType</key>
+	<integer>0</integer>
+	<key>IFGlobalPowerMateInputType</key>
+	<integer>0</integer>
+	<key>IFGlobalStatusUpperBarType</key>
+	<integer>2</integer>
+	<key>IFGlobalStatusUpperBarColorAlert</key>
+	<string>1.000000 0.000000 0.000000 1.000000</string>
+	<key>IFGlobalStatusUpperBarColorLeft</key>
+	<string>0.966372 0.102116 0.000000 0.750000</string>
+	<key>IFGlobalStatusUpperBarColorRight</key>
+	<string>0.893173 0.000000 0.887842 0.750000</string>
+	<key>IFGlobalStatusUpperDotType</key>
+	<integer>3</integer>
+	<key>IFGlobalStatusUpperDotColorAlert</key>
+	<string>1.000000 0.516063 0.000000 1.000000</string>
+	<key>IFGlobalStatusUpperDotColorLeft</key>
+	<string>0.571383 0.816321 0.000000 0.750000</string>
+	<key>IFGlobalStatusUpperDotColorRight</key>
+	<string>0.710916 0.322363 0.063111 0.750000</string>
+	<key>IFGlobalStatusLowerBarType</key>
+	<integer>1</integer>
+	<key>IFGlobalStatusLowerBarColorAlert</key>
+	<string>1.000000 0.000000 0.000000 1.000000</string>
+	<key>IFGlobalStatusLowerBarColorLeft</key>
+	<string>0.003589 0.068139 1.000000 0.750000</string>
+	<key>IFGlobalStatusLowerBarColorRight</key>
+	<string>1.000000 0.558253 0.000000 0.750000</string>
+	<key>IFGlobalStatusLowerDotType</key>
+	<integer>4</integer>
+	<key>IFGlobalStatusLowerDotColorAlert</key>
+	<string>1.000000 0.516063 0.000000 1.000000</string>
+	<key>IFGlobalStatusLowerDotColorLeft</key>
+	<string>0.000000 0.833027 0.842965 0.750000</string>
+	<key>IFGlobalStatusLowerDotColorRight</key>
+	<string>0.000050 0.652365 0.432482 0.750000</string>
+	
+	<key>IFMiscellaneousIsDirty</key>
+	<integer>0</integer>
+
+	<key>IFApplicationPlotProcessorArea</key>
+	<integer>1</integer>
+	<key>IFApplicationAlwaysHoverTime</key>
+	<integer>1</integer>
+	<key>IFApplicationNeverHide</key>
+	<integer>0</integer>
+	<key>IFApplicationHideInfoOnDrag</key>
+	<integer>0</integer>
+	<key>IFApplicationAlternativeActivity</key>
+	<integer>0</integer>
+	<key>IFApplicationSwapfilesPath</key>
+	<string>/var/vm</string>
+	<key>IFApplicationCHUDWorkaround</key>
+	<integer>0</integer>
+	<key>IFApplicationInfoDelay</key>
+	<real>0.75</real>
+	<key>IFApplicationTrackMouse</key>
+	<integer>0</integer>
+	<key>IFApplicationStatusAlertThreshold</key>
+	<real>0.9</real>
+	<key>IFApplicationIgnoreExpose</key>
+	<integer>0</integer>
+	<key>IFApplicationCheckMotherboardTemperature</key>
+	<array>
+		<!-- PowerMac G5 -->
+		<!-- Unused: U3 HEATSINK -->
+		
+		<!-- PowerBook G4 (15 & 17 in.) -->
+		<string>CPU/INTREPID BOTTOMSIDE</string>
+		
+		<!-- PowerBook G4 (15 & 17 in.) & iBook G4 -->
+		<string>CPU BOTTOMSIDE</string>
+		
+		<!-- PowerBook G4 (12 in.) -->
+		<string>CPU TOPSIDE</string>
+
+		<!-- iMac G5 -->
+		<!-- Unused: Hard drive -->
+		
+		<!-- Xserve G5 -->
+		<!-- Unused: CPU A AD7417 AMB, CPU A INLET, CPU B AD7417 AMB, CPU B INLET -->
+
+		<!-- PowerMac Quad G5 -->
+		<string>CPU A0 DIODE TEMP</string>
+		<string>CPU A1 DIODE TEMP</string>
+		<string>CPU B0 DIODE TEMP</string>
+		<string>CPU B1 DIODE TEMP</string>
+	</array>
+	<key>IFApplicationCheckDiodeTemperature</key>
+	<array>
+		<!-- PowerMac G5 -->
+		<string>CPU A AD7417 AD1</string>
+		<string>CPU B AD7417 AD1</string>
+				
+		<!-- iMac G5 -->
+		<string>CPU T-Diode</string>
+		
+		<!-- Xserve G5 -->
+		<string>CPU A DIODE TEMP</string>
+		<string>CPU B DIODE TEMP</string>
+	</array>
+
+</dict>
+</plist>

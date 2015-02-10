@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {setupPermissions = id; showOptions = id; }; 
+            CLASS = Permissions; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {panel = id; permissionsSelection = id; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

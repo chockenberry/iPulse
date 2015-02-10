@@ -1,0 +1,720 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<title>iPulse - Help</title>
+		<style>
+			BODY {
+				color: black;
+				background-color: white;
+				font-family: "Lucida Grande", Arial, sans-serif;
+				font-size: 12px;
+			}
+			TABLE, TD, TH {
+				color: black;
+				font-family: "Lucida Grande", Arial, sans-serif;
+				font-size: 12px;
+			}
+			TD, TH {
+				text-align: left;
+				vertical-align: top;
+			}
+			UL {
+				list-style: square;
+			}
+			OL {
+				list-style-type: lower-alpha;
+			}
+			A {
+				/* color: #0066cc; */
+				color: #33337F;
+			}
+			A:hover {
+				color: #666666;
+			}
+			EM {
+				color: #cc3333;
+				font-style: normal;
+			}
+			PRE {
+				padding-left: 24px;
+				font-family: "Andale Mono", Courier, monospace;
+				font-size: 12px;
+				color: #33337F;
+			}
+			.section {
+				width: 130px;
+				color: #cc0000;
+				font-weight: bold;
+				text-align: right;
+				vertical-align: top;
+				/* border: black solid 1px; */
+				padding-right: 10px;
+			}
+			.sectionbody {
+				width: 520px;
+				vertical-align: top;
+				padding-bottom: 24px;
+				/* border: black solid 1px; */
+			}
+			.topic {
+				color: #cc0000;
+				text-decoration: none;
+				padding-right: 4px;
+			}
+			.figure {
+				text-align: center;
+			}
+			.gauge {
+				color: #0066cc;
+				font-weight: bold;
+			}
+			.subtle {
+				color: #ccccff;
+			}
+			.command {
+				font-size: 12px;
+				font-family: "Andale Mono", Courier, monospace;
+				color: #33337F;
+				/* font-weight: bold; */
+			}
+			.group {
+				/* background-color: #aaddff; */
+				background-color: #dedeff;
+				padding: 10px;
+				border: #ccccff solid 1px;
+				margin-bottom: 5px;
+			}
+			.key {
+				width: 65px;
+			}
+		</style>
+	</head>
+
+	<body background="../pattern_aqua.gif" bgcolor="white" text="black" link="#0066cc">
+		<a href="http://www.iconfactory.com"><img height="56" width="195" src="../if_logo.gif" border="0"></a><br>
+		<br>
+		<br>
+		<table>
+			<tr>
+				<td>&nbsp;</td>
+				<td class="sectionbody">
+					<a href="http://www.iconfactory.com/ip_home.asp">iPulse Home Page</a>  | <a href="http://www.iconfactory.com/ip_gallery.asp">iPulse Jacket Gallery</a>  |  <a href="http://www.iconfactory.com/ip_faq.asp">iPulse FAQ</a>  | <a href="http://www.iconfactory.com">Iconfactory Home Page</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					About iPulse
+				</td>
+				<td class="sectionbody">
+iPulse is an application that graphically displays the inner workings of Mac&nbsp;OS&nbsp;X.
+<p>
+After you start the iPulse application, several gauges are displayed in the iPulse window and dock icon. These gauges display the following items:
+<ul>
+	<li><a href="#cpu_usage">CPU usage</a></li>
+	<li><a href="#system_load">System load</a></li>
+	<li><a href="#memory_usage">Memory usage</a> and <a href="#memory_swapping">swapping</a></li>
+	<li><a href="#disk_usage">Disk usage</a> and <a href="#disk_activity">activity</a></li>
+	<li><a href="#network_activity">Network activity</a></li>
+	<li><a href="#mobility">Mobility status (Battery and Wireless)</a></li>
+	<li><a href="#clock">Clock (Current time and date)</a></li>
+	<li><a href="#general_information">General information</a></li>
+</ul>
+You can learn more about each gauge, and the information window that appears when you hover over it, by clicking on the name above. We also suggest that you start with the <a href="#introduction">Introduction</a> as it gives some useful background information.
+</p>
+<p>
+iPulse can be configured using the application <a href="#preferences">preferences</a>&mdash;there are many different ways to display your system's information. You can also load an iPulse Jacket to quickly set the preferences (a section below explains how to <a href="#creating_jackets">create your own Jackets</a>.)
+</p>
+<p>
+After you become familiar with iPulse, take a look at the <a href="#tips_and_tricks">Tips and Tricks</a> and <a href="#power_users">Power Users</a> sections for additional help with configuring iPulse.
+</p>
+<p>
+<em>Note:</em> This page is displayed the first time you run iPulse. If you need to refer to it again, choose <strong>Help</strong> from the iPulse menu bar.
+</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					Registering
+				</td>
+				<td class="sectionbody">
+The cost to register iPulse is only $12.95. Your registration helps support the Iconfactory and all the good things we do.
+<p>
+<a href="http://www.iconfactory.com/orders.asp?product=ipulse">Register iPulse now</a>
+</p>
+<p>
+You will be reminded periodically to register your copy of iPulse. Gauges in the iPulse interface will also be disabled over time. After registering your copy of iPulse, the reminders will stop and the gauges will be restored.
+</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					How It Works
+				</td>
+				<td class="sectionbody">
+As you may be aware, Mac&nbsp;OS&nbsp;X is based on the Unix operating system. This operating system has evolved over many years into a robust and efficient computing platform. The developers of Mac&nbsp;OS&nbsp;X and its predecessors have included many mechanisms for examining the internal state of the operating system. This instrumentation allows an administrator to tune the system for optimum performance and to determine the cause of any system problems.
+<p>
+With iPulse, our goal was to graphically represent this internal information in a way that is both space efficient and easy to read.
+</p>
+<p>
+So where does iPulse get this internal information? And how is it displayed graphically? The rest of this section is dedicated to answering these questions.
+</p>
+<p>
+<a name="introduction"></a><span class="topic">Introduction</span> In order to make this help file useful for the widest group of people possible, we'll start each topic at a basic level. As we progress through the topic, the technical detail will increase&mdash;readers can skip to the next topic if they find the current one gets too difficult.
+</p>
+<p>
+One of the major new features in this version of iPulse is the information window that appears when you hover the mouse over a gauge. The contents of this window will be discussed after a brief introduction to the gauge. In many cases, the information window helps you to learn what the gauge is doing.
+</p>
+<p>
+After discussing the information window, we will present low-level information that will be useful for those readers who are technically inclined and want to fully understand the data. We'll be referring to Unix shell commands which can be executed from a Terminal window. If you are curious, go ahead and use the commands: none of the examples presented here can damage your Mac (just make sure you don't make any typographical errors!) You can also use <span class="command">man [command]</span> to learn more about a particular command.
+</p>
+<div class="group">
+<strong>iPulse Gauges</strong>
+<a name="diagram"></a>
+<p>
+<div class="figure">
+<img src="../iPulse_help.gif" width="343" height="300" border="0">
+</div>
+The diagram above shows the location of the various gauges in the iPulse interface. Each of the gauges will be described below.
+</p>
+<p>
+If you are looking for information on a particular gauge you can locate it quickly by looking for a marker like this: <a href="#diagram">[#]</a> (where the # is replaced by the number on the gauge.) Clicking on any marker will scroll back to this diagram. Use your browser's back button to return to the topic.
+</p>
+</div>
+
+
+<p>
+<a name="cpu_usage"></a><span class="topic">CPU Usage</span> The first gauge we'll cover is the CPU: the heart of your Mac and iPulse's display!
+</p>
+<p>
+Mac&nbsp;OS&nbsp;X follows the Unix convention of breaking the CPU usage down into three categories: system time, user time and nice time. The system time is the amount of time spent processing operating system tasks. User time, on the other hand, is the time spent running applications and services outside of the kernel. Nice time is the amount spent running low priority processes&mdash;these processes are "nice" because their reduced priority lets the kernel automatically lower their CPU usage when the system gets busy.
+</p>
+<p>
+The CPU gauge is drawn with the percentage of time spent on system tasks in the inner circle <a href="#diagram">[1]</a> and the percentage of user time in the outer circle <a href="#diagram">[2]</a>. Any lower priority (nice) processes are displayed outside the user circle <a href="#diagram">[3]</a>. The number displayed on the gauge is the sum of system, user and nice time. The value is averaged over the last 10 updates.
+</p>
+<p>
+Another feature of the CPU gauge is that it tints the display according to system load. We'll explain system load in the next topic, but you can think of this feature like an electric heating element: as your CPU "heats up", the gauge gets more color.
+</p>
+<p>iPulse examines the amount of work your Mac has done over the past 15 minutes and uses the resulting value to adjust the color tint of the gauge. The end result is that you can see long term trends in CPU usage. For example, if you are performing some CPU intensive task like a Gaussian blur on a 2 GB image, you'll see the CPU gauge get redder (it's hot!) When the CPU gauge returns to the normal color, you'll know that your processing task is complete.
+</p>
+<p>
+Each iPulse gauge displays an information window when you hover your mouse over the gauge. This helps you learn where each of the gauges is located. After you use iPulse for awhile, you won't have any problem remembering, but at first it can be a bit difficult to associate the gauge  with the item it represents.
+</p>
+The CPU information window displays the following items:
+<ul>
+	<li>Load - the current system load (averaged for the past minute) along with the minimum, maximum and average loads from the past hour.</li>
+	<li>Processes - the number of processes that are currently active, broken down into those that are running, sleeping, or in some other state. The processes labeled "root" are processes that iPulse can't examine because it doesn't have the appropriate permissions&mdash;you can manually change iPulse's permissions so that it can report more accurate process information. See the <a href="#power_users">Power Users</a> section below for more information. </li>
+	<li>Temperature - the current temperature as reported by a sensor on the CPU chip. Some Macs don't report this information (most notably, the latest PowerMac G4 desktops.) Even when the CPU temperature is reported, it's not extremely accurate: the values tend to be lower than the real temperature. It's best to think of this value as a relative value. The maximum operating temperature for the G4 chip is 101 &deg;C&mdash;if you see this value displayed, run for your life! :-)</li>
+	<li>Usage - the CPU usage is broken down into percentage values for each of the categories mentioned above. By default, the total value will not include the low priority processes (there is a preference to change this.)</li>
+	<li>Process listing - The last piece of information is the list of processes sorted by average CPU usage. The busiest application is at the top of the list. The process number (also called a process id or procid) is also displayed for us Unix geeks.</li>
+</ul>
+</p>
+<p>
+You can obtain similar information using the <span class="command">top</span> command in a Terminal window. In fact, if you find iPulse reporting something unexpected, like a process using more CPU time than normal, you can use <span class="command">top</span> to start investigating the problem. The process number reported in the information window can also be used with <span class="command">ps -p #</span> (where # is the process number.)
+</p>
+<p>
+The CPU usage statistics are retrieved using the host_statistics() system call with the HOST_CPU_LOAD_INFO selector. 
+</p>
+
+
+<p>
+<a name="system_load"></a><span class="topic">System load</span> Another measure of CPU usage in the land of Unix is the "load average". The load average is a metric which represents the average number of processes waiting for the CPU over a period of time. As the CPU load increases, so does the load average.
+</p>
+<p>
+You can think of the load average like a line at a bank. There are customers (processes) who need to interact with a teller (processor.) There can be more than one teller (multiple processors.) As the line (process queue) gets longer, the tellers have more work to do. At lunch time, when there are more customers waiting for service, the teller's load average will be higher than it is at other times of the day.
+</p>
+<p>
+The History gauge shows the load average as a ring of dots around the outside of the iPulse window <a href="#diagram">[19]</a>. This gives an overall view of the load for the past hour. The current minute is represented by an unfilled dot; the other dots show the load average relative to the current minute. For example, the five dots that are counter-clockwise from the unfilled dot show the past five minutes.
+</p>
+<p>
+An opaque dot indicates a minute of high activity (checking your mail, running a heavy-duty operation in Photoshop, or something else which consumes a lot of the CPU.) Alternatively, a transparent dot indicates a period of low CPU load. Your coffee break, for example.
+</p>
+<p>
+The display of the load average can be adjusted in the History pane of the preferences window. The slider for the minimum load average sets the lowest load average that will be displayed (any load average below this value will be transparent.) The maximum load average is the level at which the dots become opaque. These preferences are also used for the CPU tint feature mentioned above.
+</p>
+<p>
+There is no information window for the History gauge. You can see the load average statistics by hovering over the CPU gauge.
+</p>
+<p>
+Both <span class="command">uptime</span> and <span class="command">top</span> will show you the current load averages in a Terminal window. They report the load averages over a period of 1, 5 and 15 minutes.
+</p>
+<p>
+iPulse retrieves the CPU load using the host_statistics() system call with the HOST_LOAD_INFO selector. 
+</p>
+
+<p>
+<a name="memory_usage"></a><span class="topic">Memory Usage</span> Mac&nbsp;OS&nbsp;X has a very sophisticated mechanism for managing virtual memory. If you were ever unlucky enough to have experienced virtual memory in OS 9, you'll appreciate this sophistication!
+</p>
+<p>
+The virtual memory in Mac&nbsp;OS&nbsp;X is managed by dividing physical memory usage into four categories: wired, active, inactive and free. Each of these categories is accounted for in 4 kb blocks of memory called pages. The categories are described below:
+<ul>
+	<li>Wired <a href="#diagram">[4]</a> - these pages represent the memory being used by the Unix kernel. These pages are "locked in place" and will never be unloaded from physical memory. Applications have an indirect effect on wired memory usage since this is where the kernel stores and manages data about processes, threads, and libraries.</li>
+	<li>Active <a href="#diagram">[5]</a> - active pages indicate physical memory which has been recently accessed. These pages are mapped (accessible) to an application.</li>
+	<li>Inactive <a href="#diagram">[6]</a> - inactive pages are those that have not been accessed recently. The data in the inactive pages is valid, but may not be mapped to an application. Inactive pages will either be made active (mapped to the application) or be moved from physical memory to disk (to make room for new pages.)</li>
+	<li>Free <a href="#diagram">[7]</a> - these pages are not in use by any part of the system and can be assigned to an application immediately.</li>
+</ul>
+There are several "pagers" in Mac&nbsp;OS&nbsp;X that periodically check the state of each category and moves memory pages from one group to another. The algorithms behind this mechanism are beyond the scope of this document; search the Apple Developer site for "<a href="http://developer.apple.com/cgi-bin/search.pl?&q=VM+pager">VM pager</a>" and you'll see all the gory details. This website also has more general information on the <a href="http://developer.apple.com/cgi-bin/search.pl?&q=OS+X+virtual+memory">virtual memory</a> subsystem.
+</p>
+<p>
+When iPulse graphs the memory usage, it breaks the four groups above into two colored bands representing "in use" and "available" memory. The "in use" band of color shows the wired amount (left-most) and active memory. Memory that is "available", represented by inactive and free memory (right-most), is shown in the other band of color.
+</p>
+<p>
+When you hover over the gauge with your mouse, an indicator will highlight which category of memory you are viewing and how much space is allocated. After the summary, you'll see a list of the processes (applications) that are using the most memory. The list shows the amount of physical memory in use (resident usage) as both an amount and a percentage of total memory. The total amount of memory used by the application (virtual memory) is also shown.
+</p>
+
+<p>
+Again, the <span class="command">top</span> command in a Terminal window shows this information and provides more detail about how the memory is distributed within the process. The <span class="command">vm_stat</span> command also gives more detailed information about how virtual memory is being used.
+</p>
+<p>
+iPulse calls host_statistics() with the HOST_VM_INFO selector to gather the memory information from the Unix kernel.
+</p>
+
+
+<p>
+<a name="memory_swapping"></a><span class="topic">Memory Swapping</span> Memory swapping (or "paging") is the act of moving memory pages from physical memory to the hard disk. This is an operation that uses a lot of system resources: memory must be read and copied to the disk. If you're swapping, your Mac doesn't have much time for other important tasks (like a game of Unreal Tournament.)
+</p>
+<p>
+Swapping in (also called pagein) occurs when an application needs to access a memory page, and the page is not active or inactive. The page must be read in from the disk. Likewise, inactive pages will be swapped out (pageout) and written to disk in order to make room for new requests for memory.
+</p>
+<p>
+You'll notice this behavior when using Mac&nbsp;OS&nbsp;X: when you have many applications running, and memory becomes full, you'll notice delays and disk activity when you switch between applications. This is caused by memory pages being swapped in for the new application, while pages from an older application are swapped out to disk.
+</p>
+<p>
+If you are experiencing a lot of swapping activity, it's a good sign that you need to purchase more memory for your Mac!
+</p>
+<p>
+The gauges for pages being swapped in and out show activity in one page increments up to a maximum of 90 (one page per degree of arc on the gauge.) Pages that are swapped in are displayed on the left <a href="#diagram">[16]</a> and pages swapped out are displayed on the right <a href="#diagram">[17]</a>. The text on the graph shows the number of pages swapped.
+</p>
+<p>
+When you hover over the swapping gauges, you'll see an information window with summary of the paging activity. There is also a report of how many files are being used for storing memory on disk; having a lot of "swapfile" usage indicates that virtual memory is getting fragmented and a reboot may be in order.
+</p>
+<p>
+The list of processes is sorted by two important pieces of information:
+<ul>
+	<li>Pageins - the number of pages each process caused to be read from disk into memory.</li>
+	<li>Faults - the number of pages that needed to be accessed but were not active. This is an indicator of which applications are actively using memory. Having a high fault count is not necessarily a bad thing.</li>
+</ul>
+</p>
+<p>
+iPulse calls host_statistics() with the HOST_VM_INFO selector to gather the memory information from the Unix kernel.
+</p>
+
+<p>
+<a name="disk_usage"></a><span class="topic">Disk Usage</span> iPulse shows a disk usage gauge, giving you a quick overview of how much space is in use. When you use applications like iMovie, iPhoto and iTunes, free space can often be in short supply!
+</p>
+<p>
+To minimize clutter in the gauge, only disks (filesystems) that are read/write are displayed. CD-ROMs and other read-only media are not displayed. Network disks are displayed in the gauge after you connect to the server.
+</p>
+<p>
+The amount of disk space used <a href="#diagram">[10]</a> and the amount of free space <a href="#diagram">[9]</a> are both displayed in a clockwise manner. When the amount of disk space exceeds 90%, the gauge is displayed with a warning color. iPulse limits the usage display to the first six disks that are connected. The first disk in the list is the one used to load Mac&nbsp;OS&nbsp;X and is labeled "(Root)" following standard Unix conventions.
+</p>
+<p>
+In version 2.0, a new feature was added to show the sum of all disks&mdash;iPulse computes the amount of space used by all disks and displays the result. If you have many disks, this is often a better option than showing them individually.
+</p>
+<p>
+When you hover over the disk usage gauge, you'll see a summary that shows each disk and how much space is in use. The list also shows the kind of file system used on the disk. The file system can be one of the following:
+<ul>
+	<li>hfs - Hierarchical file system. The traditional Mac file system.</li>
+	<li>webdav - Web-based Distributed Authoring and Versioning file system. We're glad Apple chose to call it iDisk instead!</li>
+	<li>smbfs - Server Message Block file system. Used by Windows to share files on a network.</li>
+	<li>ufs - Unix file system. Used since the dawn of time, when a 1 MB disk was hearty.</li>
+	<li>msdos - MS-DOS file system. For all your floppy needs!</li>
+	<li>nfs - Network file system. A file sharing mechanism commonly used on Unix and Linux.</li>
+	<li>udf - Universal Disk Format file system. Used for CD and DVD recordings.</li>
+</ul>
+</p>
+<p>
+The <span class="command">df -k</span> command in a Terminal window shows the disk usage for all mounted filesystems (including read-only and device filesystems.)
+</p>
+<p>
+The disk statistics are gathered by calling getmntinfo().
+</p>
+
+<p>
+<a name="disk_activity"></a><span class="topic">Disk Activity</span> The disk usage gauge described above shows fairly static information about how the disk is being used. The disk activity gauge, on the other hand, shows how the disk is being used by the system. The gauge displays an indicator for every read or write operation performed by the Unix kernel. It also display the amount of data transferred.
+</p>
+<p>
+The read activity is displayed as a dot on the left side of the gauge <a href="#diagram">[8]</a> while the write activity is displayed as a dot on the right <a href="#diagram">[11]</a>. When the dot is displayed, it indicates that there was a read or write operation during the last update period. If there are more than 100 operations performed, the dot is displayed in the highlight color to indicate that there is a higher level of activity.
+</p>
+<p>
+The number of bytes transferred to or from the disk is shown as a bar graph under the activity indicator. The scale for the graph can be set to  fixed, logarithmic or automatic&mdash;these options are described in the <a href="#preferences">preferences</a> section.
+</p>
+<p>
+The bar graph also includes a peak indicator. iPulse keeps track of the maximum number of bytes over a period of time and will display a small line at this peak value. Initially, the peak will be held for one minute; you can adjust the hold time in Global preferences. 
+</p>
+<p>
+When you hover over the gauge, you'll be shown a summary of the read and write operations. The summary includes the number of operations and bytes per second transferred during the last update period. The current peak and average values are also displayed.
+</p>
+<p>
+The disk activity information is obtained from IOKit using the "IOBlockStorageDriver" selector.
+</p>
+
+
+<p>
+<a name="network_activity"></a><span class="topic">Network Activity</span> When designing iPulse, one of the issues we struggled with was what kind of networking information to show. There is a lot of network information available from the kernel. In the end, we decided that two types of information were most useful:
+<ul>
+	<li>IP activity - the number of packets sent and received by IP (Internet Protocol). This lets you see activity caused by any IP packet (even if it's not a TCP packet.)</li>
+	<li>TCP bandwidth - the number of bytes sent and received by TCP (Transmission Control Protocol.) This allows you to see the amount of data you are transferring while doing common tasks like moving files between servers, surfing the web and reading e-mail.</li>
+</ul>
+</p>
+<p>
+iPulse draws incoming network traffic on the left <a href="#diagram">[12,13]</a> and outgoing traffic on the right <a href="#diagram">[14,15]</a>. The bar graph displays the number of bytes of data per second <a href="#diagram">[13,14]</a>. The scale for the graph is either fixed, logarithmic or automatic, depending on the <a href="#preferences">preference</a> setting.
+</p>
+<p>
+The dot at the beginning of the bar graph is displayed if there are any IP packets received <a href="#diagram">[12,15]</a>. The dot is highlighted if there are more than 25 packets per second.
+</p>
+<p>
+When you hover over the gauge, you'll be shown a summary of the network traffic. The summary includes the number of packets transferred along with the bytes per second during the update period. The current peak and average values are also displayed.
+</p>
+<p>
+The information window also shows the current hostname along with some basic network configuration information (interface name and associated IP address.)
+</p>
+<p>
+You can see the network activity using the Terminal command line using the <span class="command">netstat -I [interface]</span> command with the named interface (such as en0 for Ethernet and en1 for Airport.) Additional network configuration information can be retrieved with <span class="command">ifconfig -a -u</span>.
+</p>
+<p>
+The network information is retrieved using the sysctlbyname() system call. The TCP statistics are retrieved using the "net.inet.tcp.stats" selector, the IP statistics with the "net.inet.ip.stats" selector. If you didn't believe our earlier statement about there being a lot of networking information, try <span class="command">sysctl -A net</a>.
+</p>
+
+<p>
+<a name="mobility"></a><span class="topic">Mobility</span> If you have a Mac with either a battery or wireless Ethernet (AirPort), you'll see some additional gauges. One displays the current battery power level <a href="#diagram">[18]</a>, and the other displays the wireless signal strength <a href="#diagram">[20]</a>.
+</p>
+<p>
+The battery gauge displays six dots when the battery is full and no dots when the battery is empty. When the battery level falls below 10%, the background is highlighted (the default color is red, giving you a visual clue to save your work!)
+</p>
+<p>
+As the battery charges, the dots are shown in orange. When the battery is full and the dots turn green. This coloring matches the standard power adaptor, but if you'd like something different, you can change the colors with the Mobility preference pane.
+</p>
+<p>
+Wireless signal strength is displayed in a similar manner. Maximum signal strength is displayed as six dots, while no signal shows no dots. If the signal strength dips below 10%, the background is highlighted&mdash;alerting you that it's time to find a new seat in the coffee house!
+</p>
+<p>
+The information window for both of these gauges displays additional information about the battery and wireless connection. The battery's voltage and amount of current being drawn is shown along with an estimate of the time remaining. The wireless information includes the access point name and ID along with the signal-to-noise ratio.
+</p>
+<p>
+The battery information is obtained from IOPMCopyBatteryInfo. Wireless information comes from the undocumented Apple80211 framework.
+</p>
+
+<p>
+<a name="clock"></a><span class="topic">Clock</span> The clock shows the current time.
+</p>
+<p>
+With the default preference settings, it should be pretty obvious how the data is displayed. The 24-hour settings change the face of the clock so that it shows a unique position for every hour of the day. The <a href="http://www.pobox.com/~clock24">24-hour clock</a> predates mechanical timepieces&mdash;it was originally used on the face of a sundial.
+</p>
+<p>
+The clock can also include a date indicator. The preferences allow you to set the month, day, date or moon phase as the indicator. The moon phase divides the year into 12 periods (approximately). If you have ever wondered why the number 12 appears frequently in timekeeping, you can blame it on the moon!
+</p>
+<p>
+A feature to ring on the hour can also be configured. Instructions for adding your own sounds can be found in the <a href="#tips_and_tricks">Tips and Tricks</a> section.
+</p>
+<p>
+When you hover over the date (at the 12 o'clock position) the clock information window is shown. This window displays the numeric time and date (along with the time zone and GMT/UTC offset.) A calendar with the current week and date highlighted is also shown.
+</p>
+<p>
+The information window also displays the amount of time since you last restarted Mac&nbsp;OS&nbsp;X (commonly referred to as uptime.) Those of you who enjoy gazing at the stars will also appreciate the Julian date and details about the moon phase.
+</p>
+<p>
+The time is acquired by a call to the time() system call. The time is converted to a local time with localtime(). The moon phase calculations are derived from the work originally done by John Walker&mdash;a visit to his <a href="http://www.fourmilab.ch/earthview/">Earth and Moon Viewer</a> is highly recommended.
+</p>
+
+<p>
+<a name="general_information"></a><span class="topic">General Information</span> And last, but not least, iPulse will display some general information when you're hovering over a part of the window without a gauge.
+</p>
+<p>
+The information includes the name of the computer and your login names (both the long and short versions.) The iPulse and Mac OS X versions are also displayed along with the amount of time iPulse has been running.
+</p>
+<p>
+Finally, the general information shows if mouse clicks are being ignored. This allows you to see if clicking on the iPulse window will actually do anything :-)
+</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					Preferences
+				</td>
+				<td class="sectionbody">
+<a name="preferences"></a>There are a lot of preferences for iPulse. Instead of explaining each one in excruciating detail, we'll just highlight some of the major features. We'll also focus on the preferences that are less obvious.
+<p>
+<span class="topic">Using Jackets</span> A quick way to change your preference settings is to load an iPulse Jacket. After starting iPulse, all you need to do is double-click on the Jacket (with the .ipulse file extension) and the settings contained in the file will be applied.
+</p>
+<p>
+The iPulse folder you downloaded contains several sample Jackets. We have also created an <a href="http://www.iconfactory.com/ip_gallery.asp">online gallery</a> with additional Jackets. This gallery will be updated periodically&mdash;there is a handy link in the Help menu to check the web page.
+</p>
+<p>
+If you make any changes to a Jacket, you should save a copy. Just go to the Main preference pane and click on the Save Settings button. Then select a file name, press OK, and you'll have a new Jacket with your updated settings.
+</p>
+<p>
+<span class="topic">Turning gauges on and off</span> All of the gauges can be turned off and on with the click of a checkbox. This lets you quickly trim iPulse's display to suit your needs.
+</p>
+<p>
+<span class="topic">Opacity</span> All of the color wells in iPulse support opacity. This allows you to not only adjust the color you see in the gauge, but also how much color you see.
+</p>
+<p>
+To adjust the opacity of the gauge, just click on the color well control. In the color adjustment window, drag the opacity slider from 0% (completely transparent) to 100% (fully opaque.) You'll immediately see the change in the gauge.
+</p>
+<p>
+Adjusting a gauge's opacity to 0% is a simple way to hide parts of the iPulse gauges. As an example, you can set the window background to 0% and have the gauges floating above your desktop. This also works for the disk and mobility backgrounds. Likewise, if you want to see the amount of memory in use, but not the amount available, you can set the opacity for available memory to 0%.
+</p>
+<p>
+<span class="topic">Text on gauges</span> Most gauges have the option of showing text on the gauge. By default, the text is only displayed on the floating window&mdash;a preference in the Global pane lets you put the text on the dock icon, too.
+</p>
+<p>
+<span class="topic">Activity scale</span>Both disk and network activity have a preference to scale the gauge. The scaling types are:
+<ul>
+	<li>Fixed - The scale is determined by the value you select in the pop-up menu. For example, if you select "100K bytes per second", the gauge being completely full indicates that there is 100KB of activity in the past second. If the gauge is half full (45&deg; of the 90&deg; arc) then this indicates that there's 50KB of activity.</li>
+	<li>Automatic - This scale is much like the fixed scale described above, except that the maximum scale value adjusts automatically. The adjustment is made using the current peak value. As an example, if the peak activity is currently 75KB per second, then the gauge scale is set to the next higher power of ten&mdash;100KB per second.</li>
+	<li>Logarithmic - This scale divides the gauge into three sections, each of which displays a range of data for a power of ten. For example, if you select a logarithmic scale of 10K to 1M per second, values between 1K and 10K are displayed in the first 30&deg;, values between 10K and 100K in the second 30&deg; arc, and values between 100K and 1M per second in the remaining 30&deg;. If activity goes below 1K bytes per second, nothing is displayed&mdash;with activity above 1M bytes/second the entire gauge is filled.</li>
+</ul>
+Additionally, the automatic scale displays a series of dots on the gauge to give you an indication of the current scale. There are no dots at 1K, one dot at 10K, two dots at 100K and so on. Likewise, the logarithmic scale displays a thin divider between each of the three ranges, giving you an idea of how much the data is being scaled.
+</p>
+<p>
+<span class="topic">Peak indicators</span> The peak indicators can be configured for the disk and network activity gauges. These indicators behave like the level meters on some audio recording equipment.
+</p>
+<p>
+The indicators work by keeping track of a maximum activity level over period of time. This maximum value is displayed as a thin line on the gauge.
+</p>
+<p>
+You can control how long the maximum activity level is displayed (held) in the preferences Global pane. If you are using an automatic scale for activity, adjusting the peak hold time will also affect how often the scale is adjusted.
+</p>
+<p>
+<span class="topic">Load scaling</span> If you choose to display the history gauge, it's likely that you'll need to to adjust the minimum and maximum load averages. The default values will be fine for a wide range of machines, but fine tuning the settings will allow for a more accurate display on your own machine&mdash;be it an iBook or a dual processor G5.
+</p>
+<p>
+The first thing you'll want to do is hover over the CPU gauge so the information window appears. At the top of the information window, you'll see a line of information labelled "Load" with min and max values. These values should be used as starting point when you set values in the History preference pane.
+</p>
+<p>
+You'll notice that the opacity of the history dots changes as you adjust the minimum and maximum sliders. The minimum load average sets the lowest load average that will be displayed (any load average below this value will be transparent.) The maximum load average is the level at which the dots become opaque.
+</p>
+<p>
+These preferences are also used to adjust the tint on the CPU gauge. The tint is transparent (not shown) at the minimum load value. When the load is at maximum, tint's opacity is displayed fully.
+</p>
+<p>
+<span class="topic">Decoration</span> One of the more popular features of this version of iPulse is the ability to add a background image. You can add pretty much anything you like behind the iPulse gauges. That combined with the ability to adjust the gauge's opacity, give you quite a bit of freedom to change iPulse's look.
+</p>
+<p>
+See the following section on creating Jackets for information on the format and size of the background image.
+</p>
+<p>
+<span class="topic">Ignoring mouse</span> In the Window preference pane, there are several adjustments that should be fairly obvious. The one that's not is "Ignore mouse clicks."
+</p>
+<p>
+This is a new feature in this version of iPulse. After you enable the checkbox, mouse clicks in the iPulse floating window will be ignored and passed onto the application below. This allows you to click on scroll bars, the desktop or whatever else is behind iPulse.
+</p>
+<p>
+The only drawback to this feature is that it's hard to move the iPulse window since it ignores your clicks. That leads us to our next topic...
+</p>
+<p>
+<span class="topic">Setting hotkeys</span> iPulse allows you to set two hotkeys. One of these hotkeys shows or hides the iPulse floating window. The other hotkey toggles the "ignore mouse" feature discussed above.
+</p>
+<p>
+By default, the hotkeys are not enabled. You'll need to go to the Global preferences and press on the "Set..." button. In the window that appears, press the key combination or function key you want to assign and press OK. Be careful that you don't assign a key combination that's used in another application. If you assign Command-C to the hot key, you'll get iPulse instead of a clipboard copy!
+</p>
+<p>
+After you've set the hotkey, you can use the hotkeys in any application. The show/hide hotkey is useful if you want to get rid of iPulse for a presentation, game or any other full-screen activity where it would be in the way. If you are using the "ignore mouse" feature, you can use the hotkey to quickly enable the mouse, move iPulse's floating window, and then disable the mouse again.
+</p>
+<p>
+<span class="topic">Hide iPulse in listings</span> Finally, in the Global preferences, there's a preference to include iPulse in the process listings. We recommend that you do <strong>not</strong> use this feature.
+</p>
+<p>
+The reason is not because we don't want you to know how much CPU iPulse is using; it's because a process that monitors itself is notoriously inaccurate. If you want an accurate estimate of how much time iPulse is using, please use <span class="command">top</span> from a Terminal window.
+</p>
+<p>
+If you think iPulse is using too much CPU time, please check the <a href="#tips_and_tricks">Tips and Tricks</a> section for ways to lower its usage.
+</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					Creating Jackets
+				</td>
+				<td class="sectionbody">
+<a name="creating_jackets"></a>If you'd like to create your own iPulse Jackets and distribute them to your friends or make them a download on your website, here are a few simple instructions that will help you out:
+<p>
+<span class="topic">Background Image</span> The most visually striking part of an iPulse Jacket is the image used behind the gauges. You can set any TIFF, JPG, PNG, GIF, PDF or ICNS file as the background using the controls on the Other preference pane. If you use the TIFF format, make sure that there aren't any alpha channels or layers in the file.
+</p>
+<p>
+ The image file's dimensions should be 128 x 128 pixels (it will be scaled automatically when the user changes the iPulse window size.) The gauge's are positioned in even divisions of 128 pixels&mdash;8, 16, and 32 pixels. The circle is divided up like a clock&mdash;12 sections of 30&deg; each.
+</p>
+<p>
+<span class="topic">Save Settings</span> After you have configured your iPulse settings the way you want, create the Jacket by going to the Main preference pane and clicking on Save Settings. This will create a .ipulse file (Jacket) that contains the settings.
+</p>
+<p>
+Be aware that the Jacket does not contain the preferences from the Window or Global panes. These preferences, which contain hotkeys, window sizes, and other configuration items, are considered personal settings and are not updated when another iPulse user loads your Jacket.
+</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					Tips and Tricks
+				</td>
+				<td class="sectionbody">
+<a name="tips_and_tricks"></a>This section will give you some ideas on how to configure iPulse on your own system.
+<p>
+<span class="topic">Start iPulse at login</span> You can configure iPulse to launch automatically using the Login Items of the System Preferences.
+</p>
+<p>
+<span class="topic">Lower iPulse CPU usage</span> On an older Mac, you may be concerned about iPulse's CPU usage. Here are a few tips for making iPulse run as efficiently as possible:
+<ul>
+	<li>Longer time between updates - In the Global preference pane, there is a setting for the amount of time between updates. Since the majority of iPulse CPU usage is collecting information required by the update, you can significantly reduce the overhead by changing the speed from the default of one second to two seconds (or even three seconds.)</li>
+	<li>Lower iPulse priority - Another setting to check in the Global pane is the process priority for iPulse. Make sure that the priority is lowered (the default is +5 nice.) When iPulse's priority is lowered, other applications will be given more CPU time when things get busy. Another benefit, in periods of high activity, is that iPulse will automatically update less frequently&mdash;giving the CPU even more time to run other tasks.</li>
+	<li>Turn off shadow for floating window - If you have a shadow on your iPulse window, try turning it off. It won't look as nice, but it will require less CPU time since the shadow does not need to be recomputed at each update.</li>
+	<li>Turn off information window fading - Set the information window fade in/out to "None". The window will appear faster and it will use less CPU time to display.</li>
+</ul>
+</p>
+<p>
+<span class="topic">Add your own sounds</span> To use your own sounds for the "ring on hour" feature, add AIFF sound files to your ~/Library/Sounds folder. Files with the extension ".aiff" will appear in the list of sound names after you restart iPulse.
+</p>
+<p>
+To create the AIFF sound file, you can use the QuickTime Player to open an MP3, movie or other media file. Select the portion you want using the slider controls at the bottom of the time window. Then use Edit > Trim followed by File > Export to save the selected portion in the audio file. Make sure that "Sound to AIFF" is selected in the pop-up menu when you export.
+</p>
+<p>
+<span class="topic">Running iPulse without a dock icon</span> Normally, iPulse displays with an icon in the dock. You can configure iPulse to run as an application in "background mode" which will prevent the application icon from appearing the dock.
+</p>
+<p>
+When you run an application in background mode, you need to be aware of several limitations:
+<ul>
+	<li>There is no menu bar for the application. The command keys will still work, so you can quit the application (Command-Q) or display preferences (Command-Comma). You can also use the context menu that appears when you control-click on the iPulse window to access these functions.</li>
+	<li>iPulse will not appear in the Force Quit menu when you use Command-Option-Escape. You will need to use a Terminal window to manually kill the iPulse process.</li>
+	<li>Since the changes required are to the application's configuration, all users on the machine must use iPulse in background mode.</li>
+</ul>
+Before making the change to background mode, make sure that the iPulse window is displayed on the desktop.
+</p>
+<p>
+To configure iPulse to run in background mode, open the application package using a control-click on the application icon and selecting "Show Package Contents". Find the Info.plist file in the Contents folder and open it with TextEdit. Locate the LSUIElement and change the "&lt;string&gt;0&lt;/string&gt;" to "&lt;string&gt;1&lt;/string&gt;". Save the file and return to the Contents folder.
+</p>
+<p>
+If you are running on Mac&nbsp;OS&nbsp;X 10.2, can just restart iPulse at this point. If you are running on 10.3 (Panther), the Launch Services information contained in the Info.plist file is cached, so you'll need create a new Info.plist file so the cache will be updated. The easiest way to do this is by making a copy of the Info.plist file. Then rename the original file from Info.plist to Info_old.plist. The copied file can then be renamed to Info.plist and you can restart iPulse.
+</p>
+<p>
+If you decide you don't want to run in background mode, change the NSUIElement back to it's original value of "0".
+</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					Power Users
+				</td>
+				<td class="sectionbody">
+<a name="power_users"></a>This section is dedicated to those who fear no command line. The instructions in this section assume that you are comfortable in a Terminal window. If you are not, we recommend that you skip this section.
+<p>
+<span class="topic">Preferences</span> Most of the preferences in iPulse are exposed with the panes in the Preferences window. There are, however, other preferences which can be useful, but would either clutter the user interface or be difficult for a novice user to understand.
+</p>
+<p>
+To set one of these "power user" preferences, quit iPulse and issue the following from a command line:
+<pre>
+% defaults write com.iconfactory.iPulse [preference] [value]
+</pre>
+where [preference] is the name of the preference and [value] is the value to use (shown in the table below.) After restarting iPulse, you should see the new preference setting.
+</p>
+<p>
+To delete the preference and return to a default setting, use:
+<pre>
+% defaults delete com.iconfactory.iPulse [preference]
+</pre>
+</p>
+<p>
+So, without further adieu, here are the power user preferences:
+</p>
+<table>
+	<tr>
+		<th>Preference</th>
+		<th>Value</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td> IFApplicationNeverHide </td>
+		<td> 1 </td>
+		<td> When this preference is set to 1, iPulse will never hide. This prevents the dock icon from dimming. </td>
+	</tr>
+	<tr>
+		<td> IFApplicationPlotProcessorArea </td>
+		<td> 0 </td>
+		<td> Normally, iPulse plots the CPU gauge with the percentage represented as an area within the circle. For example, a 50% usage will fill 50% of the circle's area. This is more visually accurate, but tends to make smaller CPU usage values look bigger. To plot the CPU as a function of the radius, change the value to 0. This will cause 50% usage to use half of the circle's radius.</td>
+	</tr>
+	<tr>
+		<td> IFApplicationAlwaysHoverTime </td>
+		<td> 0 </td>
+		<td> By default, iPulse shows the clock information even if there is no date indicator and the clock is turned off. When this preference is set to 0, the information window will only be displayed when the date indicator is displayed. </td>
+	</tr>
+	<tr>
+		<td> IFApplicationHideInfoOnDrag </td>
+		<td> 1 </td>
+		<td> Setting this preference to 1 will cause iPulse to hide the information window while you drag the floating window. This is less work for older graphics cards and can provide better response. </td>
+	</tr>
+	<tr>
+		<td> IFApplicationAlternativeActivity </td>
+		<td> 1 </td>
+		<td> Set this preference to 1 and you'll see an activity indicator that doesn't overlap the gauge to the top. </td>
+	</tr>
+	<tr>
+		<td> IFApplicationSwapfilesPath </td>
+		<td> /path/to/dir </td>
+		<td> This preference specifies the path to where your swapfiles are located. If you have customized your swapfile configuration, you'll need to change this from the default of /var/vm. </td>
+	</tr>
+	<tr>
+		<td> IFApplicationCHUDWorkaround </td>
+		<td> 1 </td>
+		<td> If you have the CHUD Tools installed, you'll need to set this flag, otherwise iPulse will cause the kernel to use excessive amounts of CPU time. When the flag is 1, iPulse avoids a call to host_processor_info with the PROCESSOR_TEMPERATURE temperature parameter. </td>
+	</tr>
+	<tr>
+		<td> IFApplicationUsePowerMate </td>
+		<td> 0 </td>
+		<td> Normally, iPulse will detect the presence of a <a href="http://griffintechnology.com/products/powermate/">PowerMate</a> device and set its LED brightness according to the CPU usage. If you'd prefer iPulse to ignore the PowerMate, set this preference to 0.</td>
+	</tr>
+	<tr>
+		<td> IFApplicationInfoDelay </td>
+		<td> 0.75 </td>
+		<td> By default, iPulse will use a 0.75 second delay before opening the information window (assuming the preference is set in the Windows pane.) If you'd like the delay to be longer or shorter, you can change the value to any number greater than 0.</td>
+	</tr>
+
+</table>
+<p>
+<span class="topic">Show Root Processes</span> iPulse is designed to run as a user process. As a result, it does not have access to information about processes running as root.
+</p>
+<p>
+iPulse will happily run as root with the set-user-ID-on-execution bit set. Of course, before you do this, consider that once you give an application this right, it can do anything a root user can. You should think twice before doing this for <strong>any</strong> application.
+</p>
+<p>
+If you trust iPulse like you do <span class="command">top</span>, <span class="command">ps</span> and other Unix command line tools, then go ahead and make the change:
+<pre>
+% cd /Applications  (or wherever you keep iPulse)
+% cd iPulse.app/Contents/MacOS
+% sudo chown root iPulse
+% sudo chgrp admin iPulse
+% sudo chmod u+s iPulse
+</pre>
+After making this change, you'll note that the CPU information window will show "0 root" in the Processes summary (e.g. it's showing all root processes.) Also, in the information windows that list processes, you'll now see "WindowServer" and some other system processes that aren't shown while running as a normal user.
+</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					Known Problems
+				</td>
+				<td class="sectionbody">
+On some Macs running Mac&nbsp;OS&nbsp;X 10.1 or lower, the shadow will flicker with each update. The problem is fixed in the 10.2 release of Mac&nbsp;OS&nbsp;X. If you can't upgrade to this version of the OS, you can turn off the shadow in the Window preferences.
+				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					Contact Us
+				</td>
+				<td class="sectionbody">
+					The Iconfactory - <a href="mailto:webmaster@iconfactory.com">webmaster@iconfactory.com</a><br>
+					<br>
+					Technical Support - <a href="mailto:ipulse@iconfactory.com">ipulse@iconfactory.com</a><br>
+					<br>
+					<br>
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td class="subtle">
+					Copyright &copy; 2002-2003 The Iconfactory, All rights reserved.<br>
+					<br>
+					AGProcess: Copyright &copy; 2002 Aram Greenman. All rights reserved.<br>
+					HotKeysLib: Copyright &copy; 2002 Quentin D. Carnicelli. All rights reserved.
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

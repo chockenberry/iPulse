@@ -1,0 +1,112 @@
+﻿"MainLabel" = "Principale";
+"MainTooltip" = "Introduzione alle preferenze di iPulse";
+"CpuLabel" = "CPU";
+"CpuTooltip" = "Modifica le preferenze degli indicatori della CPU";
+"MemoryLabel" = "Memoria";
+"MemoryTooltip" = "Modifica le preferenze degli indicatori della memoria";
+"DiskLabel" = "Dischi";
+"DiskTooltip" = "Modifica le preferenze degli indicatori dei dischi";
+"NetworkLabel" = "Rete";
+"NetworkTooltip" = "Modifica le preferenze degli indicatori di rete";
+"MobilityLabel" = "Mobilità";
+"MobilityTooltip" = "Modifica le preferenze degli indicatori per i computer portatili";
+"HistoryLabel" = "Storico";
+"HistoryTooltip" = "Modifica le preferenze dell'indicatore storico";
+"ClockLabel" = "Orologio";
+"ClockTooltip" = "Modifica le preferenze dell'orologio";
+"OtherLabel" = "Altro";
+"OtherTooltip" = "Modifica altre preferenze";
+"WindowLabel" = "Finestre";
+"WindowTooltip" = "Configura le finestre di iPulse";
+"GlobalLabel" = "Globale";
+"GlobalTooltip" = "Modifica le preferenze globali di iPulse";
+
+"DockChanged" = "Configurazione Dock aggiornata";
+"DockChangedText" = "La nuova configurazione del Dock verrà utilizzata al prossimo avvio di iPulse.";
+
+"GeneralLabel" = "Informazioni generali";
+"SwappingLabel" = "Memoria (Swap)";
+
+"UpdateSpeed" = "%.1f secondi (%.0f b/min)";
+"WindowSize" = "%.0f x %.0f pixel\n(%2.0f%%)";
+"MaxTemperature" = "%.0f ºC";
+"SchedulingPriority" = "+%d nice";
+"HoldTimeSeconds" = "%.0f secondi";
+"HoldTimeMinutes" = "%.1f minuti";
+
+"NetworkClient" = "Client di rete";
+"SoftwareBaseStation" = "Stazione base software";
+"ComputerToComputer" = "Computer-Computer";
+"Unknown" = "Sconosciuta";
+
+"DecibelPerMilliwatt" = "dBm";
+"Decibel" = "dB";
+
+"ValidLabel" = "Grazie per aver registrato iPulse!";
+"ValidMessage" = "Le vostre informazioni di registrazione sono state inserite.";
+
+"InvalidLabel" = "Le vostre informazioni di registrazione non sono valide.";
+"InvalidMessage" = "Assicuratevi che i valori inseriti siano ESATTAMENTE quelli che vi sono stati inviati.";
+
+"PreferencesWarningLabel" = "Le vostre attuali preferenze non sono state registrate.";
+"PreferencesWarningMessage" = "Se premete Continua, le preferenze verranno perdute.";
+
+"Unregistered" = "Non registrato";
+
+"PermissionsAuthorization" = "Per poter vedere le informazioni sui processi,";
+"PermissionsReadOnlyLabel" = "I permessi non possono essere aggiornati";
+"PermissionsReadOnlyMessage" = "iPulse è in esecuzione da un supporto a sola lettura (come un'immagine disco). I permessi possono essere aggiornati solo se l'esecuzione avviene da un supporto scrivibile.\n\nUscite da iPulse, copiatelo nella vostra cartella Applicazioni e provate di nuovo.";
+"PermissionsRelaunchLabel" = "Aggiornamento dei permessi completato";
+"PermissionsRelaunchMessage" = "iPulse deve riavviarsi per usare i nuovi permessi. Premete il pulsante sottostante per continuare.";
+"PermissionsRelaunchButton" = "Rilancia";
+
+"Temperature" = "Temperatura";
+
+"siUnitsByteAbbr" = "B";
+"ieeeUnitsByteAbbr" = "b";
+"appleUnitsByteAbbr" = "B";
+
+"BitAbbr" = "bit";
+
+"Hotkey" = "Inverti con";
+
+"Version" = "Versione ";
+
+"None" = "(Nessuna)";
+
+"NotAvailableAbbr" = "ND";
+
+"Charging" = "In carica";
+"ChargerConnected" = "Alimentatore connesso";
+"InUse" = "In uso";
+"Full" = "Carica";
+
+"NewMoon" = "Nuova";
+"WaxingCrescent" = "Falce crescente";
+"FirstQuarter" = "Primo quarto";
+"WaxingGibbous" = "Crescente";
+"WaningCrescent" = "Falce calante";
+"LastQuarter" = "Ultimo quarto";
+"WaningGibbous" = "Calante";
+"FullMoon" = "Piena";
+
+"DaylightSavingsTimeAbbr" = "Legale";
+"GreenwichMeanTimeAbbr" = "GMT";
+
+"Yes" = "Sì";
+"No" = "No";
+"OK" = "OK";
+"TryAgain" = "Provare di nuovo";
+"NewCodes" = "Nuovi codici";
+"Cancel" = "Annulla";
+"Continue" = "Continua";
+
+"Calculating" = "…";   // don't localize this string
+
+"Increase" = "↑";   // don't localize this string
+"Decrease" = "↓";   // don't localize this string
+"NoChange" = " ";   // don't localize this string
+
+">" = "▶";   // don't localize this string
+"Dash" = "—";   // don't localize this string
+"Ratio" = "∶";

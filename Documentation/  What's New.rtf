@@ -1,0 +1,332 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf110
+{\fonttbl\f0\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;}
+\vieww9000\viewh8400\viewkind0
+\pard\tx1440\tx2880\tx4320\tx5760\tx7200\ql\qnatural
+
+\f0\fs22 \cf0 \
+This version of iPulse contains the following changes:\
+
+\b \
+Version 2.1.10
+\b0 \
+\
+NOTE: You will now be prompted for a password each time you launch iPulse because of a security change in Snow Leopard. The dialog appears when iPulse (or any other application) runs with elevated permissions; it does this so that it can retrieve process information. The security risk is that iPulse could theoretically inject code into another process using with these elevated permissions.\
+ \
+\pard\tx720\pardeftab720\sa60\ql\qnatural
+\cf0 \'95\'a0Wireless information is now displayed correctly on Snow Leopard.\
+\'95\'a0Fixed the disk size display when disk volumes have invalid block sizes (such as WebDAV.)\
+\'95 Fixed a display issue with long network interface names.\
+\'95\'a0Fixed a problem with "nan" being displayed when processors were not in use.\
+\'95\'a0Added check for idle processors and they will be removed from CPU info window when there is no activity.\
+\'95\'a0Fixed problem with floating window not appearing in all Spaces on Snow Leopard.\
+\'95 PowerMate preferences were removed because the current version of the driver does not allow a third party to update the USB device.\
+\'95\'a0Updated application icon to include 512x512 and 256x256 resources.\
+\
+\pard\tx1440\tx2880\tx4320\tx5760\tx7200\ql\qnatural
+
+\b \cf0 Version 2.1.9
+\b0 \
+\
+\pard\tx720\pardeftab720\sa60\ql\qnatural
+\cf0 \'95\'a0Added support for reading temperature from SMC on the latest Intel Macs.\
+\'95\'a0Added Dock menu.\
+\'95\'a0Added a preference in the Global > Displays panel to hide the dock icon.\
+\'95 Fixed a problem with "AM" and "PM" being displayed twice in the Clock information window.\
+\'95 iPulse will now "reset" when you hold down the option key at launch. During the reset, the window position will be moved to the lower-left corner of the display (allowing you to recover from a Spaces bug where the floating window is stuck offscreen.) The dialog to set permissions will also be redisplayed.\
+\pard\tx1440\tx2880\tx4320\tx5760\tx7200\ql\qnatural
+
+\b \cf0 \
+\
+Version 2.1.8
+\b0 \
+\
+\pard\tx720\pardeftab720\sa60\ql\qnatural
+\cf0 \'95\'a0Added support for reading temperature from SMC on 17\'94 Mac Book Pro.\
+\'95\'a0Fixed problems with localization while updating permissions.\
+\'95\'a0Corrected a problem where certain environment variables would cause processes to be reported incorrectly.\
+\'95\'a0Fixed an issue displaying network statistics on interfaces that had been disabled (such as disconnecting from a VPN.)\
+\'95\'a0Added support for viewing CPU statistics on machines with up to 8 processors.\
+\'95\'a0Added support for Leopard.\
+\pard\tx720\pardeftab720\sa60\ql\qnatural
+
+\b \cf0 \
+\
+\pard\tx1440\tx2880\tx4320\tx5760\tx7200\ql\qnatural
+\cf0 Version 2.1.7
+\b0 \
+\
+\pard\tx635\tx1270\tx1906\tx2543\tx3177\tx3815\tx4451\tx5087\tx5722\tx6359\tx6995\tx7630\tx8267\tx8902\tx9539\tx10175\tx10810\tx11445\tx12080\tx12718\tx13354\tx13990\tx14625\tx15260\tx15898\tx16534\tx17170\tx17805\tx18440\tx19078\tx19714\tx20350\tx20985\tx21621\tx22256\tx22893\tx23528\tx24165\tx24801\tx25436\tx26073\tx26708\tx27345\tx27981\tx28616\tx29253\tx29888\tx30525\tx31160\tx31796\tx32431\tx33068\tx33703\tx34340\tx34976\tx35611\tx36248\tx36883\tx37520\tx38156\tx38791\tx39428\tx40063\tx40700\tx41335\tx41971\tx42607\tx43242\tx43877\tx44515\tx45151\tx45787\tx46422\tx47057\tx47695\tx48331\tx48967\tx49602\tx50237\tx50875\tx51510\tx52146\tx52782\tx53417\tx54052\tx54690\tx55326\tx55962\tx56597\tx57232\tx57870\tx58506\tx59142\tx59777\tx60412\tx61050\tx61685\tx62321\tx62957\tx63592\ql\qnatural
+\cf0 \'95\'a0Added support for reading temperatures on Macs with Core 2 Duo processors.\
+\
+\'95 Updated network statistics to include the number of bytes transferred over UDP. Also, traffic on the loopback interface (lo0) will now be ignored.\
+\
+\'95\'a0Fixed a problem with reading MAC address and Link speed on latest version of 10.4.\
+\
+\'95 Fixed a problem while running under Panther on older Macs without temperature sensors.\
+\pard\tx635\tx1271\tx1907\tx2543\tx3179\tx3815\tx4451\tx5087\tx5723\tx6359\tx6995\tx7631\tx8267\tx8903\tx9539\tx10175\tx10810\tx11446\tx12082\tx12718\tx13354\tx13990\tx14626\tx15262\tx15898\tx16534\tx17170\tx17806\tx18442\tx19078\tx19714\tx20350\tx20985\tx21621\tx22257\tx22893\tx23529\tx24165\tx24801\tx25437\tx26073\tx26709\tx27345\tx27981\tx28617\tx29253\tx29889\tx30525\tx31160\tx31796\tx32432\tx33068\tx33704\tx34340\tx34976\tx35612\tx36248\tx36884\tx37520\tx38156\tx38792\tx39428\tx40064\tx40700\tx41335\tx41971\tx42607\tx43243\tx43879\tx44515\tx45151\tx45787\tx46423\tx47059\tx47695\tx48331\tx48967\tx49603\tx50239\tx50875\tx51510\tx52146\tx52782\tx53418\tx54054\tx54690\tx55326\tx55962\tx56598\tx57234\tx57870\tx58506\tx59142\tx59778\tx60414\tx61050\tx61685\tx62321\tx62957\tx63593\ql\qnatural\pardirnatural
+
+\fs20 \cf0 \CocoaLigature0 \
+\pard\tx635\tx1270\tx1906\tx2543\tx3177\tx3815\tx4451\tx5087\tx5722\tx6359\tx6995\tx7630\tx8267\tx8902\tx9539\tx10175\tx10810\tx11445\tx12080\tx12718\tx13354\tx13990\tx14625\tx15260\tx15898\tx16534\tx17170\tx17805\tx18440\tx19078\tx19714\tx20350\tx20985\tx21621\tx22256\tx22893\tx23528\tx24165\tx24801\tx25436\tx26073\tx26708\tx27345\tx27981\tx28616\tx29253\tx29888\tx30525\tx31160\tx31796\tx32431\tx33068\tx33703\tx34340\tx34976\tx35611\tx36248\tx36883\tx37520\tx38156\tx38791\tx39428\tx40063\tx40700\tx41335\tx41971\tx42607\tx43242\tx43877\tx44515\tx45151\tx45787\tx46422\tx47057\tx47695\tx48331\tx48967\tx49602\tx50237\tx50875\tx51510\tx52146\tx52782\tx53417\tx54052\tx54690\tx55326\tx55962\tx56597\tx57232\tx57870\tx58506\tx59142\tx59777\tx60412\tx61050\tx61685\tx62321\tx62957\tx63592\ql\qnatural
+
+\fs22 \cf0 \CocoaLigature1 \
+\pard\tx1440\tx2880\tx4320\tx5760\tx7200\ql\qnatural
+
+\b \cf0 Version 2.1.6
+\b0 \
+\
+\pard\tx635\tx1270\tx1906\tx2543\tx3177\tx3815\tx4451\tx5087\tx5722\tx6359\tx6995\tx7630\tx8267\tx8902\tx9539\tx10175\tx10810\tx11445\tx12080\tx12718\tx13354\tx13990\tx14625\tx15260\tx15898\tx16534\tx17170\tx17805\tx18440\tx19078\tx19714\tx20350\tx20985\tx21621\tx22256\tx22893\tx23528\tx24165\tx24801\tx25436\tx26073\tx26708\tx27345\tx27981\tx28616\tx29253\tx29888\tx30525\tx31160\tx31796\tx32431\tx33068\tx33703\tx34340\tx34976\tx35611\tx36248\tx36883\tx37520\tx38156\tx38791\tx39428\tx40063\tx40700\tx41335\tx41971\tx42607\tx43242\tx43877\tx44515\tx45151\tx45787\tx46422\tx47057\tx47695\tx48331\tx48967\tx49602\tx50237\tx50875\tx51510\tx52146\tx52782\tx53417\tx54052\tx54690\tx55326\tx55962\tx56597\tx57232\tx57870\tx58506\tx59142\tx59777\tx60412\tx61050\tx61685\tx62321\tx62957\tx63592\ql\qnatural
+\cf0 \'95\'a0On most Intel Macs, iPulse will now display the CPU temperature based on information from the System Management Controller (SMC.)\
+\
+\'95\'a0When required, a new dialog will be displayed that allows you to update iPulse's runtime permissions. Recent versions of Mac OS X require elevated permissions to read the CPU and memory usage for a process.\
+\
+\'95 Fixed a bug with the display of hotkeys on Intel Macs.\
+\
+\'95 Added process annotations for Yahoo! Widget Engine.\
+\
+\
+\pard\tx1440\tx2880\tx4320\tx5760\tx7200\ql\qnatural
+
+\b \cf0 Version 2.1.5
+\b0 \
+\
+\pard\tx635\tx1270\tx1906\tx2543\tx3177\tx3815\tx4451\tx5087\tx5722\tx6359\tx6995\tx7630\tx8267\tx8902\tx9539\tx10175\tx10810\tx11445\tx12080\tx12718\tx13354\tx13990\tx14625\tx15260\tx15898\tx16534\tx17170\tx17805\tx18440\tx19078\tx19714\tx20350\tx20985\tx21621\tx22256\tx22893\tx23528\tx24165\tx24801\tx25436\tx26073\tx26708\tx27345\tx27981\tx28616\tx29253\tx29888\tx30525\tx31160\tx31796\tx32431\tx33068\tx33703\tx34340\tx34976\tx35611\tx36248\tx36883\tx37520\tx38156\tx38791\tx39428\tx40063\tx40700\tx41335\tx41971\tx42607\tx43242\tx43877\tx44515\tx45151\tx45787\tx46422\tx47057\tx47695\tx48331\tx48967\tx49602\tx50237\tx50875\tx51510\tx52146\tx52782\tx53417\tx54052\tx54690\tx55326\tx55962\tx56597\tx57232\tx57870\tx58506\tx59142\tx59777\tx60412\tx61050\tx61685\tx62321\tx62957\tx63592\ql\qnatural
+\cf0 \'95\'a0Fixed the graphic used to display the iPulse gauges in the Help file.\
+\
+\'95\'a0Fixed problems with localizations for the French, Japanese, Italian, Spanish, and Swedish languages. Also made some updates to incomplete Dutch and German localizations.\
+\
+\
+\pard\tx1440\tx2880\tx4320\tx5760\tx7200\ql\qnatural
+
+\b \cf0 Version 2.1.4
+\b0 \
+\
+\pard\tx635\tx1270\tx1906\tx2543\tx3177\tx3815\tx4451\tx5087\tx5722\tx6359\tx6995\tx7630\tx8267\tx8902\tx9539\tx10175\tx10810\tx11445\tx12080\tx12718\tx13354\tx13990\tx14625\tx15260\tx15898\tx16534\tx17170\tx17805\tx18440\tx19078\tx19714\tx20350\tx20985\tx21621\tx22256\tx22893\tx23528\tx24165\tx24801\tx25436\tx26073\tx26708\tx27345\tx27981\tx28616\tx29253\tx29888\tx30525\tx31160\tx31796\tx32431\tx33068\tx33703\tx34340\tx34976\tx35611\tx36248\tx36883\tx37520\tx38156\tx38791\tx39428\tx40063\tx40700\tx41335\tx41971\tx42607\tx43242\tx43877\tx44515\tx45151\tx45787\tx46422\tx47057\tx47695\tx48331\tx48967\tx49602\tx50237\tx50875\tx51510\tx52146\tx52782\tx53417\tx54052\tx54690\tx55326\tx55962\tx56597\tx57232\tx57870\tx58506\tx59142\tx59777\tx60412\tx61050\tx61685\tx62321\tx62957\tx63592\ql\qnatural
+\cf0 \'95\'a0Added support for Quad Processor PowerMac G5 systems:\
+\
+\pard\tx635\tx1270\tx1906\tx2543\tx3177\tx3815\tx4451\tx5087\tx5722\tx6359\tx6995\tx7630\tx8267\tx8902\tx9539\tx10175\tx10810\tx11445\tx12080\tx12718\tx13354\tx13990\tx14625\tx15260\tx15898\tx16534\tx17170\tx17805\tx18440\tx19078\tx19714\tx20350\tx20985\tx21621\tx22256\tx22893\tx23528\tx24165\tx24801\tx25436\tx26073\tx26708\tx27345\tx27981\tx28616\tx29253\tx29888\tx30525\tx31160\tx31796\tx32431\tx33068\tx33703\tx34340\tx34976\tx35611\tx36248\tx36883\tx37520\tx38156\tx38791\tx39428\tx40063\tx40700\tx41335\tx41971\tx42607\tx43242\tx43877\tx44515\tx45151\tx45787\tx46422\tx47057\tx47695\tx48331\tx48967\tx49602\tx50237\tx50875\tx51510\tx52146\tx52782\tx53417\tx54052\tx54690\tx55326\tx55962\tx56597\tx57232\tx57870\tx58506\tx59142\tx59777\tx60412\tx61050\tx61685\tx62321\tx62957\tx63592\li800\fi-800\ql\qnatural
+\cf0 	\'bb The CPU gauge will be split into four 90\'b0 sections\'97each core's usage is displayed in the section.\
+	\'bb The status item in the menu bar will display the average of the two cores for each CPU\'97the left sides shows core 0 & 1 (CPU A), the right side cores 2 & 3 (CPU B).\
+ 	\'bb The temperature displayed in the info window will be the average of all 4 CPUs.\
+\pard\tx635\tx1270\tx1906\tx2543\tx3177\tx3815\tx4451\tx5087\tx5722\tx6359\tx6995\tx7630\tx8267\tx8902\tx9539\tx10175\tx10810\tx11445\tx12080\tx12718\tx13354\tx13990\tx14625\tx15260\tx15898\tx16534\tx17170\tx17805\tx18440\tx19078\tx19714\tx20350\tx20985\tx21621\tx22256\tx22893\tx23528\tx24165\tx24801\tx25436\tx26073\tx26708\tx27345\tx27981\tx28616\tx29253\tx29888\tx30525\tx31160\tx31796\tx32431\tx33068\tx33703\tx34340\tx34976\tx35611\tx36248\tx36883\tx37520\tx38156\tx38791\tx39428\tx40063\tx40700\tx41335\tx41971\tx42607\tx43242\tx43877\tx44515\tx45151\tx45787\tx46422\tx47057\tx47695\tx48331\tx48967\tx49602\tx50237\tx50875\tx51510\tx52146\tx52782\tx53417\tx54052\tx54690\tx55326\tx55962\tx56597\tx57232\tx57870\tx58506\tx59142\tx59777\tx60412\tx61050\tx61685\tx62321\tx62957\tx63592\ql\qnatural
+\cf0 \
+\'95\'a0Support for Intel systems has been added\'97the current platform (either PowerPC or Intel) is now displayed in the General information window. In build 8F1111, iPulse is affected by Radar Bug 4336431. The workaround is to give iPulse setuid root permissions\'97the instructions are in the Power Users section of the Help file.\
+\
+\'95\'a0Added additional information for Konfabulator processes\'97they will show the name of the widget that it is running.\
+\
+\
+\pard\tx1440\tx2880\tx4320\tx5760\tx7200\ql\qnatural
+
+\b \cf0 Version 2.1.3
+\b0 \
+\
+\pard\tx635\tx1270\tx1906\tx2543\tx3177\tx3815\tx4451\tx5087\tx5722\tx6359\tx6995\tx7630\tx8267\tx8902\tx9539\tx10175\tx10810\tx11445\tx12080\tx12718\tx13354\tx13990\tx14625\tx15260\tx15898\tx16534\tx17170\tx17805\tx18440\tx19078\tx19714\tx20350\tx20985\tx21621\tx22256\tx22893\tx23528\tx24165\tx24801\tx25436\tx26073\tx26708\tx27345\tx27981\tx28616\tx29253\tx29888\tx30525\tx31160\tx31796\tx32431\tx33068\tx33703\tx34340\tx34976\tx35611\tx36248\tx36883\tx37520\tx38156\tx38791\tx39428\tx40063\tx40700\tx41335\tx41971\tx42607\tx43242\tx43877\tx44515\tx45151\tx45787\tx46422\tx47057\tx47695\tx48331\tx48967\tx49602\tx50237\tx50875\tx51510\tx52146\tx52782\tx53417\tx54052\tx54690\tx55326\tx55962\tx56597\tx57232\tx57870\tx58506\tx59142\tx59777\tx60412\tx61050\tx61685\tx62321\tx62957\tx63592\ql\qnatural
+\cf0 \'95\'a0Added additional information for Java and Dashboard processes. A DashboardClient process will show the name of the widget that it is running. Java applications will show the JAR file that was used on the command line when the interpreter was launched. This additional information is shown in parenthesis after the process name.\
+\'95\'a0Fixed an information window display bug for Java applications running on Tiger. \
+\'95\'a0Fixed a bug which caused iPulse information window to not appear on Japanese systems running Tiger.\
+\
+\pard\tx1440\tx2880\tx4320\tx5760\tx7200\ql\qnatural
+
+\b \cf0 Version 2.1.2
+\b0 \
+\
+\pard\tx635\tx1270\tx1906\tx2543\tx3177\tx3815\tx4451\tx5087\tx5722\tx6359\tx6995\tx7630\tx8267\tx8902\tx9539\tx10175\tx10810\tx11445\tx12080\tx12718\tx13354\tx13990\tx14625\tx15260\tx15898\tx16534\tx17170\tx17805\tx18440\tx19078\tx19714\tx20350\tx20985\tx21621\tx22256\tx22893\tx23528\tx24165\tx24801\tx25436\tx26073\tx26708\tx27345\tx27981\tx28616\tx29253\tx29888\tx30525\tx31160\tx31796\tx32431\tx33068\tx33703\tx34340\tx34976\tx35611\tx36248\tx36883\tx37520\tx38156\tx38791\tx39428\tx40063\tx40700\tx41335\tx41971\tx42607\tx43242\tx43877\tx44515\tx45151\tx45787\tx46422\tx47057\tx47695\tx48331\tx48967\tx49602\tx50237\tx50875\tx51510\tx52146\tx52782\tx53417\tx54052\tx54690\tx55326\tx55962\tx56597\tx57232\tx57870\tx58506\tx59142\tx59777\tx60412\tx61050\tx61685\tx62321\tx62957\tx63592\ql\qnatural
+\cf0 \'95\'a0Fixed a bug which caused iPulse to log errors on Tiger. The errors were displayed when using obsolete CGS functions. \
+\
+\pard\tx1440\tx2880\tx4320\tx5760\tx7200\ql\qnatural
+
+\b \cf0 Version 2.1.1
+\b0 \
+\
+\pard\tx635\tx1270\tx1906\tx2543\tx3177\tx3815\tx4451\tx5087\tx5722\tx6359\tx6995\tx7630\tx8267\tx8902\tx9539\tx10175\tx10810\tx11445\tx12080\tx12718\tx13354\tx13990\tx14625\tx15260\tx15898\tx16534\tx17170\tx17805\tx18440\tx19078\tx19714\tx20350\tx20985\tx21621\tx22256\tx22893\tx23528\tx24165\tx24801\tx25436\tx26073\tx26708\tx27345\tx27981\tx28616\tx29253\tx29888\tx30525\tx31160\tx31796\tx32431\tx33068\tx33703\tx34340\tx34976\tx35611\tx36248\tx36883\tx37520\tx38156\tx38791\tx39428\tx40063\tx40700\tx41335\tx41971\tx42607\tx43242\tx43877\tx44515\tx45151\tx45787\tx46422\tx47057\tx47695\tx48331\tx48967\tx49602\tx50237\tx50875\tx51510\tx52146\tx52782\tx53417\tx54052\tx54690\tx55326\tx55962\tx56597\tx57232\tx57870\tx58506\tx59142\tx59777\tx60412\tx61050\tx61685\tx62321\tx62957\tx63592\ql\qnatural
+\cf0 \'95\'a0Fixed a bug which could cause CPU usage increase over a period of several days. The problem was that iPulse was leaking Mach ports (used to communicate with the kernel and IOKit). As the pool of Mach ports was slowly consumed, the CPU usage would increase as iPulse communicated with the operating system.\
+\
+\'95 German localization by Jog\
+\pard\tx1440\tx2880\tx4320\tx5760\tx7200\ql\qnatural
+\cf0 \
+
+\b Version 2.1
+\b0 \
+\
+\'95 Added Fahrenheit & Kelvin to temperature reading in CPU information window. Also added support for reading the G5's on-chip temperature sensor (available on the iMac G5, PowerMac G5 and Xserve G5.) Verified accuracy of reported values for all current Mac models.\
+\pard\tx635\tx1270\tx1906\tx2543\tx3177\tx3815\tx4451\tx5087\tx5722\tx6359\tx6995\tx7630\tx8267\tx8902\tx9539\tx10175\tx10810\tx11445\tx12080\tx12718\tx13354\tx13990\tx14625\tx15260\tx15898\tx16534\tx17170\tx17805\tx18440\tx19078\tx19714\tx20350\tx20985\tx21621\tx22256\tx22893\tx23528\tx24165\tx24801\tx25436\tx26073\tx26708\tx27345\tx27981\tx28616\tx29253\tx29888\tx30525\tx31160\tx31796\tx32431\tx33068\tx33703\tx34340\tx34976\tx35611\tx36248\tx36883\tx37520\tx38156\tx38791\tx39428\tx40063\tx40700\tx41335\tx41971\tx42607\tx43242\tx43877\tx44515\tx45151\tx45787\tx46422\tx47057\tx47695\tx48331\tx48967\tx49602\tx50237\tx50875\tx51510\tx52146\tx52782\tx53417\tx54052\tx54690\tx55326\tx55962\tx56597\tx57232\tx57870\tx58506\tx59142\tx59777\tx60412\tx61050\tx61685\tx62321\tx62957\tx63592\ql\qnatural
+\cf0 \'95 Added a status item to menu bar. The status bar can be configured in the Displays tab of the Global preference panel. The left side of the status bar indicates data moving "into" memory (e.g. network packets in, disk reads, pageins, etc.) The right side shows data moving "out" of memory. On a Mac with dual processors, the status bar shows each CPU independently.\
+\'95 Added more support for the PowerMate\'97you can now set the pulse rate or the brightness as system activity increases. The activity being monitored can be the CPU, disk, network or swapping.\
+\'95 Added hotkey to lock information window in place. If you press the hotkey while the information window is being displayed, the window will remain on screen until the hotkey is pressed again. It can also be used to toggle the information window on and off.\
+\'95\'a0Added options when saving iPulse Jacket that allow status bar and information window settings to be include in the Jacket. There are two new menubar Jackets in the iPulse Jackets folder (Menubar_Gray.ipulse and Menubar_xScope.ipulse). There are also new Jackets with these additional settings in the iPulse Jacket Gallery at <http://www.iconfactory.com/ip_gallery.asp>\
+\'95\'a0Added a power user preference which causes the iPulse windows to remain on screen when Expos\'e9 is used\'97please see the Help file for instructions on how to enable this feature (set IFApplicationIgnoreExpose to 1.)\
+\'95 Updated network information window to include MAC addresses and link speeds.\
+\'95\'a0Updated disk information to display usage information more quickly\'97the statistics now update immediately. Also added a list of read-only file systems such as CDs/DVDs and improved the file system type information.\
+\'95\'a0Updated general information to show the hotkey that toggles the "ignore mouse" feature.\
+\'95\'a0Updated the Windows and Global preference panels to use tabbed views.\
+\'95 Updated preference panels to disable items that are not available (e.g. PowerMate not being connected.)\
+\'95 Fixed the display of disk names that used Unicode characters.\
+\'95\'a0Fixed a bug where mounting of disk images could cause iPulse to use too much CPU time or crash.\
+\'95\'a0Fixed several problems with the windows appearing at incorrect locations after a display configuration change.\
+\'95 Fixed display of processes that use more than 2 GB of memory. Also fixed a bug which caused values for virtual memory to be doubled for some processes.\
+\'95 Fixed problems reporting overall memory usage on systems with more than 4 GB.\
+\'95 Fixed problems reporting wireless signal levels after Aiport 3.4.1 update. The values displayed are now displayed in decibels (dB).\
+\'95\'a0Fixed a bug where long disk names would not wrap in information window.\
+\'95\'a0Fixed the calendar's reporting of the last week in a year with 53 weeks (like 2004.)\
+\'95 Improved performance by removing code to track mouse in floating window. Added "track mouse" power user preference for backward compatibility.\
+\'95\'a0Added power user preference: IFApplicationStatusAlertThreshold\'97see the Help file for more information.\
+\
+\'95 Spanish localization by Charly Avital\
+\'95\'a0Swedish localization by Markus Magnuson\
+\
+\pard\tx1440\tx2880\tx4320\tx5760\tx7200\ql\qnatural
+
+\b \cf0 Version 2.0.2
+\b0 \
+\
+\'95 Added display of motherboard temperature in CPU information window.\
+\'95 Added support for Griffin PowerMate\'97if the device is available, iPulse will set the LED brightness according to CPU usage.\
+\'95 Created a new preference that adds a short delay before opening the information window.\
+\'95 Added Airport mode to the status information for the Mobility gauges\'97useful if you are running a Software Base Station or a Computer To Computer network.\
+\'95\'a0Added bandwidth reporting (bits per second) to the Network information window.\
+\'95\'a0Fixed disk information window so that it will wrap long disk names to the next line instead of cutting of the end.\
+\'95\'a0Fixed a bug with the opacity of the swapping gauge.\
+\'95 Fixed instructions on how to run iPulse without a dock icon\'97the previous instructions were correct, they just wouldn't work all the time :-)\
+\'95 Fixed a small memory leak when displaying computer and login names.\
+\'95\'a0Updated various help topics.\
+
+\b \
+Version 2.0.1
+\b0 \
+\
+\'95 The preference toolbar now highlights the selected pane (Panther only.)\
+\'95 Plugged a memory leak when getting battery information.\
+\'95 Uptime will now be reported correctly (in some cases, it would be off by one day.)\
+\'95 Fixed a bug where swapfiles space would overflow and display incorrectly.\
+\'95 Ring on hour feature will now work even if clock hands are disabled.\
+\'95 Applications with Unicode characters in their name will display correctly.\
+\'95 Added check at startup to check if iPulse is running without a dock icon. If so, dock icon updates will be turned off (preventing many message being logged to the Console.) Also, the floating window will be turned on if necessary.\
+\'95 Added another check at startup to see if iPulse window is offscreen (because of display configuration changes.) If necessary, it's moved back on screen.\
+\'95 Changing preferences after a display configuration change will no longer cause the iPulse window to jump.\
+\'95 Changed opacity of default preference for seconds indicator color.\
+\
+\'95 Updated resources:\
+\
+	Updated labels for logarithmic indicators so they make more sense.\
+	Removed ellipsis where they weren't necessary (following HI guidelines.)\
+\
+\'95 Documentation changes:\
+\
+	Fixed instructions for making iPulse run as root process\
+	Updated instructions for removing dock icon on 10.3 (Panther)\
+	Added French localization of Help by Ronald Leroux\
+
+\b \
+
+\b0 \'95 Dutch localization by Menno Zonnet\
+\'95 Italian localization by Gabriele Callari\
+
+\b \
+Version 2.0
+\b0 \
+\
+\'95 Added info windows for all gauges. Some of the highlights are:\
+\
+	Top processes for memory usage (Memory)\
+	Top processes for CPU usage (CPU)\
+	CPU temperature (CPU)\
+	Load and process counts (CPU)\
+	Disk I/O summary (Disk)\
+	Disk usage list (Disk)\
+	Network I/O summary (Network)\
+	Network interface and IP address list (Network)\
+	Computer and user name (General)\
+	Uptime (Clock)\
+	Calendar (Clock)\
+	Julian date (Clock)\
+	Moon statistics (Clock)\
+	Number of swapfiles (Swapping)\
+	Top processes for pageins and faults (Swapping)\
+\
+\'95 Added ability to save and load preference settings.\
+\'95 Added new gauge to show wireless reception.\
+\'95 Added new gauge to show battery power level and charging.\
+\'95 Added preference for background image.\
+\'95 Added hotkey to hide/show the iPulse window.\
+\'95 Added preference to make iPulse window ignore mouse clicks.\
+\'95 Added hotkey to toggle ignoring mouse clicks.\
+\'95 Added disk read and write indicators.\
+\'95 Added peak indicators for disk and network I/O gauges.\
+\'95 Added logarithmic scale preference for disk and network I/O gauges.\
+\'95 Added automatic scale preference for disk and network I/O gauges.\
+\'95 Added preference to turn off disk read and write indicators.\
+\'95 Added preference to turn off network in and out indicators.\
+\'95 Added preference to lower the priority of the iPulse process after it's launched.\
+\'95 Added preference to tint CPU gauge according to load.\
+\'95 Updated all color preferences to use opacity.\
+\'95 Updated date indicator rendering and added new indicator that shows the current phase of the moon.\
+\'95 Updated code to reposition iPulse window when the display (screen) configuration changes.\
+\'95 Updated registration reminders to be less drastic.\
+\'95 Added preference to display disk usage as a sum of all disks.\
+\'95 Added preference to display clock in 24 hour format.\
+\'95 Added preference to never hide iPulse window (even when another application uses Hide Others.)\
+\'95 Added menu item and shortcut to Hide Others.\
+\'95 Added preference to show darker shadows under text (better contrast against gauges)\
+\'95 Added preference to hide iPulse in lists. A process that monitors itself is never very accurate; it's better to use "top" to monitor iPulse.\
+\'95 Added preference to switch between Apple, IEEE and SI units for values in lists.\
+\'95 Added an indicator to history gauge to show where next sample is going (a reference point if clock hands are turned off.)\
+\'95 Changed CPU gauge to render percentage of area instead of radius. A value of 50% will fill half the area of the circle, not half the radius of the circle. This gives a more accurate rendering of the CPU usage.\
+\'95\'a0Added menu item to launch Network Utility.\
+\'95 Added preference to show text in dock icon.\
+\'95\'a0Added preferences for power users.\
+\'95 Updated graphics and icons.\
+\'95 Updated for Panther.\
+\'95 And lots of tweaking :-)\
+
+\b \
+
+\b0 \'95 French localization by Ronald Leroux\
+\'95\'a0Japanese localization by petercat\
+
+\b \
+Version 1.0.4
+\b0 \
+\
+\'95 Updated for Ten for X customers.\
+\
+
+\b Version 1.0.3
+\b0 \
+\
+\'95 Fixed a bug which would cause the window position to reset when waking from sleep on a PowerBook.\
+\'95 Fixed a potential problem with registration information being saved to disk.\
+\'95\'a0Fixed a potential problem when running on Mac OS X Server.\
+\'95 Changed permissions on configuration files to support multi-user environment.\
+
+\b \
+Version 1.0.2
+\b0 \
+\
+\'95 Fixed a bug which prevented Process Viewer from launching correctly on Mac OS X 10.2\
+\'95 Fixed a crash when mounting some disks for Unix (NFS) and iDisk (WebDAV)\
+\'95 Fixed a bug with window moving off-screen when monitor size/configuration changed\
+\
+\'95 Dutch localization by Menno Pieters\
+\'95 German localization by Florentin Westermann\
+\'95 Italian localization by Gianfranco Astolfi\
+\'95\'a0Japanese localization by petercat and hiko\
+\'95 Norwegian localization by Bj\'f8rnar Kvamme\
+\'95 Spanish localization by Jorge Salvador Caffarena\
+\
+
+\b Version 1.0.1
+\b0 \
+\
+\'95\'a0Made credits read-only text\
+\'95 Fixed a bug that prevented "nice" processes from being shown on the CPU gauge\
+\'95 Fixed a spelling error in CPU Preference panel\
+\'95 Added menu for external applications (Process Viewer and Terminal)\
+\'95 Fixed bug with load indicator when the update speed was greater than 1 second\
+\'95 Added URLs to Help menu\
+\'95\'a0Added diagram with gauge locations to help file\
+\
+\'95 French localization by Ronald Leroux\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+}

@@ -1,0 +1,235 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<title>iPulse - Localization Help</title>
+		<style>
+			BODY {
+				color: black;
+				background-color: white;
+				font-family: "Lucida Grande", Arial, sans-serif;
+				font-size: 12px;
+			}
+			TABLE, TD, TH {
+				color: black;
+				font-family: "Lucida Grande", Arial, sans-serif;
+				font-size: 12px;
+			}
+			TD, TH {
+				text-align: left;
+				vertical-align: top;
+			}
+			UL {
+				list-style: square;
+			}
+			OL {
+				list-style-type: lower-alpha;
+			}
+			A {
+				/* color: #0066cc; */
+				color: #33337F;
+			}
+			A:hover {
+				color: #666666;
+			}
+			EM {
+				color: #cc3333;
+				font-style: normal;
+			}
+			PRE {
+				padding-left: 24px;
+				font-family: "Andale Mono", Courier, monospace;
+				font-size: 12px;
+				color: #33337F;
+			}
+			.section {
+				width: 130px;
+				color: #cc0000;
+				font-weight: bold;
+				text-align: right;
+				vertical-align: top;
+				/* border: black solid 1px; */
+				padding-right: 10px;
+			}
+			.sectionbody {
+				width: 520px;
+				vertical-align: top;
+				padding-bottom: 24px;
+				/* border: black solid 1px; */
+			}
+			.topic {
+				color: #cc0000;
+				text-decoration: none;
+				padding-right: 4px;
+			}
+			.figure {
+				text-align: center;
+			}
+			.gauge {
+				color: #0066cc;
+				font-weight: bold;
+			}
+			.subtle {
+				color: #ccccff;
+			}
+			.command {
+				font-size: 12px;
+				font-family: "Andale Mono", Courier, monospace;
+				color: #33337F;
+				/* font-weight: bold; */
+			}
+			.group {
+				/* background-color: #aaddff; */
+				background-color: #dedeff;
+				padding: 10px;
+				border: #ccccff solid 1px;
+				margin-bottom: 5px;
+			}
+			.key {
+				width: 65px;
+			}
+		</style>
+	</head>
+
+	<body background="pattern_aqua.gif" bgcolor="white" text="black" link="#0066cc">
+		<a href="http://www.iconfactory.com"><img height="56" width="195" src="if_logo.gif" border="0"></a><br>
+		<br>
+		<br>
+		<table>
+			<tr>
+				<td class="section">
+					Localizing iPulse
+				</td>
+				<td class="sectionbody">
+This is a short guide to help you with the localization of iPulse.
+<p>
+The files in the English.lproj need to be localized. This folder is located in the iPulse.app package contents (under Resources.) The following is a checklist of items that need to be localized:
+<ul>
+	<li><a href="#nib_files">NIB files</a></li>
+	<li><a href="#rtf_templates">RTF templates</a></li>
+	<li><a href="#html_help">HTML help</a></li>
+	<li><a href="#localizable_strings">Localizable strings</a></li>
+	<li><a href="#read_me">Read Me file</a></li>
+</ul>
+If you have localized iPulse or other software before, some of these files will be familiar to you. There are some special requirements for each of the files, so please read each section before doing the localization.
+</p>
+<p>
+<em>Note:</em> This file <strong>does not</strong> need to be localized.
+</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					NIB files
+				</td>
+				<td class="sectionbody">
+<a name="nib_files"></a>The .nib files contain the iPulse user interface. These files are edited with Interface Builder.
+<p>
+The files that need to be edited are:
+<ul>
+	<li>About.nib - the iPulse about box.</li>
+	<li>KeyComboPanel.nib - the panel that appears when you define a hot key.</li>
+	<li>MainMenu.nib - the iPulse menu bar.</li>
+	<li>Preferences.nib - the iPulse preferences dialog.</li>
+	<li>Registration.nib - the iPulse registration dialog.</li>
+</ul>
+</p>
+<p>
+<span class="topic">Preferences.nib</span> The "View Panel" resource defines the title for the preferences dialog. The width of this resource also defines how wide the dialog window will be (you may need to make it wider if the labels for the preference panes are wider than the English versions.)
+</p>
+<p>
+Each of the preference panes is labeled as "xxxx View". Please do not adjust the height of these views since we need all of the preference panes to be the same height (so the legend graphics align correctly.)
+</p>
+<p>
+The legend graphics have callouts (text labels) that need to be localized. We have tried to make enough room for the localized labels, but you may need to adjust them slightly.
+</p>
+<p>
+<span class="topic">KeyComboPanel.nib</span> The "Panel" resource contains a small gray box in the lower-left corner. Please do not move or delete this (it's the thing that captures the hotkey when the user types in this dialog.)
+</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					RTF templates
+				</td>
+				<td class="sectionbody">
+<a name="rtf_templates"></a>The .rtf files contain templates for iPulse's information windows (that appear when you hover over the user interface.) These files are edited with TextEdit.
+<p>
+The template files contains special characters and tabs positions that should not be modified:
+</p>
+<p>
+<span class="topic">Special characters</span>The template contain tokens which are replaced with data. For example, in "Clock.rtf", the first line of the file is:
+<pre>
+Now: [ct] on [cd]
+</pre>
+iPulse will replace [ct] with the current time, and [cd] with the current date. You will need to change the "Now:" and "on" to fit your language. This:
+<pre>
+Ora: [ct] su [cd]
+</pre>
+Will be displayed in the information window as:
+<pre>
+Ora: 19:00 su 18/9/03
+</pre>
+(The time and date will be displayed according to the International settings in System Preferences.)
+</p>
+<p>
+<span class="topic">Tabs</span>The .rtf template files contain carefully placed tabs. Please do not adjust the position of the tabs&mdash;any changes to the tabs may cause data to be pushed off the right side of the information window.
+</p>
+<p>
+<span class="topic">Seeing your changes</span> iPulse reads these template files when it's first started. If you make changes to the file and want to see how they look, you'll need to quit and restart iPulse.
+</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					HTML help
+				</td>
+				<td class="sectionbody">
+<a name="html_help"></a>The Help.html file contains the help for iPulse. The file's character encoding is UTF-8, so it should be ready for any language. We suggest that you edit the file with Project Builder so that the character encoding is preserved correctly.
+<p>
+The help file is long and contains a lot of technical reference materials. This is the hardest part of the iPulse localization.
+</p>
+<p>
+If you need help with any of the concepts presented, please don't hesitate to contact me at <a href="mailto:craig@iconfactory.com">craig@iconfactory.com</a>
+</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					Localizable strings
+				</td>
+				<td class="sectionbody">
+<a name="localizable_strings"></a>The Localizable.strings file contains strings that are used internally. The file's character encoding is UTF-16. We suggest that you edit the file with Project Builder so that the character encoding is preserved correctly.
+<p>
+At the end of the file, you'll see some localized strings with the comment "// don't localize this string". These Unicode strings are used as graphical elements in the iPulse information window and don't need to be localized.
+</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					Read Me file
+				</td>
+				<td class="sectionbody">
+<a name="read_me"></a>When you mount the iPulse disk image, there is a file named "iPulse Read Me.rtfd". This file needs to be localized since it provides the initial instructions on how to use iPulse.
+				</td>
+			</tr>
+			<tr>
+				<td class="section">
+					Contact Us
+				</td>
+				<td class="sectionbody">
+					The Iconfactory - <a href="mailto:webmaster@iconfactory.com">webmaster@iconfactory.com</a><br>
+					<br>
+					Technical Support - <a href="mailto:ipulse@iconfactory.com">ipulse@iconfactory.com</a><br>
+					<br>
+					<br>
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td class="subtle">
+					Copyright &copy; 2002-2003 The Iconfactory, All rights reserved.<br>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

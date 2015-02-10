@@ -1,0 +1,247 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<title>iPulse - Help</title>
+		<style>
+			BODY {
+				color: black;
+				background-color: white;
+				font-family: "Lucida Grande", Arial, sans-serif;
+				font-size: 12px;
+			}
+			TABLE, TD {
+				color: black;
+				font-family: "Lucida Grande", Arial, sans-serif;
+				font-size: 12px;
+			}
+			UL {
+				list-style: square;
+			}
+			A {
+				color: #0066cc;
+			}
+			A:hover {
+				color: #666666;
+			}
+			.section {
+				color: #cc0000;
+				font-weight: bold;
+			}
+			.topic {
+				color: #cc0000;
+				text-decoration: none;
+				padding-right: 4px;
+			}
+			.gauge {
+				color: #0066cc;
+				font-weight: bold;
+			}
+			.subtle {
+				color: #9999cc;
+			}
+		</style>
+	</head>
+
+	<body background="../pattern_aqua.gif" bgcolor="white" text="black" link="#0066cc">
+		<a href="http://www.iconfactory.com" target="_blank"><img height="56" width="195" src="../if_logo.gif" border="0"></a><br>
+		<br>
+		<br>
+		<table border="0" cellpadding="0" cellspacing="2">
+			<tr>
+				<td width="130" valign="top"></td>
+				<td valign="top"></td>
+				<td width="450" valign="top">
+					<a href="http://www.iconfactory.com/ip_home.asp" target="_blank">iPulse Home Page</a>  |  <a href="http://www.iconfactory.com/ip_faq.asp" target="_blank">iPulse FAQ</a>  | <a href="http://www.iconfactory.com" target="_blank">Iconfactory Home Page</a><br>
+					<br>
+					<br>
+				</td>
+			</tr>
+			<tr>
+				<td width="130" valign="top" align="right" class="section">
+					About iPulse
+				</td>
+				<td valign="top"><img src="../10space.gif" width="10" height="10" border="0"></td>
+				<td width="450" valign="top">
+					iPulse is an application that graphically displays the inner workings of Mac&nbsp;OS&nbsp;X.<br>
+					<br>
+					After you start the iPulse application, several gauges are displayed in the iPulse window and icon. These gauges display the following items:
+					<ul>
+						<li>CPU activity</li>
+						<li>System load</li>
+						<li>Network activity</li>
+						<li>Memory activity and usage</li>
+						<li>Disk usage</li>
+						<li>Current time and date</li>
+					</ul>
+					iPulse is highly configurable using the application preferences, so there are many different ways to display this information both in the dock and on your desktop.<br>
+					<br>
+					<b>NOTE:</b> This page is displayed the first time you run iPulse. If you need to refer to it again, choose <b>Help</b> from the iPulse menu bar.<br>
+					<br>
+				</td>
+			</tr>
+			<tr>
+				<td width="130" valign="top" align="right" class="section">
+					Registering
+				</td>
+				<td valign="top"></td>
+				<td width="450" valign="top">
+					The cost to register iPulse is only $12.95. Your registration helps fund the Iconfactory and all the good things we do.<br>
+					<br>
+					<a href="http://www.iconfactory.com/orders.asp?product=ipulse" target="_blank">Register iPulse</a><br>
+					<br>
+					You will be reminded periodically to register your copy of iPulse. Also, some of the gauges will be disabled over time.<br>
+					After registering your software, the reminders will stop and the gauges will be restored.<br>
+					<br>
+				</td>
+			</tr>
+			<tr>
+				<td width="130" valign="top" align="right" class="section">
+					How It Works
+				</td>
+				<td valign="top"></td>
+				<td width="450" valign="top">
+					As you may be aware, Mac&nbsp;OS&nbsp;X is based on the Unix operating system. This operating system has evolved over many years into a robust and efficient computing platform. The developers of Mac&nbsp;OS&nbsp;X and its predecessors have included many mechanisms for examining the internal state of the operating system. This instrumentation allows an administrator to tune the system for optimum performance and to determine the cause of any system problems.<br>
+					<br>
+					With iPulse, our goal was to graphically represent this internal information in a way that is both space efficient and easy to read.<br>
+					<br>
+					So where does iPulse get this internal information? And how is it displayed graphically?<br>
+					<br>
+					We've tried to keep the other sections of this help file as simple as possible, but the following low-level information will be useful for those readers who are technically inclined and want to fully understand the visual data. We'll be referring to Unix shell commands which can be executed from a Terminal window. If you are curious, go ahead and use the commands: none of the information presented here can damage your Mac (just make sure you don't make any typographical errors!) You can also use <i>man [command]</i> to learn more about any of the commands mentioned below.<br>
+					<br>
+					<br>
+					<a name="diagram">
+					<table cellspacing="0" cellpadding="0" width="100%">
+						<tr>
+							<td align="center">
+								<img src="../iPulse_help.jpg" width="282" height="254" border="0"><br>
+								iPulse gauges
+							</td>
+						</tr>
+					</table>
+					<br>
+					<br>
+					The iPulse gauges are described below. You can locate them quickly by looking for a marker like this: <a href="#diagram">[#]</a>. Clicking on the marker will scroll back to the diagram.<br>
+					<br>
+					<span class="topic">CPU and System Load</span> Mac&nbsp;OS&nbsp;X follows the Unix convention of breaking the CPU usage down into two categories: system time and user time. The system time is the amount of time spent running on operating system tasks. User time, on the other hand, is the amount of time spent running applications and services outside of the kernel.<br>
+					<br>
+					The CPU graph is drawn with the percentage of time spent on system tasks in the inner circle <a href="#diagram">[1]</a> and the percentage of user time in the outer circle <a href="#diagram">[2]</a>. Any lower priority (nice) processes are displayed outside the user circle. The number displayed on the graph is the sum of system, user time and nice time. The value is averaged over the last 10 samples.<br>
+					<br>
+					At the end of each minute, the load factor for the past minute is obtained and graphed with the other load factor samples <a href="#diagram">[15]</a>. The load factors are normalized for display; the lowest load factor during the past hour is fully transparent while the highest load factor during the hour is completely opaque. Values between the minimum and maximum are assigned a transparency based on a linear interpolation.<br>
+					<br>
+					The end result is that periods of high load display an opaque dot, and periods of low activity are displayed as a transparent dot.<br>
+					<br>
+					You can obtain the same information using <i>top</i> in a Terminal window. In fact, if you find iPulse reporting something unexpected like a CPU running at 100%, you can use <i>top</i> to identify processes that are consuming the most CPU cycles.<br>
+					<br>
+					The CPU statistics and load are retrieved using the host_statistics() system call with the HOST_CPU_LOAD_INFO and HOST_LOAD_INFO selectors. <br>
+					<br>
+					<span class="topic">Memory Usage and Activity</span> Mac&nbsp;OS&nbsp;X divides physical memory usage into four categories: wired, active, inactive and free. Each of these categories is accounted for in 4 kb blocks of memory called pages. The categories are described below:
+					<ul>
+						<li>Wired <a href="#diagram">[3]</a> - These pages represent the memory being used by the Unix kernel. These pages are "locked in place" and will never be unloaded from physical memory. Applications have an indirect effect on wired memory usage since data managed by the kernel (like processes, threads, and libraries) are stored there.</li>
+						<li>Active <a href="#diagram">[4]</a> - The active pages indicate the amount of physical memory which has been recently accessed. Active pages are also mapped (accessible) to an application.</li>
+						<li>Inactive <a href="#diagram">[5]</a> - Inactive pages are those that have not been accessed recently. The data in the inactive pages is valid, but may not be mapped to an application. Eventually, inactive pages will be moved from physical memory to disk.</li>
+						<li>Free <a href="#diagram">[6]</a> - These pages are not in use by any part of the system and can be used immediately.</li>
+					</ul>
+					When an application needs to access a memory page, and that page is not active or inactive, the page must be read in from the disk. This is referred to as "swapping in". Likewise, the inactive pages will be "swapped out" and written to disk in order to make room for new requests for memory.<br>
+					<br>
+					You'll notice this behavior when using Mac&nbsp;OS&nbsp;X: when you have many applications running, and memory becomes full, you'll notice delays and disk activity when you switch between applications. This is caused by memory pages being swapped in and out to disk. If you are experiencing a lot of swapping activity, it's a good sign that you need to buy more memory!<br>
+					<br>
+					When iPulse graphs the memory usage, it displays the wired pages on the left part of the gauge <a href="#diagram">[3]</a>, followed by active pages to the right <a href="#diagram">[4]</a>. In iPulse, these two values combined are referred to memory that is "in use". The memory that is "unused" is displayed in the next two slices (inactive pages <a href="#diagram">[5]</a> followed by free pages <a href="#diagram">[6]</a>.) The percentage displayed on the graph is the amount of memory "in use" (the sum of wired and active pages.)<br>
+					<br>
+					The graph for pages being swapped in and out is displayed in page increments up to a maximum of 90 (one page per degree of arc on the gauge.) Pages that are swapped in are displayed on the left <a href="#diagram">[13]</a> and pages swapped out are displayed on the right <a href="#diagram">[14]</a>. The text on the graph shows the number of pages swapped.<br>
+					<br>
+					Again, the <i>top</i> command in a Terminal window also shows this information (in a slightly different format.) The <i>top</i> window also breaks memory usage down by process, so you can get an idea of where memory is being consumed. The <i>vm_stat</i> command also gives more detailed information about how virtual memory is being used.<br>
+					<br>
+					iPulse calls host_statistics() with the HOST_VM_INFO selector to gather the memory information from the Unix kernel.<br>
+					<br>
+					<span class="topic">Disk Usage</span> iPulse also shows how your disk space is being used. The gauge displays the amount of space used as a percentage.<br>
+					<br>
+					To minimize clutter in the gauge, only disks (filesystems) that are read/write are displayed (CDs and other read-only media are not displayed.) Network disks are displayed in the gauge after you connect. The amount of disk space used <a href="#diagram">[7]</a> and the amount of free space <a href="#diagram">[8]</a> are both displayed in a clockwise manner. When the amount of disk space exceeds 90%, the gauge is displayed with a warning color.<br>
+					<br>
+					The <i>df</i> command in a Terminal window shows the disk usage for all mounted filesystems (including read-only and device filesystems.)<br>
+						<br>
+					The disk statistics are gathered by calling getmntinfo().<br>
+					<br>
+					<span class="topic">Network Activity</span> When designing iPulse, one of the issues we struggled with was what kind of networking information to show. There is a lot of network information available from the kernel. In the end, we decided that two types of information were most useful:
+					<ul>
+						<li>IP activity - the number of packets sent and received by IP (Internet Protocol). This lets you see activity caused by any IP packet (even if it's not a TCP packet.)</li>
+						<li>TCP bandwidth - the number of bytes send and received by TCP (Transmission Control Protocol.) This allows you to see the amount of data you are transferring when doing common tasks like moving files between servers, surfing the web and reading e-mail.</li>
+					</ul>
+					iPulse graphs both of these values differently.	 Incoming network traffic is drawn on the left <a href="#diagram">[9,10]</a> and outgoing traffic is drawn on the right <a href="#diagram">[11,12]</a>. The bar graph displays the number of kilobytes of data per second <a href="#diagram">[10,12]</a> (averaged over the past 10 samples.) The dot at the beginning of the graph is displayed if there are any IP packets received <a href="#diagram">[9,11]</a>. The dot is highlighted if there are more than 25 packets per second.<br>
+					<br>
+					You can see the network activity using the Terminal command line using the <i>netstat -I [interface]</i> command with the named interface (such as en0 for Ethernet and en1 for Airport.)<br>
+					<br>
+					The network information is retrieved using the sysctlbyname() system call. The TCP statistics are retrieved using the "net.inet.tcp.stats" selector, the IP statistics with the "net.inet.ip.stats" selector.<br>
+					<br>
+					<span class="topic">Clock</span> The clock shows the current time <a href="#diagram">[16]</a>. It should be pretty obvious how the data is graphed :-)<br>
+					<br>
+					The time is aquired by a call to the time() system call. The time is converted to a local time with localtime().
+					<br>
+					<br>
+				</td>
+			</tr>
+			<tr>
+				<td width="130" valign="top" align="right" class="section">
+					Tips and Tricks
+				</td>
+				<td valign="top"></td>
+				<td width="450" valign="top">
+					<span class="topic">Start iPulse at login</span> You can configure iPulse to launch automatically using the Login Items of the System Preferences.<br>
+					<br>
+					<span class="topic">Hide iPulse application</span> Since iPulse is a normal application, you can temporarily hide its desktop window using Command-H. If you want to permanently disable the desktop window, use the Window preferences to disable the "show gauges in a separate window" option.<br>
+					<br>
+					<span class="topic">Add your own sounds</span> To use your own sounds for the "ring on hour" feature, add AIFF sound files to your ~/Library/Sounds folder. Files with the extension ".aiff" will appear in the list of sound names after you restart iPulse.<br>
+					<br>
+					<span class="topic">Running iPulse without a dock icon</span> Normally, iPulse displays an icon in the dock (and optionally in a desktop window.) You can configure iPulse to run as an application in "background mode" which will prevent the application's icon from appearing the dock.<br>
+					<br>
+					When you run an application in background mode, you need to be aware of several limitations:
+					<ul>
+						<li>There is no menu bar for the application. The command keys will still work, so you can quit the application (Command-Q) or display preferences (Command-Y). You can also use the context menu that appears when you control-click on the iPulse window to access these functions.</li>
+						<li>iPulse will not appear in the Force Quit menu when you use Command-Option-Escape. You will need to use a Terminal window to manually kill the iPulse process.</li>
+						<li>Since the changes required are to the application's configuration, all users on the machine must use iPulse in background mode.</li>
+					</ul>
+					Before making the change to background mode, make sure that the iPulse window is displayed on the desktop.<br>
+					<br>
+					To configure iPulse to run in background mode, open the application package using a control-click on the application icon and selecting "Show Package Contents". Find the Info.plist file in the Contents folder and open it with TextEdit. Locate the NSUIElement and change the "&lt;string&gt;0&lt;/string&gt;" to "&lt;string&gt;1&lt;/string&gt;". Save the file and restart iPulse.<br>
+					<br>
+					If you decide you don't want to run in background mode, change the NSUIElement back to it's original value of "0".<br>
+					<br>
+				</td>
+			</tr>
+			<tr>
+				<td width="130" valign="top" align="right" class="section">
+					Known Problems
+				</td>
+				<td valign="top"></td>
+				<td width="450" valign="top">
+					On some Macs running Mac&nbsp;OS&nbsp;X 10.1 or 10.0, the shadow will flicker with each update. The problem is fixed in the 10.2 release of Mac&nbsp;OS&nbsp;X. If you can't upgrade to this version of the OS, you can also turn off the shadow in the Window preferences.<br>
+					<br>
+				</td>
+			<tr>
+				<td width="130" valign="top" align="right" class="section">
+					Contact Us
+				</td>
+				<td valign="top"></td>
+				<td width="450" valign="top">
+					The Iconfactory - <a href="mailto:webmaster@iconfactory.com">webmaster@iconfactory.com</a><br>
+					<br>
+					Technical Support - <a href="mailto:ipulse@iconfactory.com">ipulse@iconfactory.com</a><br>
+					<br>
+					<br>
+				</td>
+			</tr>
+			<tr>
+				<td width="130" valign="top"></td>
+				<td valign="top"></td>
+				<td width="450" valign="top" class="subtle">
+					Copyright &copy; 2002 The Iconfactory, All rights reserved.<br>
+					<br>
+					AGProcess: Copyright (c) 2002 Aram Greenman. All rights reserved.<br>
+					HotKeysLib: Copyright (c) 2002 Quentin D. Carnicelli. All rights reserved.
+				</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+	</body>
+</html>
