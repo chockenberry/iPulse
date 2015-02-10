@@ -4,13 +4,14 @@ iPulse was my first Cocoa app. This project was started [in 2002](http://iconfac
 
 The code, however, is an abomination: the main controller for the app is over 8,200 lines and there is so much refactoring needed it's not even funny. Unfortunately, the architecture of this app was done before I understood how to build things with AppKit and Foundation. Also, much of the code was written before things like Cocoa Bindings and properties even existed (look at the Preferences class to see how far we've come in the past ten years!)
 
-**Do not** look at iPulse an example of best practices in Cocoa app design.
+**Do not** look at iPulse an example of best practices in Cocoa app design. Look at it as a classic case of how a n00b can screw things up so badly that their more experienced self doesn't have the will to go clean things up years later.
 
 That said, the app still works great and I run it all the time. And despite its usefulness, iPulse is not a source of revenue anymore, so I've decided to make it available free of charge. Open source with warts and all.
 
 Build and run and **try not to** look at the source code. There is [extensive user help](English.lproj/Help.html) that explains the information being presented by iPulse. Localized help is available from the app's Help menu.
 
 I'll do my best to keep the iPulse running on the latest version of OS X since it's an important tool for the work I do. If you find bugs, come up with new features or are **brave enough** to refactor the code, I'll be happy to take pull requests.
+
 
 ## Code Structure
 
