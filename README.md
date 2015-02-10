@@ -1,6 +1,6 @@
 # iPulse
 
-iPulse was my first Cocoa app. This project was started [in 2002](http://iconfactory.com/software/ipulse_history) and the app runs fine on OS X releases since 10.5.
+[iPulse](http://iconfactory.com/software/ipulse) was my first Cocoa app. This project was started [in 2002](http://iconfactory.com/software/ipulse_history) and the app runs fine on OS X releases since 10.5.
 
 The code, however, is an abomination: the main controller for the app is over 8,200 lines and there is so much refactoring needed it's not even funny. Unfortunately, the architecture of this app was done before I understood how to build things with AppKit and Foundation. Also, much of the code was written before things like Cocoa Bindings and properties even existed (look at the Preferences class to see how far we've come in the past ten years!)
 
