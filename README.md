@@ -46,7 +46,7 @@ Each statistic is shown using a "gauge". The gauge is drawn using methods in Mai
 
 I never released a public version of iPulse with `OPTION_INCLUDE_MATRIX_ORBITAL` defined, but there is a bunch of code that lets iPulse display information on an external 20 × 2 character LCD display. The code was written for the discontinued [PK202-24-USB](http://www.matrixorbital.ca/manuals/Legacy/PK_series/PK202-24-USB/), but in theory [newer versions](http://www.matrixorbital.com/p974/BLC2021-BL-USB/product_info.html) that use the same commands should work.
 
-My LCD display is attached to a headless iMac that I use as a server in the garage. This makes it easy to keep an eye on things without opening a virtual desktop. Here's what it looks like:
+My LCD display is attached to a headless Mac mini that I use as a server in the garage. This makes it easy to keep an eye on things without opening a virtual desktop. Here's what it looks like:
 
 <img src="iPulse-LCD.jpg" width="50%" />
 
