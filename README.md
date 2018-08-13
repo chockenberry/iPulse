@@ -1,5 +1,9 @@
 # iPulse
 
+iPulse 3 is [now available](https://ipulseapp.com). The code below won't work with [System Integrity Protection](https://en.wikipedia.org/wiki/System_Integrity_Protection), so instead of building this old version of the app, I suggest that you [buy an updated version](https://itunes.apple.com/us/app/ipulse/id1028916583?ls=1&mt=12&uo=4&pt=8934&at=10l4G7&ct=IPULSE_GITHUB).
+
+<hr/>
+
 [iPulse](http://iconfactory.com/software/ipulse) was my first Cocoa app. This project was started [in 2002](http://iconfactory.com/software/ipulse_history) and the app runs fine on OS X releases since 10.5.
 
 The code, however, is an abomination: the main controller for the app is over 8,200 lines and there is so much refactoring needed it's not even funny. Unfortunately, the architecture of this app was done before I understood how to build things with AppKit and Foundation. Also, much of the code was written before things like Cocoa Bindings and properties even existed (look at the Preferences class to see how far we've come in the past ten years!)
@@ -56,8 +60,8 @@ The `iPulse` target should be used to make your own copy of the app.
 
 The `iPulse (Signed)` and `Distribution_Iconfactory` targets are used to build a version signed with a Developer ID that can be updated with Sparkle. These are used via the `build_release` script. I'll use them to do periodic binary releases.
 
-## Donations
+## Buying iPulse
 
-There's nothing from preventing you from [buying a copy of the app for $10](https://iconfactory.com/store/order/ipulse) and getting a serial number that you don't need. Think of it as a way to help buy the whiskey needed after I look at this source code :-)
+You can [buy a copy of the app for $10](https://ipulseapp.com). This new version has support for Retina displays, contains many new features including compatibility with System Integrity Protection, and works on the latest versions of macOS. Distribution on the Mac App Store also makes it easy to install on any Mac you own. Think of it as a way to help buy the whiskey needed after I refactored this source code :-)
 
 
